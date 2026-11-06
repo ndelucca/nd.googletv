@@ -1,0 +1,11 @@
+global window_animation_scale 0.0
+global transition_animation_scale 0.0
+global wifi_scan_always_enabled 0
+secure screensaver_enabled 1
+secure screensaver_components com.neilturner.aerialviews/com.neilturner.aerialviews.ui.screensaver.DreamActivity
+secure screensaver_activate_on_sleep 1
+system screen_off_timeout 600000
+secure sleep_timeout -1
+global animator_duration_scale 0.0
+global ble_scan_always_enabled null
+global wifi_networks_available_notification_on 1

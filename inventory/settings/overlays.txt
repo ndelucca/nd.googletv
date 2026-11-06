@@ -1,0 +1,16 @@
+com.android.tv.settings
+[x] com.android.tv.settings.google.resoverlay
+[x] com.android.tv.settings.vendor.resoverlay
+
+com.google.android.permissioncontroller
+[x] com.google.android.overlay.modules.permissioncontroller
+
+com.tcl.waterfall.overseas
+[x] com.tcl.tclchannel.overlay
+
+com.android.networkstack.tethering
+--- com.android.tethering.overlay.gsi
+
+com.android.networkstack.tethering.inprocess
+[x] com.android.tethering.overlay
+

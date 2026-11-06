@@ -1,0 +1,2299 @@
+Settings:
+  min_ready_non_active_jobs_count=5 
+  max_non_active_job_batch_delay_ms=1860000 
+  heavy_use_factor=0.9 
+  moderate_use_factor=0.5 
+  max_job_total_on_normal=2
+  max_job_max_bg_on_normal=2
+  max_job_min_bg_on_normal=1
+  max_job_total_on_moderate=2
+  max_job_max_bg_on_moderate=2
+  max_job_min_bg_on_moderate=1
+  max_job_total_on_low=2
+  max_job_max_bg_on_low=1
+  max_job_min_bg_on_low=1
+  max_job_total_on_critical=2
+  max_job_max_bg_on_critical=1
+  max_job_min_bg_on_critical=1
+  max_job_total_off_normal=2
+  max_job_max_bg_off_normal=2
+  max_job_min_bg_off_normal=1
+  max_job_total_off_moderate=2
+  max_job_max_bg_off_moderate=2
+  max_job_min_bg_off_moderate=1
+  max_job_total_off_low=2
+  max_job_max_bg_off_low=1
+  max_job_min_bg_off_low=1
+  max_job_total_off_critical=2
+  max_job_max_bg_off_critical=1
+  max_job_min_bg_off_critical=1
+  screen_off_job_concurrency_increase_delay_ms=30000
+  min_linear_backoff_time=10000 
+  min_exp_backoff_time=10000 
+  conn_congestion_delay_frac=0.5 
+  conn_prefetch_relax_frac=0.5 
+  enable_api_quotas=true 
+  aq_schedule_count=250 
+  aq_schedule_window_ms=60000 
+  aq_schedule_throw_exception=true 
+  aq_schedule_return_failure=false 
+  
+  TimeController:
+    use_non_wakeup_delay_alarm=true 
+  
+  QuotaController:
+    allowed_time_per_period_ms=600000 
+    in_quota_buffer_ms=30000 
+    window_size_active_ms=600000 
+    window_size_working_ms=7200000 
+    window_size_frequent_ms=28800000 
+    window_size_rare_ms=86400000 
+    window_size_restricted_ms=86400000 
+    max_execution_time_ms=14400000 
+    max_job_count_active=75 
+    max_job_count_working=120 
+    max_job_count_frequent=200 
+    max_job_count_rare=48 
+    max_job_count_restricted=10 
+    rate_limiting_window_ms=60000 
+    max_job_count_per_rate_limiting_window=10 
+    max_session_count_active=75 
+    max_session_count_working=10 
+    max_session_count_frequent=8 
+    max_session_count_rare=3 
+    max_session_count_restricted=1 
+    max_session_count_per_rate_limiting_window=20 
+    timing_session_coalescing_duration_ms=5000 
+    min_quota_check_delay_ms=60000 
+
+    In thermal throttling?: false
+
+CountQuotaTracker:
+  Is enabled: true
+  Is global quota free: false
+  Current elapsed time: 1055561
+  
+  
+  In quota alarms:
+    NOT WAITING
+  
+  Per-app free quota:
+  
+  Instantaneous events:
+    <0>com.google.android.youtube.tv::.schedulePersisted():
+      672466, 748279, 822597
+    <0>com.netflix.ninja::.schedulePersisted():
+      694981, 767850, 843225
+  
+  Cached execution stats:
+    <0>android::.schedulePersisted():
+      expirationTime=86336, windowSizeMs=60000, countLimit=250, countInWindow=1, inQuotaTime=0
+    <0>com.google.android.youtube.tv::.schedulePersisted():
+      expirationTime=882597, windowSizeMs=60000, countLimit=250, countInWindow=1, inQuotaTime=0
+    <0>com.netflix.ninja::.schedulePersisted():
+      expirationTime=903225, windowSizeMs=60000, countLimit=250, countInWindow=1, inQuotaTime=0
+  
+  Limits:
+    Category{.schedulePersisted()}: 250 events in +1m0s0ms
+    Category{.schedulePersisted out-of-quota logged}: 1 events in +1m0s0ms
+
+Started users: [0]
+Registered 58 jobs:
+  JOB #1000/1: 6a9234d com.android.providers.settings/.WriteFallbackSettingsFilesJobService
+    1000 tag=*job*/com.android.providers.settings/.WriteFallbackSettingsFilesJobService
+    Source: uid=1000 user=0 pkg=com.android.providers.settings
+    JobInfo:
+      Service: com.android.providers.settings/.WriteFallbackSettingsFilesJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      PERSISTED
+      Requires: charging=true batteryNotLow=false deviceIdle=false
+      Extras: {config=/data/system/users/0/settings_config.xml, global=/data/system/users/0/settings_global.xml, secure=/data/system/users/0/settings_secure.xml, system=/data/system/users/0/settings_system.xml, ssaid=/data/system/users/0/settings_ssaid.xml}
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE [0xc0000001]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Uid: active
+    Tracking: BATTERY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=+17h2m0s710ms, latest=+1d17h2m0s710ms, original latest=+1d17h2m0s710ms
+    Last successful run: 2026-11-05 20:52:34
+    Last failed run: 2026-10-14 20:40:37
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/800: 41936f5 android/com.android.server.pm.BackgroundDexOptService
+    1000 tag=*job*/android/com.android.server.pm.BackgroundDexOptService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.pm.BackgroundDexOptService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE [0xc0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s698ms
+    Run time: earliest=-17m17s698ms, latest=+23h42m42s302ms, original latest=+23h42m42s302ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/808: cea1ad2 android/com.android.server.MountServiceIdler
+    1000 tag=*job*/android/com.android.server.MountServiceIdler
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.MountServiceIdler
+      Requires: charging=false batteryNotLow=true deviceIdle=true
+      Minimum latency: +1d0h11m57s530ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: BATTERY_NOT_LOW TIMING_DELAY IDLE [0x80000006]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: TIMING_DELAY IDLE [0x80000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m14s983ms
+    Run time: earliest=+23h54m42s547ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/100183: cf00076 com.google.android.gms.people/com.google/<email>:android
+    1000 tag=*job*/com.google.android.gms.people/com.google/<email>:android
+    Source: uid=u0a9 user=0 pkg=com.google.android.gms
+    JobInfo:
+      Service: android/com.android.server.content.SyncJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1h12m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: {provider=com.google.android.gms.people, reason=-4, source=4, userId=0, expectedRuntime=0, syncExemptionFlag=0, owningPackage=com.google.android.gms, SyncManagerJob=true, isPeriodic=true, allowParallelSyncs=false, periodMillis=86400000, sourcePeriodicId=-1, jobId=100183, owningUid=10009, flexMillis=3456000, accountName=<email>, accountType=com.google, retries=0, syncExtras=PersistableBundle[{}]}
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10009 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Uid: active
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=+16h5m5s321ms, latest=+17h17m5s321ms, original latest=+17h17m5s321ms
+    Last successful run: 2026-11-05 19:13:40
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/100419: f31e313 com.google.android.gms.subscribedfeeds/com.google/<email>:android
+    1000 tag=*job*/com.google.android.gms.subscribedfeeds/com.google/<email>:android
+    Source: uid=u0a9 user=0 pkg=com.google.android.gms
+    JobInfo:
+      Service: android/com.android.server.content.SyncJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1h12m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: {provider=com.google.android.gms.subscribedfeeds, reason=-4, source=4, userId=0, expectedRuntime=0, syncExemptionFlag=0, owningPackage=com.google.android.gms, SyncManagerJob=true, isPeriodic=true, allowParallelSyncs=false, periodMillis=86400000, sourcePeriodicId=-1, jobId=100419, owningUid=10009, flexMillis=3456000, accountName=<email>, accountType=com.google, retries=0, syncExtras=PersistableBundle[{}]}
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10009 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Uid: active
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=+17h12m27s724ms, latest=+18h24m27s724ms, original latest=+18h24m27s724ms
+    Last successful run: 2026-11-05 20:42:34
+    Last failed run: 2026-10-16 20:31:41
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/106415: 953ae02 com.google.android.location.reporting/com.google/<email>:android
+    1000 tag=*job*/com.google.android.location.reporting/com.google/<email>:android
+    Source: uid=u0a9 user=0 pkg=com.google.android.gms
+    JobInfo:
+      Service: android/com.android.server.content.SyncJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1h12m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: {provider=com.google.android.location.reporting, reason=-4, source=4, userId=0, expectedRuntime=0, syncExemptionFlag=0, owningPackage=com.google.android.gms, SyncManagerJob=true, isPeriodic=true, allowParallelSyncs=false, periodMillis=86400000, sourcePeriodicId=-1, jobId=106415, owningUid=10009, flexMillis=3456000, accountName=<email>, accountType=com.google, retries=0, syncExtras=PersistableBundle[{}]}
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10009 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Uid: active
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=+17h13m14s675ms, latest=+18h25m14s675ms, original latest=+18h25m14s675ms
+    Last successful run: 2026-11-05 20:42:44
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/765123: 6d4ef18 android/com.android.server.PruneInstantAppsJobService
+    1000 tag=*job*/android/com.android.server.PruneInstantAppsJobService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.PruneInstantAppsJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE IDLE [0xc0000004]
+    Dynamic constraints:
+    Satisfied constraints: TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400000]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s696ms
+    Run time: earliest=-17m17s696ms, latest=+23h42m42s304ms, original latest=+23h42m42s304ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/882313: f72a779 android/com.android.server.net.watchlist.ReportWatchlistJobService
+    1000 tag=*job*/android/com.android.server.net.watchlist.ReportWatchlistJobService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.net.watchlist.ReportWatchlistJobService
+      PERIODIC: interval=+12h0m0s0ms flex=+12h0m0s0ms
+      Requires: charging=false batteryNotLow=true deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: BATTERY_NOT_LOW TIMING_DELAY DEADLINE IDLE [0xc0000006]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m15s59ms
+    Run time: earliest=-17m15s59ms, latest=+11h42m44s941ms, original latest=+11h42m44s941ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/2030028: 3f93c8a android/com.android.server.pm.DynamicCodeLoggingService
+    1000 tag=*job*/android/com.android.server.pm.DynamicCodeLoggingService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.pm.DynamicCodeLoggingService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE [0xc0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s697ms
+    Run time: earliest=-17m17s697ms, latest=+23h42m42s303ms, original latest=+23h42m42s303ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/3345678: b886cc9 com.android.networkstack.inprocess/com.android.server.connectivity.ipmemorystore.RegularMaintenanceJobService
+    1000 tag=*job*/com.android.networkstack.inprocess/com.android.server.connectivity.ipmemorystore.RegularMaintenanceJobService
+    Source: uid=1000 user=0 pkg=com.android.networkstack.inprocess
+    JobInfo:
+      Service: com.android.networkstack.inprocess/com.android.server.connectivity.ipmemorystore.RegularMaintenanceJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=true batteryNotLow=true deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEADLINE IDLE [0xc0000007]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m13s167ms
+    Run time: earliest=-17m13s167ms, latest=+23h42m46s833ms, original latest=+23h42m46s833ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/13254266: 1e9e4bc android/com.android.server.camera.CameraStatsJobService
+    1000 tag=*job*/android/com.android.server.camera.CameraStatsJobService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.camera.CameraStatsJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Minimum latency: +1d0h0m0s0ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY IDLE [0x80000004]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY IDLE [0x80000004]
+    Uid: active
+    Tracking: IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s676ms
+    Run time: earliest=+23h42m42s324ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/52417896: 5a58a77 android/com.android.server.backup.KeyValueBackupJob
+    1000 tag=*job*/android/com.android.server.backup.KeyValueBackupJob
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.backup.KeyValueBackupJob
+      Requires: charging=true batteryNotLow=false deviceIdle=false
+      Transient extras: {userId=0}
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1000 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +4h6m29s463ms
+      Max execution delay: +1d0h0m0s0ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000001]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Uid: active
+    Tracking: BATTERY CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m4s734ms
+    Run time: earliest=+3h49m24s720ms, latest=+23h42m55s257ms, original latest=+23h42m55s257ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/191934935: 7f1d35b android/com.android.server.blob.BlobStoreIdleJobService
+    1000 tag=*job*/android/com.android.server.blob.BlobStoreIdleJobService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.blob.BlobStoreIdleJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE [0xc0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m11s993ms
+    Run time: earliest=-17m11s993ms, latest=+23h42m48s7ms, original latest=+23h42m48s7ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/203142925: e4d02fb android/com.android.server.pm.DynamicCodeLoggingService
+    1000 tag=*job*/android/com.android.server.pm.DynamicCodeLoggingService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.pm.DynamicCodeLoggingService
+      PERIODIC: interval=+2h0m0s0ms flex=+2h0m0s0ms
+      Requires: charging=false batteryNotLow=true deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: BATTERY_NOT_LOW TIMING_DELAY DEADLINE IDLE [0xc0000006]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s697ms
+    Run time: earliest=-17m17s697ms, latest=+1h42m42s303ms, original latest=+1h42m42s303ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/204561367: f8a370b android/com.android.server.people.data.DataMaintenanceService
+    1000 tag=*job*/android/com.android.server.people.data.DataMaintenanceService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.people.data.DataMaintenanceService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE IDLE [0xc0000004]
+    Dynamic constraints:
+    Satisfied constraints: TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400000]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m8s780ms
+    Run time: earliest=-17m8s780ms, latest=+23h42m51s220ms, original latest=+23h42m51s220ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/546357475: 93f42e4 android/com.android.server.usage.UsageStatsIdleService
+    1000 tag=*job*/android/com.android.server.usage.UsageStatsIdleService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.usage.UsageStatsIdleService
+      PERSISTED
+      Internal flags: 1 HAS_FOREGROUND_EXEMPTION
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: {user_id=0}
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: IDLE [0x4]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: IDLE [0x4]
+    Uid: active
+    Tracking: IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/546378950: 425216c android/com.android.server.usage.UsageStatsIdleService
+    1000 tag=*job*/android/com.android.server.usage.UsageStatsIdleService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.usage.UsageStatsIdleService
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Minimum latency: +1d0h0m0s0ms
+      Max execution delay: +2d0h0m0s0ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Uid: active
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m8s957ms
+    Run time: earliest=+23h42m51s43ms, latest=+1d23h42m51s43ms, original latest=+1d23h42m51s43ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #1000/1145656139: 1726ded android/com.android.server.storage.DiskStatsLoggingService
+    1000 tag=*job*/android/com.android.server.storage.DiskStatsLoggingService
+    Source: uid=1000 user=0 pkg=android
+    JobInfo:
+      Service: android/com.android.server.storage.DiskStatsLoggingService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE [0xc0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s779ms
+    Run time: earliest=-17m17s779ms, latest=+23h42m42s221ms, original latest=+23h42m42s221ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a13/-100: a611b82 com.android.providers.downloads/.DownloadIdleService
+    u0a13 tag=*job*/com.android.providers.downloads/.DownloadIdleService
+    Source: uid=u0a13 user=0 pkg=com.android.providers.downloads
+    JobInfo:
+      Service: com.android.providers.downloads/.DownloadIdleService
+      PERIODIC: interval=+12h0m0s0ms flex=+12h0m0s0ms
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE [0xc0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -16m51s361ms
+    Run time: earliest=-16m51s361ms, latest=+11h43m8s639ms, original latest=+11h43m8s639ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9952: 31c4638 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=100
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +11h28m2s431ms
+      Max execution delay: +23h28m2s431ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m11s20ms
+    Run time: earliest=+11h24m51s411ms, latest=+23h24m51s411ms, original latest=+23h24m51s411ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9953: 7bf2611 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=100
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Max execution delay: +23h28m59s722ms
+      Backoff: policy=1 initial=+30s0ms
+      Has late constraint
+    Required constraints: DEADLINE IDLE CONNECTIVITY [0x50000004]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Tracking: CONNECTIVITY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m11s13ms
+    Run time: earliest=none, latest=+23h25m48s709ms, original latest=+23h25m48s709ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9955: a978649 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=100
+      Max execution delay: +22h29m3s188ms
+      Backoff: policy=1 initial=+30s0ms
+      Has late constraint
+    Required constraints: DEADLINE IDLE [0x40000004]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Tracking: IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -3m10s950ms
+    Run time: earliest=none, latest=+22h25m52s238ms, original latest=+22h25m52s238ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9956: 2e49b4e com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=100
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +6d23h29m6s19ms
+      Max execution delay: +24d23h49m13s776ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE CONNECTIVITY [0xd0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE IDLE [0xc0000004]
+    Tracking: BATTERY CONNECTIVITY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m10s947ms
+    Run time: earliest=+6d23h25m55s71ms, latest=+24d23h46m2s828ms, original latest=+24d23h46m2s828ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9957: efc146f com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=100
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +6d23h29m6s16ms
+      Max execution delay: +24d23h49m13s773ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE IDLE CONNECTIVITY [0xd0000004]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE IDLE [0xc0000004]
+    Tracking: CONNECTIVITY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m10s944ms
+    Run time: earliest=+6d23h25m55s72ms, latest=+24d23h46m2s829ms, original latest=+24d23h46m2s829ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9958: c68b57c com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=100
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +6d17h40m29s418ms
+      Max execution delay: +21d17h40m29s418ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m10s943ms
+    Run time: earliest=+6d17h37m18s475ms, latest=+21d17h37m18s475ms, original latest=+21d17h37m18s475ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/9962: f4d9f82 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=100
+      Minimum latency: +10h50m0s861ms
+      Max execution delay: +11h5m0s861ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -1m50s211ms
+    Run time: earliest=+10h48m10s650ms, latest=+11h3m10s650ms, original latest=+11h3m10s650ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/10919: 5301a20 com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=100
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Max execution delay: +23h58m45s80ms
+      Backoff: policy=1 initial=+30s0ms
+      Has late constraint
+    Required constraints: DEADLINE IDLE CONNECTIVITY [0x50000004]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Tracking: CONNECTIVITY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m39s749ms
+    Run time: earliest=none, latest=+23h55m5s331ms, original latest=+23h55m5s331ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a30/10920: 2310fd9 com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground
+    u0a30 tag=*job*/com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground
+    Source: uid=u0a30 user=0 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=100
+      Max execution delay: +23h28m31s117ms
+      Backoff: policy=1 initial=+30s0ms
+      Has late constraint
+    Required constraints: DEADLINE IDLE [0x40000004]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Tracking: IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: false
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -3m39s746ms
+    Run time: earliest=none, latest=+23h24m51s371ms, original latest=+23h24m51s371ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a34/1: 8213177 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+    u0a34 tag=*job*/com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+    Source: uid=u0a34 user=0 pkg=com.google.android.youtube.tv
+    JobInfo:
+      Service: com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+      PERIODIC: interval=+4h7m0s0ms flex=+2h3m30s0ms
+      PERSISTED
+      Requires: charging=true batteryNotLow=false deviceIdle=false
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10034 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000001]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Tracking: BATTERY CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m52s952ms
+    Run time: earliest=+1h59m37s48ms, latest=+4h3m7s48ms, original latest=+4h3m7s48ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a34/9001: e33af5a com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+    u0a34 tag=*job*/com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a34 user=0 pkg=com.google.android.youtube.tv
+    JobInfo:
+      Service: com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=true batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10034 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +23h59m59s934ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: CHARGING TIMING_DELAY CONNECTIVITY [0x90000001]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: BATTERY CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -2m42s369ms
+    Run time: earliest=+23h57m17s565ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a34/9002: 3ed6726 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+    u0a34 tag=*job*/com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a34 user=0 pkg=com.google.android.youtube.tv
+    JobInfo:
+      Service: com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10034 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +1d19h59m59s963ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY CONNECTIVITY [0x90000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -2m42s326ms
+    Run time: earliest=+1d19h57m17s637ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a36/3397: dc06e3a com.netflix.ninja/androidx.work.impl.background.systemjob.SystemJobService
+    u0a36 tag=*job*/com.netflix.ninja/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a36 user=0 pkg=com.netflix.ninja
+    JobInfo:
+      Service: com.netflix.ninja/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10036 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +4h7m52s970ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY CONNECTIVITY [0x90000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m30s653ms
+    Run time: earliest=+4h4m22s317ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a36/1398409954: d80773d com.netflix.ninja/com.netflix.mediaclient.service.preapp.DETTokenRefreshJobService
+    u0a36 tag=*job*/com.netflix.ninja/com.netflix.mediaclient.service.preapp.DETTokenRefreshJobService
+    Source: uid=u0a36 user=0 pkg=com.netflix.ninja
+    JobInfo:
+      Service: com.netflix.ninja/com.netflix.mediaclient.service.preapp.DETTokenRefreshJobService
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10036 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Minimum latency: +7d0h0m0s0ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY CONNECTIVITY [0x90000000]
+    Dynamic constraints:
+    Satisfied constraints: CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: CONNECTIVITY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -3m32s328ms
+    Run time: earliest=+6d23h56m27s672ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a51/925: 138d365 com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    u0a51 tag=*job*/com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a51 user=0 pkg=com.google.android.tts
+    JobInfo:
+      Service: com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +9h46m19s293ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: CHARGING TIMING_DELAY IDLE [0x80000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: TIMING_DELAY IDLE [0x80000004]
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m31s148ms
+    Run time: earliest=+9h29m48s145ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a51/926: e5054b6 com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    u0a51 tag=*job*/com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a51 user=0 pkg=com.google.android.tts
+    JobInfo:
+      Service: com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10051 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: CHARGING IDLE CONNECTIVITY [0x10000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Tracking: BATTERY CONNECTIVITY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: RARE
+    Enqueue time: -16m30s815ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a51/927: 24f2b19 com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    u0a51 tag=*job*/com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a51 user=0 pkg=com.google.android.tts
+    JobInfo:
+      Service: com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10051 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: CHARGING IDLE CONNECTIVITY [0x10000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Tracking: BATTERY CONNECTIVITY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: RARE
+    Enqueue time: -16m31s1ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a51/969: e3b48d com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    u0a51 tag=*job*/com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a51 user=0 pkg=com.google.android.tts
+    JobInfo:
+      Service: com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: CHARGING IDLE [0x5]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Tracking: BATTERY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m30s537ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a51/979: 60adbad com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    u0a51 tag=*job*/com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a51 user=0 pkg=com.google.android.tts
+    JobInfo:
+      Service: com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=true batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +2h46m39s732ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: CHARGING TIMING_DELAY [0x80000001]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: BATTERY TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m31s232ms
+    Run time: earliest=+2h30m8s500ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a51/980: c6d20c4 com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    u0a51 tag=*job*/com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a51 user=0 pkg=com.google.android.tts
+    JobInfo:
+      Service: com.google.android.tts/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +8h48m52s512ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY [0x80000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m31s245ms
+    Run time: earliest=+8h32m21s267ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4309: ccd516f com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +3h18m50s238ms
+      Backoff: policy=1 initial=+1h0m0s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY [0x80000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Uid: active
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -17m4s409ms
+    Run time: earliest=+3h1m45s828ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4366: 15f2973 com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +18h44m6s256ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY [0x80000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Uid: active
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -17m1s529ms
+    Run time: earliest=+18h27m4s727ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4367: 26b0029 com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Internal flags: 1 HAS_FOREGROUND_EXEMPTION
+      Requires: charging=false batteryNotLow=true deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: BATTERY_NOT_LOW IDLE [0x6]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Uid: active
+    Tracking: BATTERY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m59s669ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4368: db91ff7 com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Internal flags: 1 HAS_FOREGROUND_EXEMPTION
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: CHARGING IDLE [0x5]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Uid: active
+    Tracking: BATTERY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m58s547ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4369: 2c794bb com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +6h47m0s339ms
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+    Required constraints: CHARGING TIMING_DELAY IDLE [0x80000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400003]
+    Unsatisfied constraints: TIMING_DELAY IDLE [0x80000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m57s593ms
+    Run time: earliest=+6h30m2s746ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4370: f6960be com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Internal flags: 1 HAS_FOREGROUND_EXEMPTION
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10056 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: CHARGING IDLE CONNECTIVITY [0x10000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Uid: active
+    Tracking: BATTERY CONNECTIVITY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: RARE
+    Enqueue time: -16m55s626ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4371: 5a687cf com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Internal flags: 1 HAS_FOREGROUND_EXEMPTION
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10056 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: CHARGING IDLE CONNECTIVITY [0x10000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x13400003]
+    Unsatisfied constraints: IDLE [0x4]
+    Uid: active
+    Tracking: BATTERY CONNECTIVITY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: RARE
+    Enqueue time: -16m54s312ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a56/4372: ef2bf33 com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    u0a56 tag=*job*/com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a56 user=0 pkg=com.google.android.inputmethod.latin
+    JobInfo:
+      Service: com.google.android.inputmethod.latin/androidx.work.impl.background.systemjob.SystemJobService
+      Flags: 2
+      Internal flags: 1 HAS_FOREGROUND_EXEMPTION
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Extras: mParcelledData.dataSize=248
+      Backoff: policy=1 initial=+30s0ms
+    Required constraints: IDLE [0x4]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: IDLE [0x4]
+    Uid: active
+    Tracking: IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -16m53s431ms
+    Run time: earliest=none, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a81/0: 6d3ec5f com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.LocationAccessCheck$LocationAccessCheckJobService
+    u0a81 tag=*job*/com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.LocationAccessCheck$LocationAccessCheckJobService
+    Source: uid=u0a81 user=0 pkg=com.google.android.permissioncontroller
+    JobInfo:
+      Service: com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.LocationAccessCheck$LocationAccessCheckJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+2h24m0s0ms
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -16m35s682ms
+    Run time: earliest=+21h19m24s318ms, latest=+23h43m24s318ms, original latest=+23h43m24s318ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a81/2: 5059b9b com.google.android.permissioncontroller/com.android.permissioncontroller.hibernation.HibernationJobService
+    u0a81 tag=*job*/com.google.android.permissioncontroller/com.android.permissioncontroller.hibernation.HibernationJobService
+    Source: uid=u0a81 user=0 pkg=com.google.android.permissioncontroller
+    JobInfo:
+      Service: com.google.android.permissioncontroller/com.android.permissioncontroller.hibernation.HibernationJobService
+      PERIODIC: interval=+15d0h0m0s0ms flex=+15d0h0m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY DEADLINE [0xc0000000]
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=+8d14h23m55s202ms, latest=+23d14h23m55s202ms, original latest=+23d14h23m55s202ms
+    Last successful run: 2026-10-30 18:14:35
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a85/-200: ce66c74 com.android.providers.media.module/com.android.providers.media.IdleService
+    u0a85 tag=*job*/com.android.providers.media.module/com.android.providers.media.IdleService
+    Source: uid=u0a85 user=0 pkg=com.android.providers.media.module
+    JobInfo:
+      Service: com.android.providers.media.module/com.android.providers.media.IdleService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      Requires: charging=true batteryNotLow=false deviceIdle=true
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: CHARGING TIMING_DELAY DEADLINE IDLE [0xc0000005]
+    Dynamic constraints:
+    Satisfied constraints: CHARGING BATTERY_NOT_LOW TIMING_DELAY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x83400003]
+    Unsatisfied constraints: DEADLINE IDLE [0x40000004]
+    Uid: active
+    Tracking: BATTERY IDLE TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: RARE
+    Enqueue time: -17m2s676ms
+    Run time: earliest=-17m2s676ms, latest=+23h42m57s324ms, original latest=+23h42m57s324ms
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a87/0: 21ef5a4 org.jellyfin.androidtv/org.acra.sender.JobSenderService
+    u0a87 tag=*job*/org.jellyfin.androidtv/org.acra.sender.JobSenderService
+    Source: uid=u0a87 user=0 pkg=org.jellyfin.androidtv
+    JobInfo:
+      Service: org.jellyfin.androidtv/org.acra.sender.JobSenderService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=7920
+      Backoff: policy=1 initial=+30s0ms
+      Has late constraint
+    Required constraints: DEADLINE [0x40000000]
+    Dynamic constraints:
+    Satisfied constraints: DEADLINE DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x43400000]
+    Unsatisfied constraints:
+    Tracking: QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDeadlineSatisfied: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -3m35s715ms
+    Run time: earliest=none, latest=-3m35s715ms, original latest=-3m35s715ms
+    Restricted due to: none.
+    Ready: true (job=true user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a87/197: 53450f5 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+    u0a87 tag=*job*/org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a87 user=0 pkg=org.jellyfin.androidtv
+    JobInfo:
+      Service: org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +59m59s963ms
+      Backoff: policy=0 initial=+10m0s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY [0x80000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -3m32s141ms
+    Run time: earliest=+56m27s822ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a101/2471: dfd9183 com.spotify.tv.android/androidx.work.impl.background.systemjob.SystemJobService
+    u0a101 tag=*job*/com.spotify.tv.android/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a101 user=0 pkg=com.spotify.tv.android
+    JobInfo:
+      Service: com.spotify.tv.android/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +1h1m46s109ms
+      Backoff: policy=1 initial=+10s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY [0x80000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Uid: active
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -3m44s453ms
+    Run time: earliest=+58m1s656ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u0a101/2472: 1cd4da1 com.spotify.tv.android/androidx.work.impl.background.systemjob.SystemJobService
+    u0a101 tag=*job*/com.spotify.tv.android/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u0a101 user=0 pkg=com.spotify.tv.android
+    JobInfo:
+      Service: com.spotify.tv.android/androidx.work.impl.background.systemjob.SystemJobService
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: mParcelledData.dataSize=248
+      Minimum latency: +1h1m41s588ms
+      Backoff: policy=1 initial=+10s0ms
+      Has early constraint
+    Required constraints: TIMING_DELAY [0x80000000]
+    Dynamic constraints:
+    Satisfied constraints: DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0x3400000]
+    Unsatisfied constraints: TIMING_DELAY [0x80000000]
+    Uid: active
+    Tracking: TIME QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Standby bucket: ACTIVE
+    Enqueue time: -3m40s263ms
+    Run time: earliest=+58m1s325ms, latest=none, original latest=none
+    Restricted due to: none.
+    Ready: false (job=false user=true !restricted=true !pending=true !active=true !backingup=true comp=true)
+  JOB #u10a18/111007999: a8853aa com.google.android.apps.tv.launcherx/com.google.android.libraries.notifications.entrypoints.scheduled.ScheduledTaskService
+    u10a18 tag=*job*/com.google.android.apps.tv.launcherx/com.google.android.libraries.notifications.entrypoints.scheduled.ScheduledTaskService
+    Source: uid=u10a18 user=10 pkg=com.google.android.apps.tv.launcherx
+    JobInfo:
+      Service: com.google.android.apps.tv.launcherx/com.google.android.libraries.notifications.entrypoints.scheduled.ScheduledTaskService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Extras: {com.google.android.libraries.notifications.INTENT_EXTRA_TASK_HANDLER=PERIODIC_TASK}
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010018 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: TIMING_DELAY DEADLINE CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0xd3400000]
+    Unsatisfied constraints:
+    Tracking: CONNECTIVITY QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=-17m17s818ms, latest=-17m17s818ms, original latest=-17m17s818ms
+    Last successful run: 2023-12-15 19:31:56
+    Restricted due to: none.
+    Ready: false (job=true user=false !restricted=true !pending=true !active=true !backingup=true comp=false)
+  JOB #u10a30/151530822: ae7b695 com.android.vending/com.google.android.finsky.instantapps.InstantAppHygieneService
+    u10a30 tag=*job*/com.android.vending/com.google.android.finsky.instantapps.InstantAppHygieneService
+    Source: uid=u10a30 user=10 pkg=com.android.vending
+    JobInfo:
+      Service: com.android.vending/com.google.android.finsky.instantapps.InstantAppHygieneService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=true
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE IDLE CONNECTIVITY [0xd0000004]
+    Dynamic constraints:
+    Satisfied constraints: TIMING_DELAY DEADLINE CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0xd3400000]
+    Unsatisfied constraints: IDLE [0x4]
+    Tracking: CONNECTIVITY IDLE QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=-17m17s818ms, latest=-17m17s818ms, original latest=-17m17s818ms
+    Restricted due to: none.
+    Ready: false (job=false user=false !restricted=true !pending=true !active=true !backingup=true comp=false)
+  JOB #u10a55/1003: 62a764c com.google.android.videos/com.google.android.apps.play.movies.tv.service.channel.SyncChannelJobService
+    u10a55 tag=*job*/com.google.android.videos/com.google.android.apps.play.movies.tv.service.channel.SyncChannelJobService
+    Source: uid=u10a55 user=10 pkg=com.google.android.videos
+    JobInfo:
+      Service: com.google.android.videos/com.google.android.apps.play.movies.tv.service.channel.SyncChannelJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010055 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: TIMING_DELAY DEADLINE CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0xd3400000]
+    Unsatisfied constraints:
+    Tracking: CONNECTIVITY QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=-17m17s819ms, latest=-17m17s819ms, original latest=-17m17s819ms
+    Restricted due to: none.
+    Ready: false (job=true user=false !restricted=true !pending=true !active=true !backingup=true comp=false)
+  JOB #u10a55/2003: abc167f com.google.android.videos/com.google.android.apps.play.movies.tv.service.channel.SyncWatchNextChannelJobService
+    u10a55 tag=*job*/com.google.android.videos/com.google.android.apps.play.movies.tv.service.channel.SyncWatchNextChannelJobService
+    Source: uid=u10a55 user=10 pkg=com.google.android.videos
+    JobInfo:
+      Service: com.google.android.videos/com.google.android.apps.play.movies.tv.service.channel.SyncWatchNextChannelJobService
+      PERIODIC: interval=+1d0h0m0s0ms flex=+1d0h0m0s0ms
+      PERSISTED
+      Requires: charging=false batteryNotLow=false deviceIdle=false
+      Network type: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010055 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+      Backoff: policy=1 initial=+30s0ms
+      Has early constraint
+      Has late constraint
+    Required constraints: TIMING_DELAY DEADLINE CONNECTIVITY [0xd0000000]
+    Dynamic constraints:
+    Satisfied constraints: TIMING_DELAY DEADLINE CONNECTIVITY DEVICE_NOT_DOZING BACKGROUND_NOT_RESTRICTED WITHIN_QUOTA [0xd3400000]
+    Unsatisfied constraints:
+    Tracking: CONNECTIVITY QUOTA
+    Implicit constraints:
+      readyNotDozing: true
+      readyNotRestrictedInBg: true
+      readyDynamicSatisfied: false
+    Network: 100
+    Standby bucket: ACTIVE
+    Enqueue time: -17m17s816ms
+    Run time: earliest=-17m17s821ms, latest=-17m17s821ms, original latest=-17m17s821ms
+    Restricted due to: none.
+    Ready: false (job=true user=false !restricted=true !pending=true !active=true !backingup=true comp=false)
+
+ConnectivityController:
+  Available networks:
+    100
+  #1000/52417896 from 1000: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1000 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #1000/106415 from u0a9: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10009 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #1000/100183 from u0a9: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10009 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #1000/100419 from u0a9: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10009 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a30/9956 from u0a30: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a30/9952 from u0a30: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a30/10919 from u0a30: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a30/9953 from u0a30: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a30/9958 from u0a30: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a30/9957 from u0a30: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a34/9002 from u0a34: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10034 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a34/1 from u0a34: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10034 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a34/9001 from u0a34: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10034 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a36/1398409954 from u0a36: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10036 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a36/3397 from u0a36: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10036 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a51/927 from u0a51: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10051 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a51/926 from u0a51: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10051 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a56/4371 from u0a56: NetworkRequest [ NONE id=0, [ Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10056 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u0a56/4370 from u0a56: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 10056 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u10a18/111007999 from u10a18: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010018 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u10a30/151530822 from u10a30: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010030 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u10a55/1003 from u10a55: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010055 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+  #u10a55/2003 from u10a55: NetworkRequest [ NONE id=0, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1010055 AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null] ]
+
+TimeController:
+  Elapsed clock: 1055603
+  Next delay alarm in +56m27s772ms
+  Next deadline alarm in +1h42m42s253ms
+  
+  #1000/203142925 from 1000: Delay=-17m17s747ms, Deadline=+1h42m42s253ms
+  #u0a34/1 from u0a34: Delay=+1h59m36s998ms, Deadline=+4h3m6s998ms
+  #u0a30/9962 from u0a30: Delay=+10h48m10s600ms, Deadline=+11h3m10s600ms
+  #1000/882313 from 1000: Delay=-17m15s109ms, Deadline=+11h42m44s891ms
+  #u0a13/-100 from u0a13: Delay=-16m51s411ms, Deadline=+11h43m8s589ms
+  #1000/100183 from u0a9: Delay=+16h5m5s271ms, Deadline=+17h17m5s271ms
+  #1000/100419 from u0a9: Delay=+17h12m27s674ms, Deadline=+18h24m27s674ms
+  #1000/106415 from u0a9: Delay=+17h13m14s625ms, Deadline=+18h25m14s625ms
+  #u0a30/9955 from u0a30: Delay=N/A, Deadline=+22h25m52s188ms
+  #u0a30/10920 from u0a30: Delay=N/A, Deadline=+23h24m51s321ms
+  #u0a30/9952 from u0a30: Delay=+11h24m51s361ms, Deadline=+23h24m51s361ms
+  #u0a30/9953 from u0a30: Delay=N/A, Deadline=+23h25m48s659ms
+  #1000/1145656139 from 1000: Delay=-17m17s829ms, Deadline=+23h42m42s171ms
+  #1000/800 from 1000: Delay=-17m17s748ms, Deadline=+23h42m42s252ms
+  #1000/2030028 from 1000: Delay=-17m17s747ms, Deadline=+23h42m42s253ms
+  #1000/765123 from 1000: Delay=-17m17s746ms, Deadline=+23h42m42s254ms
+  #1000/3345678 from 1000: Delay=-17m13s217ms, Deadline=+23h42m46s783ms
+  #1000/191934935 from 1000: Delay=-17m12s43ms, Deadline=+23h42m47s957ms
+  #1000/204561367 from 1000: Delay=-17m8s830ms, Deadline=+23h42m51s170ms
+  #1000/52417896 from 1000: Delay=+3h49m24s670ms, Deadline=+23h42m55s207ms
+  #u0a85/-200 from u0a85: Delay=-17m2s726ms, Deadline=+23h42m57s274ms
+  #u0a81/0 from u0a81: Delay=+21h19m24s268ms, Deadline=+23h43m24s268ms
+  #u0a30/10919 from u0a30: Delay=N/A, Deadline=+23h55m5s281ms
+  #1000/1 from 1000: Delay=+17h2m0s660ms, Deadline=+1d17h2m0s660ms
+  #1000/546378950 from 1000: Delay=+23h42m50s993ms, Deadline=+1d23h42m50s993ms
+  #u0a30/9958 from u0a30: Delay=+6d17h37m18s425ms, Deadline=+21d17h37m18s425ms
+  #u0a81/2 from u0a81: Delay=+8d14h23m55s152ms, Deadline=+23d14h23m55s152ms
+  #u0a30/9956 from u0a30: Delay=+6d23h25m55s21ms, Deadline=+24d23h46m2s778ms
+  #u0a30/9957 from u0a30: Delay=+6d23h25m55s22ms, Deadline=+24d23h46m2s779ms
+  #u0a34/9002 from u0a34: Delay=+1d19h57m17s587ms, Deadline=N/A
+  #u0a34/9001 from u0a34: Delay=+23h57m17s515ms, Deadline=N/A
+  #u0a36/3397 from u0a36: Delay=+4h4m22s267ms, Deadline=N/A
+  #u0a87/197 from u0a87: Delay=+56m27s772ms, Deadline=N/A
+  #u0a36/1398409954 from u0a36: Delay=+6d23h56m27s622ms, Deadline=N/A
+  #u0a101/2472 from u0a101: Delay=+58m1s275ms, Deadline=N/A
+  #u0a101/2471 from u0a101: Delay=+58m1s606ms, Deadline=N/A
+  #u0a51/925 from u0a51: Delay=+9h29m48s95ms, Deadline=N/A
+  #u0a51/979 from u0a51: Delay=+2h30m8s450ms, Deadline=N/A
+  #u0a51/980 from u0a51: Delay=+8h32m21s217ms, Deadline=N/A
+  #u0a56/4369 from u0a56: Delay=+6h30m2s696ms, Deadline=N/A
+  #u0a56/4366 from u0a56: Delay=+18h27m4s677ms, Deadline=N/A
+  #u0a56/4309 from u0a56: Delay=+3h1m45s778ms, Deadline=N/A
+  #1000/13254266 from 1000: Delay=+23h42m42s274ms, Deadline=N/A
+  #1000/808 from 1000: Delay=+23h54m42s497ms, Deadline=N/A
+
+IdleController:
+  Currently idle: false
+  Idleness tracker:
+    mIdle: false
+    mScreenOn: true
+    mDockIdle: false
+    mInCarMode: false
+  
+  #u0a51/969 from u0a51
+  #u0a51/925 from u0a51
+  #1000/1145656139 from 1000
+  #1000/13254266 from 1000
+  #u0a30/10920 from u0a30
+  #u0a51/927 from u0a51
+  #u0a56/4367 from u0a56
+  #u0a56/4369 from u0a56
+  #u0a30/9956 from u0a30
+  #1000/2030028 from 1000
+  #1000/800 from 1000
+  #u0a30/10919 from u0a30
+  #u0a56/4371 from u0a56
+  #1000/765123 from 1000
+  #u0a30/9953 from u0a30
+  #1000/191934935 from 1000
+  #1000/546357475 from 1000
+  #u0a13/-100 from u0a13
+  #u0a30/9955 from u0a30
+  #u10a30/151530822 from u10a30
+  #1000/3345678 from 1000
+  #u0a85/-200 from u0a85
+  #1000/808 from 1000
+  #u0a56/4368 from u0a56
+  #1000/203142925 from 1000
+  #u0a51/926 from u0a51
+  #u0a56/4372 from u0a56
+  #u0a30/9957 from u0a30
+  #u0a56/4370 from u0a56
+  #1000/882313 from 1000
+  #1000/204561367 from 1000
+
+BatteryController:
+  Stable power: true
+  Not low: true
+  
+  #u0a51/969 from u0a51
+  #u0a51/925 from u0a51
+  #1000/1145656139 from 1000
+  #u0a51/927 from u0a51
+  #u0a56/4367 from u0a56
+  #u0a56/4369 from u0a56
+  #u0a30/9956 from u0a30
+  #1000/2030028 from 1000
+  #1000/800 from 1000
+  #1000/52417896 from 1000
+  #u0a56/4371 from u0a56
+  #u0a51/979 from u0a51
+  #1000/1 from 1000
+  #1000/191934935 from 1000
+  #u0a34/1 from u0a34
+  #u0a13/-100 from u0a13
+  #1000/3345678 from 1000
+  #u0a85/-200 from u0a85
+  #1000/808 from 1000
+  #u0a56/4368 from u0a56
+  #u0a34/9001 from u0a34
+  #1000/203142925 from 1000
+  #u0a51/926 from u0a51
+  #u0a56/4370 from u0a56
+  #1000/882313 from 1000
+
+StorageController:
+  Not low: true
+  Sequence: -1
+  
+
+BackgroundJobsController:
+  Forced App Standby Feature enabled: true
+  Force all apps standby: false
+  Small Battery Device: false
+  Force all apps standby for small battery device: false
+  Plugged In: true
+  Active uids: [u0a9 u0a12 u0a29 u0a56 u0a62 u0a79 u0a82 u0a85 u0a101]
+  Foreground uids: [u0a9 u0a12 u0a29 u0a62 u0a79 u0a82 u0a85 u0a101]
+  Except-idle + user whitelist appids: [2000, 10009, 10013, 10014, 10018, 10021, 10023, 10024, 10030, 10036, 10054]
+  User whitelist appids: []
+  Temp whitelist appids: []
+  Exempted packages:
+  
+  Restricted packages:
+    u0a97 com.crunchyroll.crunchyroid
+  Stats:
+    UID_FG_STATE_CHANGED: count=280, total=57.4ms, avg=0.205ms, max calls/s=11 max dur/s=41.1ms max time=33.5ms
+    UID_ACTIVE_STATE_CHANGED: count=123, total=811.0ms, avg=6.594ms, max calls/s=6 max dur/s=122.5ms max time=72.4ms
+    RUN_ANY_CHANGED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    ALL_UNWHITELISTED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    ALL_WHITELIST_CHANGED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    TEMP_WHITELIST_CHANGED: count=4, total=0.4ms, avg=0.108ms, max calls/s=1 max dur/s=0.1ms max time=0.1ms
+    EXEMPT_CHANGED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    FORCE_ALL_CHANGED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    FORCE_APP_STANDBY_FEATURE_FLAG_CHANGED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    IS_UID_ACTIVE_CACHED: count=0, total=0.0ms, avg=0.000ms, max calls/s=0 max dur/s=0.0ms max time=0.0ms
+    IS_UID_ACTIVE_RAW: count=3, total=0.4ms, avg=0.137ms, max calls/s=0 max dur/s=0.0ms max time=0.3ms
+  
+  #u10a55/2003 from u10a55 idle: com.google.android.videos [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u10a55/1003 from u10a55 idle: com.google.android.videos [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u10a30/151530822 from u10a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u10a18/111007999 from u10a18 idle, whitelisted: com.google.android.apps.tv.launcherx [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a101/2471 from u0a101 active: com.spotify.tv.android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a101/2472 from u0a101 active: com.spotify.tv.android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a87/197 from u0a87 idle: org.jellyfin.androidtv [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a87/0 from u0a87 idle: org.jellyfin.androidtv [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a85/-200 from u0a85 active: com.android.providers.media.module [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a81/0 from u0a81 idle: com.google.android.permissioncontroller [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a81/2 from u0a81 idle: com.google.android.permissioncontroller [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4370 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4372 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4368 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4309 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4371 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4369 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4367 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a56/4366 from u0a56 active: com.google.android.inputmethod.latin [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a51/926 from u0a51 idle: com.google.android.tts [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a51/980 from u0a51 idle: com.google.android.tts [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a51/979 from u0a51 idle: com.google.android.tts [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a51/927 from u0a51 idle: com.google.android.tts [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a51/925 from u0a51 idle: com.google.android.tts [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a51/969 from u0a51 idle: com.google.android.tts [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a36/3397 from u0a36 idle, whitelisted: com.netflix.ninja [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a36/1398409954 from u0a36 idle, whitelisted: com.netflix.ninja [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a34/9001 from u0a34 idle: com.google.android.youtube.tv [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a34/1 from u0a34 idle: com.google.android.youtube.tv [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a34/9002 from u0a34 idle: com.google.android.youtube.tv [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9962 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9957 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9958 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9955 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9953 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/10919 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9952 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/9956 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a30/10920 from u0a30 idle, whitelisted: com.android.vending [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #u0a13/-100 from u0a13 idle, whitelisted: com.android.providers.downloads [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/204561367 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/882313 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/100419 from u0a9 active, whitelisted: com.google.android.gms [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/203142925 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/100183 from u0a9 active, whitelisted: com.google.android.gms [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/808 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/3345678 from 1000 active: com.android.networkstack.inprocess [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/106415 from u0a9 active, whitelisted: com.google.android.gms [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/546357475 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/191934935 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/765123 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/1 from 1000 active: com.android.providers.settings [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/52417896 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/546378950 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/800 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/2030028 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/13254266 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+  #1000/1145656139 from 1000 active: android [RUN_ANY_IN_BACKGROUND allowed] RUNNABLE
+
+ContentObserverController:
+  
+
+DeviceIdleJobsController:
+  Idle mode: false
+  
+  #u10a55/2003 from u10a55: com.google.android.videos RUNNABLE
+  #u10a55/1003 from u10a55: com.google.android.videos RUNNABLE
+  #u10a30/151530822 from u10a30: com.android.vending RUNNABLE
+  #u10a18/111007999 from u10a18: com.google.android.apps.tv.launcherx RUNNABLE
+  #u0a101/2471 from u0a101: com.spotify.tv.android RUNNABLE
+  #u0a101/2472 from u0a101: com.spotify.tv.android RUNNABLE
+  #u0a87/197 from u0a87: org.jellyfin.androidtv RUNNABLE
+  #u0a87/0 from u0a87: org.jellyfin.androidtv RUNNABLE
+  #u0a85/-200 from u0a85: com.android.providers.media.module RUNNABLE
+  #u0a81/0 from u0a81: com.google.android.permissioncontroller RUNNABLE
+  #u0a81/2 from u0a81: com.google.android.permissioncontroller RUNNABLE
+  #u0a56/4370 from u0a56: com.google.android.inputmethod.latin RUNNABLE ALLOWED_IN_DOZE
+  #u0a56/4372 from u0a56: com.google.android.inputmethod.latin RUNNABLE ALLOWED_IN_DOZE
+  #u0a56/4368 from u0a56: com.google.android.inputmethod.latin RUNNABLE ALLOWED_IN_DOZE
+  #u0a56/4309 from u0a56: com.google.android.inputmethod.latin RUNNABLE
+  #u0a56/4371 from u0a56: com.google.android.inputmethod.latin RUNNABLE ALLOWED_IN_DOZE
+  #u0a56/4369 from u0a56: com.google.android.inputmethod.latin RUNNABLE
+  #u0a56/4367 from u0a56: com.google.android.inputmethod.latin RUNNABLE ALLOWED_IN_DOZE
+  #u0a56/4366 from u0a56: com.google.android.inputmethod.latin RUNNABLE
+  #u0a51/926 from u0a51: com.google.android.tts RUNNABLE ALLOWED_IN_DOZE
+  #u0a51/980 from u0a51: com.google.android.tts RUNNABLE
+  #u0a51/979 from u0a51: com.google.android.tts RUNNABLE
+  #u0a51/927 from u0a51: com.google.android.tts RUNNABLE ALLOWED_IN_DOZE
+  #u0a51/925 from u0a51: com.google.android.tts RUNNABLE
+  #u0a51/969 from u0a51: com.google.android.tts RUNNABLE ALLOWED_IN_DOZE
+  #u0a36/3397 from u0a36: com.netflix.ninja RUNNABLE
+  #u0a36/1398409954 from u0a36: com.netflix.ninja RUNNABLE
+  #u0a34/9001 from u0a34: com.google.android.youtube.tv RUNNABLE
+  #u0a34/1 from u0a34: com.google.android.youtube.tv RUNNABLE
+  #u0a34/9002 from u0a34: com.google.android.youtube.tv RUNNABLE
+  #u0a30/9962 from u0a30: com.android.vending RUNNABLE
+  #u0a30/9957 from u0a30: com.android.vending RUNNABLE
+  #u0a30/9958 from u0a30: com.android.vending RUNNABLE
+  #u0a30/9955 from u0a30: com.android.vending RUNNABLE
+  #u0a30/9953 from u0a30: com.android.vending RUNNABLE
+  #u0a30/10919 from u0a30: com.android.vending RUNNABLE
+  #u0a30/9952 from u0a30: com.android.vending RUNNABLE
+  #u0a30/9956 from u0a30: com.android.vending RUNNABLE
+  #u0a30/10920 from u0a30: com.android.vending RUNNABLE
+  #u0a13/-100 from u0a13: com.android.providers.downloads RUNNABLE
+  #1000/204561367 from 1000: android RUNNABLE
+  #1000/882313 from 1000: android RUNNABLE
+  #1000/100419 from u0a9: com.google.android.gms RUNNABLE
+  #1000/203142925 from 1000: android RUNNABLE
+  #1000/100183 from u0a9: com.google.android.gms RUNNABLE
+  #1000/808 from 1000: android RUNNABLE
+  #1000/3345678 from 1000: com.android.networkstack.inprocess RUNNABLE
+  #1000/106415 from u0a9: com.google.android.gms RUNNABLE
+  #1000/546357475 from 1000: android RUNNABLE
+  #1000/191934935 from 1000: android RUNNABLE
+  #1000/765123 from 1000: android RUNNABLE
+  #1000/1 from 1000: com.android.providers.settings RUNNABLE
+  #1000/52417896 from 1000: android RUNNABLE
+  #1000/546378950 from 1000: android RUNNABLE
+  #1000/800 from 1000: android RUNNABLE
+  #1000/2030028 from 1000: android RUNNABLE
+  #1000/13254266 from 1000: android RUNNABLE
+  #1000/1145656139 from 1000: android RUNNABLE
+
+QuotaController:
+  Is charging: true
+  Current elapsed time: 1055612
+  
+  Foreground UIDs: {1002=true, 1037=true, 1068=true, 10009=true, 10012=true, 10029=true, 10062=true, 10079=true, 10085=true, 10097=true, 10101=true}
+  
+  Cached UID->package map:
+    2000: {com.android.shell}
+    10010: {com.android.externalstorage}
+    10011: {com.google.android.apps.nbu.smartconnect.tv}
+    10013: {com.android.providers.media, com.android.providers.downloads, com.android.soundpicker}
+    10014: {com.android.providers.userdictionary, com.android.providers.contacts}
+    10021: {com.android.providers.calendar}
+    10022: {com.google.android.packageinstaller}
+    10023: {com.google.android.apps.mediashell}
+    10030: {com.android.vending}
+    10034: {com.google.android.youtube.tv}
+    10036: {com.netflix.ninja}
+    10039: {com.google.android.youtube.tvmusic}
+    10051: {com.google.android.tts}
+    10057: {com.android.settings.intelligence}
+    10062: {me.efesser.flauncher}
+    10079: {com.android.systemui}
+    10081: {com.google.android.permissioncontroller}
+    10087: {org.jellyfin.androidtv}
+    10097: {com.crunchyroll.crunchyroid}
+    10101: {com.spotify.tv.android}
+    10106: {com.neilturner.aerialviews}
+    10107: {nl.giejay.android.tv.immich}
+  
+  #u10a55/1003 from u10a55
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u10a55/2003 from u10a55
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u10a30/151530822 from u10a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u10a18/111007999 from u10a18
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4366 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4367 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4369 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4371 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4309 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4368 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4372 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a56/4370 from u0a56
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a87/0 from u0a87 (TOP)
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a87/197 from u0a87
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a36/1398409954 from u0a36
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a36/3397 from u0a36
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a85/-200 from u0a85
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a34/9002 from u0a34
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a34/1 from u0a34
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a34/9001 from u0a34
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a51/969 from u0a51
+    RARE, within quota, 600000ms remaining in quota
+  #u0a51/925 from u0a51
+    RARE, within quota, 600000ms remaining in quota
+  #u0a51/927 from u0a51
+    RARE, within quota, 600000ms remaining in quota
+  #u0a51/979 from u0a51
+    RARE, within quota, 600000ms remaining in quota
+  #u0a51/980 from u0a51
+    RARE, within quota, 600000ms remaining in quota
+  #u0a51/926 from u0a51
+    RARE, within quota, 600000ms remaining in quota
+  #1000/106415 from u0a9
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/100183 from u0a9
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/100419 from u0a9
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/1 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a81/2 from u0a81
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a81/0 from u0a81
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/1145656139 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/13254266 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/2030028 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/800 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/546378950 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/52417896 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/765123 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/191934935 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/546357475 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/808 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/203142925 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/882313 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/204561367 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/10920 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9956 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9952 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/10919 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9953 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9955 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9958 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9957 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a30/9962 from u0a30
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a101/2472 from u0a101
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a101/2471 from u0a101
+    ACTIVE, within quota, 600000ms remaining in quota
+  #1000/3345678 from 1000
+    ACTIVE, within quota, 600000ms remaining in quota
+  #u0a13/-100 from u0a13
+    ACTIVE, within quota, 600000ms remaining in quota
+  
+  Timer{<0>nl.giejay.android.tv.immich} NOT active, 0 running bg jobs
+  
+  Timer{<0>com.spotify.tv.android} NOT active, 0 running bg jobs
+  
+  Timer{<0>com.android.vending} NOT active, 0 running bg jobs
+  
+  Timer{<0>com.google.android.gms} NOT active, 0 running bg jobs
+  
+  Timer{<0>com.neilturner.aerialviews} NOT active, 0 running bg jobs
+  
+  Timer{<0>com.google.android.youtube.tv} NOT active, 0 running bg jobs
+  
+  Timer{<0>org.jellyfin.androidtv} NOT active, 0 running bg jobs
+  
+  Cached execution stats:
+    <0>com.android.providers.downloads
+      ACTIVE: expirationTime=87455615, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.android.networkstack.inprocess
+      ACTIVE: expirationTime=87455615, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.spotify.tv.android
+      ACTIVE: expirationTime=87455614, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.android.vending
+      ACTIVE: expirationTime=87455614, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>android
+      ACTIVE: expirationTime=87455614, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.google.android.permissioncontroller
+      ACTIVE: expirationTime=87455614, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.android.providers.settings
+      ACTIVE: expirationTime=87455614, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.google.android.gms
+      ACTIVE: expirationTime=87455614, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.google.android.tts
+      RARE: expirationTime=87455614, windowSizeMs=86400000, jobCountLimit=48, sessionCountLimit=3, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.google.android.youtube.tv
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.android.providers.media.module
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.netflix.ninja
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>org.jellyfin.androidtv
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <0>com.google.android.inputmethod.latin
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <10>com.google.android.apps.tv.launcherx
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <10>com.android.vending
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+    <10>com.google.android.videos
+      ACTIVE: expirationTime=87455613, windowSizeMs=600000, jobCountLimit=75, sessionCountLimit=75, executionTimeInWindow=0, bgJobCountInWindow=0, executionTimeInMaxPeriod=0, bgJobCountInMaxPeriod=0, sessionCountInWindow=0, inQuotaTime=0, rateLimitJobCountExpirationTime=0, rateLimitJobCountWindow=0, rateLimitSessionCountExpirationTime=0, rateLimitSessionCountWindow=0
+  
+  In quota alarms:
+    NOT WAITING
+
+Uid priority overrides:
+  1002: 35
+  1068: 35
+  u0a9: 35
+  u0a12: 35
+  u0a29: 35
+  u0a62: 40
+  u0a79: 35
+  u0a82: 30
+  u0a85: 35
+  u0a101: 35
+
+Current stats at 2026-11-06-02-47-59 (-17m17s893ms) over +17m17s893ms:
+  1000 / android:
+    1x pending 1x active
+    1x canceled
+  u0a9 / com.google.android.gms:
+    3x pending 1% 3x active
+    3x canceled
+  u0a30 / com.android.vending:
+    1% 6x pending 2% 4x active
+    5x canceled
+  u0a34 / com.google.android.youtube.tv:
+    13x pending 2% 11x active 2x active-top
+    13x canceled
+  u0a85 / com.android.providers.media.module:
+    1x pending 3% 1x active
+    1x canceled
+  u0a87 / org.jellyfin.androidtv:
+    1% 62x pending 2% 4x active 1% 4x active-top
+    8x canceled
+  u0a101 / com.spotify.tv.android:
+    14x pending 1% 4x active 2% 7x active-top
+    11x canceled
+  u0a106 / com.neilturner.aerialviews:
+    3x pending 1% 2x active
+    2x canceled
+  u0a107 / nl.giejay.android.tv.immich:
+    6x pending 1% 3x active 3x active-top
+    6x canceled
+  Max concurrency: 2 total, 1 foreground
+
+  Job history:
+       -17m03s391ms   START: #u0a9/106359 com.google.android.gms.people/com.google/<email>:android
+       -17m02s730ms  STOP-P: #u0a9/106359 com.google.android.gms.people/com.google/<email>:android app called jobFinished
+       -17m01s605ms   START: #u0a9/107851 com.google.android.gms.people/com.google/<email>:android
+       -17m01s498ms  STOP-P: #u0a9/107851 com.google.android.gms.people/com.google/<email>:android app called jobFinished
+       -16m51s238ms   START: #u0a85/-300 com.android.providers.media.module/com.android.providers.media.MediaService
+       -16m44s387ms   START: #u0a9/107584 com.google.android.gms.chromesync/com.google/<email>:android
+       -16m37s143ms  STOP-P: #u0a9/107584 com.google.android.gms.chromesync/com.google/<email>:android app called jobFinished
+       -16m36s956ms   START: #u0a30/9918 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+       -16m27s276ms  STOP-P: #u0a30/9918 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain app called jobFinished
+       -16m27s161ms   START: #u0a30/9921 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+       -16m26s928ms  STOP-P: #u0a30/9921 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain app called jobFinished
+       -16m15s790ms  STOP-P: #u0a85/-300 com.android.providers.media.module/com.android.providers.media.MediaService last work dequeued
+       -15m53s330ms   START: #u0a34/8967 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+       -15m52s540ms  STOP-P: #u0a34/8967 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+       -14m07s599ms   START: #u0a30/9928 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+       -14m07s585ms   START: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+       -14m07s032ms  STOP-P: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+       -14m07s014ms   START: #u0a30/9930 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+       -14m01s470ms  STOP-P: #u0a30/9928 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain app called jobFinished
+       -14m01s411ms   START: #u0a106/-1625345199 com.neilturner.aerialviews/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+       -13m57s029ms  STOP-P: #u0a106/-1625345199 com.neilturner.aerialviews/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+       -13m55s317ms  STOP-P: #u0a30/9930 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain app called jobFinished
+       -13m47s055ms   START: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+       -13m44s598ms  STOP-P: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+       -13m37s065ms   START: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+       -13m33s513ms  STOP-P: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+       -13m32s823ms   START: #u0a87/191 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+       -13m31s038ms  STOP-P: #u0a87/191 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+       -13m22s405ms   START: #u0a87/192 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+       -13m21s078ms  STOP-P: #u0a87/192 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+       -13m14s646ms   START: #u0a107/-1944112353 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+       -13m11s045ms  STOP-P: #u0a107/-1944112353 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+       -12m57s669ms   START: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+       -12m53s720ms  STOP-P: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService app called jobFinished
+       -12m18s250ms   START: #u0a106/-1625345199 com.neilturner.aerialviews/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+       -12m13s924ms  STOP-P: #u0a106/-1625345199 com.neilturner.aerialviews/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+       -11m06s374ms   START: #u0a34/8972 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+       -11m06s115ms  STOP-P: #u0a34/8972 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -9m57s097ms   START: #u0a34/8977 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+        -9m57s093ms  STOP-P: #u0a34/8977 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService canceled
+        -9m53s767ms   START: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+        -9m52s762ms  STOP-P: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService app called jobFinished
+        -9m17s886ms   START: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+        -9m17s607ms  STOP-P: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService app called jobFinished
+        -8m49s963ms   START: #u0a34/8986 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+        -8m49s937ms  STOP-P: #u0a34/8986 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -8m07s436ms   START: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -8m04s146ms  STOP-P: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -7m13s115ms   START: #1000/801 android/com.android.server.pm.BackgroundDexOptService
+        -7m09s373ms  STOP-P: #1000/801 android/com.android.server.pm.BackgroundDexOptService app called jobFinished
+        -7m07s459ms   START: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -7m07s427ms  STOP-P: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -6m59s000ms   START: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -6m56s155ms  STOP-P: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -6m14s708ms   START: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -6m13s268ms  STOP-P: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -6m04s151ms   START: #u0a87/193 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+        -6m00s835ms  STOP-P: #u0a87/193 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -5m55s051ms   START: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+        -5m52s503ms   START: #u0a87/194 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+        -5m42s683ms  STOP-P: #u0a87/194 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -5m42s651ms   START: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -5m42s225ms  STOP-P: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -5m42s207ms   START: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -5m42s207ms  STOP-P: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService app called jobFinished
+        -5m38s289ms  STOP-P: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -5m32s282ms   START: #u0a34/8989 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+        -5m31s332ms  STOP-P: #u0a34/8989 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -4m58s149ms   START: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -4m51s333ms  STOP-P: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -4m47s706ms   START: #u0a87/195 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+        -4m45s362ms  STOP-P: #u0a87/195 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -4m37s062ms   START: #u0a87/196 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+        -4m35s099ms  STOP-P: #u0a87/196 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -4m29s637ms   START: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -4m29s279ms   START: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -4m27s548ms  STOP-P: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -4m26s598ms  STOP-P: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -4m16s056ms   START: #u0a34/8994 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+        -4m15s845ms  STOP-P: #u0a34/8994 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -3m44s346ms   START: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -3m42s086ms  STOP-P: #u0a101/1496068780 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -3m34s736ms   START: #u0a87/197 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+        -3m32s229ms  STOP-P: #u0a87/197 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -3m22s889ms   START: #u0a87/198 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService
+        -3m17s787ms  STOP-P: #u0a87/198 org.jellyfin.androidtv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -3m13s811ms   START: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -3m12s167ms   START: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -3m09s064ms  STOP-P: #u0a101/-1665191564 com.spotify.tv.android/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -3m09s033ms  STOP-P: #u0a107/1301099607 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -3m01s533ms   START: #u0a34/8997 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+        -3m01s295ms  STOP-P: #u0a34/8997 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+        -2m46s890ms   START: #u0a107/-1944112353 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+        -2m43s981ms   START: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService
+        -2m43s144ms  STOP-P: #u0a107/-1944112353 nl.giejay.android.tv.immich/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService app called jobFinished
+        -2m41s856ms  STOP-P: #u0a34/2 com.google.android.youtube.tv/com.google.android.libraries.youtube.tv.recommendations.RecommendationService app called jobFinished
+        -1m51s680ms   START: #u0a30/9960 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain
+        -1m50s261ms  STOP-P: #u0a30/9960 com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain app called jobFinished
+        -1m42s885ms   START: #u0a34/9000 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService
+        -1m42s806ms  STOP-P: #u0a34/9000 com.google.android.youtube.tv/androidx.work.impl.background.systemjob.SystemJobService app called jobFinished
+
+Pending queue:
+
+Active jobs:
+  Slot #0: inactive since -1m50s197ms, stopped because: app called jobFinished
+  Slot #1: inactive since -1m42s742ms, stopped because: app called jobFinished
+  Slot #2: inactive
+  Slot #3: inactive
+  Slot #4: inactive
+  Slot #5: inactive
+  Slot #6: inactive
+  Slot #7: inactive
+  Slot #8: inactive
+  Slot #9: inactive
+  Slot #10: inactive
+  Slot #11: inactive
+  Slot #12: inactive
+  Slot #13: inactive
+  Slot #14: inactive
+  Slot #15: inactive
+
+mReadyToRock=true
+mReportedActive=false
+
+Concurrency:
+  Screen state: current ON  effective ON
+  Last screen ON: 2026-11-06 05:48:00.125 (-17m17s327ms)
+  Last screen OFF: 2026-11-06 05:47:41.899 (-17m35s553ms)
+  
+  Current max jobs:
+    
+  Config={tot=2 bg min/max=1/2} Running[FG/BG (total)]: 0 / 0 (0) Pending: 0 / 0 (0) Actual max: 0 / 0 (0) Res BG: 0 Starting: 0 / 0 (0) Total: 0 / 0 (0)
+  
+  mLastMemoryTrimLevel: 0
+  Stats:
+    assignJobsToContexts: count=1029, total=1944.4ms, avg=1.890ms, max calls/s=37 max dur/s=123.7ms max time=127.0ms
+    refreshSystemState: count=283, total=370.7ms, avg=1.310ms, max calls/s=3 max dur/s=72.7ms max time=72.7ms
+
+PersistStats: FirstLoad: 13/6/3 LastSave: 13/6/3
+

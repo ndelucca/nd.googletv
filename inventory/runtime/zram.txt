@@ -1,0 +1,1 @@
+mm_stat (orig compr mem_used mem_limit mem_max same_pages compacted huge): 552972288 104778689 109568000        0 141357056    17181    30605     2035

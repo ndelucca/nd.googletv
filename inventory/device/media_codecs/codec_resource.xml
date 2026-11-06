@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-table>
+	<!-- Capabilities -->
+	<capability name="video/av01" />
+	<capability name="video/nv12" />
+
+	<!-- MEM -->
+	<provider name="vbm" capacity="184" internal="1" />
+	<!-- IP -->
+	<provider name="ip1" capacity="2" />
+	<!-- Encoder -->
+	<provider name="venc" capacity="1" internal="1" />
+
+	<!-- Video Decoder Port -->
+	<provider name="vdp0" capacity="1" />
+	<provider name="vdp1" capacity="1" />
+
+	<!-- Audio Decoder Port -->
+	<provider name="adp0" capacity="1" />
+	<provider name="adp1" capacity="1" />
+
+	<!-- Audio Encoder Port -->
+	<provider name="aep0" capacity="1" />
+
+	<!-- Audio Mixer Port -->
+	<provider name="amp1" capacity="1" />
+	<provider name="amp2" capacity="1" />
+	<provider name="amp3" capacity="1" />
+	<provider name="amp4" capacity="1" />
+	<provider name="amp5" capacity="1" />
+	<provider name="amp6" capacity="1" />
+	<provider name="amp7" capacity="1" />
+
+
+	<!-- Video Ports -->
+	<provider name="vdps">
+		<reference name="vdp0" />
+		<reference name="vdp1" />
+	</provider>
+
+	<!-- Video Ports for Dolby Vision ( acuire both, return vdp0 first) -->
+	<provider name="vdps_dv">
+		<reference name="vdp1" />
+		<reference name="vdp0" />
+	</provider>
+
+	<provider name="adps">
+		<reference name="adp0" />
+		<reference name="adp1" />
+	</provider>
+
+	<provider name="amps">
+		<reference name="amp1" />
+		<reference name="amp2" />
+		<reference name="amp3" />
+		<reference name="amp4" />
+		<reference name="amp5" />
+		<reference name="amp6" />
+		<reference name="amp7" />
+	</provider>
+
+	<!-- AVC -->
+
+	<format name="avc" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="avc" width="4096" height="2176" fps="30000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="avc" width="4096" height="2176" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="avc" width="1920" height="1088" fps="30000" encoder="1">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="avc" width="176" height="144" fps="960000" encoder="1">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- HEVC -->
+
+	<format name="hevc" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="hevc" width="4096" height="2176" fps="30000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="hevc" width="4096" height="2176" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- MPEG1/MPEG2 -->
+
+	<format name="mpeg2" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- MPEG4 -->
+
+	<format name="mpeg4" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- WMV9 -->
+
+	<format name="wmv9" width="1920" height="1088" fps="48000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- VC1 -->
+
+	<format name="vc1" width="1920" height="1088" fps="48000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- VP9 -->
+
+	<format name="vp9" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="vp9" width="4096" height="2176" fps="30000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="vp9" width="4096" height="2176" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- VP8 -->
+
+	<format name="vp8" width="1920" height="1088" fps="30000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+	<!-- AV1 -->
+
+	<format name="av1" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="av1" width="4096" height="2176" fps="30000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="av1" width="4096" height="2176" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="120" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- H263 -->
+
+	<format name="h263" width="1920" height="1088" fps="30000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- RV -->
+
+	<format name="rv" width="1920" height="1088" fps="30000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- MJPEG -->
+
+	<format name="mjpeg" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- JPEG -->
+
+	<format name="jpeg" width="16384" height="16384" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="184" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- JPS\MPO -->
+
+	<format name="jps" width="16384" height="16384" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="184" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- PNG-->
+
+	<format name="png" width="4096" height="4096" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="184" />
+		<require name="vdp0" cost="1" />
+	</format>
+
+	<!-- BMP-->
+
+	<format name="bmp" width="4096" height="4096" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="184" />
+		<require name="vdp0" cost="1" />
+	</format>
+
+	<!-- GIF-->
+
+	<format name="gif" width="4096" height="4096" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="184" />
+		<require name="vdp0" cost="1" />
+	</format>
+
+	<!-- TIFF-->
+
+	<format name="tiff" width="4096" height="4096" fps="60000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="184" />
+		<require name="vdp0" cost="1" />
+	</format>
+
+	<!-- AVS -->
+
+	<format name="avs" width="1920" height="1088" fps="44000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="64" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- DTV -->
+
+	<format name="dtv_mpeg2" width="1920" height="1088" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="80" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="dtv_avc" width="1920" height="1088" fps="30000" encoder="0">
+		<require name="ip1" cost="1" />
+		<require name="vbm" cost="80" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="dtv_hevc" width="4096" height="2160" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="136" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<format name="dtv_avs" width="1920" height="1088" fps="44000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="80" />
+		<require name="vdps" cost="1" />
+	</format>
+
+
+	<!-- DOLBY_VISION -->
+
+	<format name="dolby_vision" width="4096" height="2176" fps="60000" encoder="0">
+		<require name="ip1" cost="2" />
+		<require name="vbm" cost="184" />
+		<require name="vdps" cost="1" />
+	</format>
+
+	<!-- UNKNOWN_VP0 -->
+
+	<format name="unknown_vp0" encoder="0">
+		<require name="vdp0" cost="1" />
+	</format>
+
+	<!-- UNKNOWN_VP1 -->
+
+	<format name="unknown_vp1" encoder="0">
+		<require name="vdp1" cost="1" />
+	</format>
+
+	<!-- SOURCE_ATV -->
+
+	<format name="source_atv" encoder="0">
+		<require name="vbm" cost="120" />
+	</format>
+
+	<!-- SOURCE_AV -->
+
+	<format name="source_av" encoder="0">
+		<require name="vbm" cost="120" />
+	</format>
+
+	<!-- SOURCE_YPP -->
+
+	<format name="source_ypp" encoder="0">
+		<require name="vbm" cost="120" />
+	</format>
+
+	<!-- SOURCE_VGA -->
+
+	<format name="source_vga" encoder="0">
+		<require name="vbm" cost="120" />
+	</format>
+
+	<!-- SOURCE_HDMI -->
+
+	<format name="source_hdmi" width="4096" height="2160" fps="60000" encoder="0">
+		<require name="vbm" cost="120" />
+	</format>
+
+	<!-- PCM -->
+
+	<format name="pcm" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- G711MLAW -->
+
+	<format name="g711mlaw" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- G711ALAW -->
+
+	<format name="g711alaw" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- ADPCM -->
+
+	<format name="adpcm" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- G726 -->
+
+	<format name="g726" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- AAC_LATM -->
+
+	<format name="aac_latm" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<format name="aac_latm" encoder="1">
+		<require name="aep0" cost="1" />
+	</format>
+
+	<!-- AAC_ADTS -->
+
+	<format name="aac_adts" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<format name="aac_adts" encoder="1">
+		<require name="aep0" cost="1" />
+	</format>
+
+	<!-- MP1 -->
+
+	<format name="mp1" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<format name="mp1" encoder="1">
+		<require name="aep0" cost="1" />
+	</format>
+
+	<!-- MP2 -->
+
+	<format name="mp2" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<format name="mp2" encoder="1">
+		<require name="aep0" cost="1" />
+	</format>
+
+	<!-- MP3 -->
+
+	<format name="mp3" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<format name="mp3" encoder="1">
+		<require name="aep0" cost="1" />
+	</format>
+
+	<!-- AMRNB -->
+
+	<format name="amrnb" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- AMRWB -->
+
+	<format name="amrwb" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- AMRWB_PLUS -->
+
+	<format name="amrwb_plus" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- VORBIS -->
+
+	<format name="vorbis" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- OPUS -->
+
+	<format name="opus" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- AC3 -->
+
+	<format name="ac3" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- EAC3 -->
+
+	<format name="eac3" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- DTS -->
+
+	<format name="dts" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- DTS_HD -->
+
+	<format name="dts_hd" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- WMA -->
+
+	<format name="wma" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- WMAPRO -->
+
+	<format name="wmapro" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- RA_COOK -->
+
+	<format name="ra_cook" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- RA_RA1 -->
+
+	<format name="ra_ra1" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- RA_LSD -->
+
+	<format name="ra_lsd" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- FLAC -->
+
+	<format name="flac" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- DV -->
+
+	<format name="dv" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- MLP -->
+
+	<format name="mlp" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- SILK -->
+
+	<format name="silk" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- G729 -->
+
+	<format name="g729" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- APE -->
+
+	<format name="ape" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+	<!-- ALAC -->
+
+	<format name="alac" encoder="0">
+		<require name="adps" cost="1" />
+		<require name="amps" cost="1" />
+	</format>
+
+</resource-table>
+

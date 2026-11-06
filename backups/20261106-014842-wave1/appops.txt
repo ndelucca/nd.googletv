@@ -1,0 +1,2 @@
+com.neilturner.aerialviews APP_AUTO_START ignore
+com.crunchyroll.crunchyroid RUN_ANY_IN_BACKGROUND default

@@ -1,0 +1,27 @@
+mProhibitMode: false
+mPowerStatus: 0
+System_settings:
+  mHdmiControlEnabled: false
+  mMhlInputChangeEnabled: true
+  mSystemAudioActivated: false
+  mHdmiCecVolumeControlEnabled true
+mMhlController: 
+mPortInfo:
+  port_id: 1, type: HDMI_IN, address: 0x1000, cec: true, arc: false, mhl: false
+  port_id: 2, type: HDMI_IN, address: 0x2000, cec: true, arc: false, mhl: false
+  port_id: 3, type: HDMI_IN, address: 0x3000, cec: true, arc: true, mhl: false
+  port_id: 4, type: HDMI_IN, address: 0x4000, cec: true, arc: false, mhl: false
+mCecController: 
+  CEC message history:
+Service Status:
+  isWakeUpMessageReceived: false
+Port Status:
+  Port1: false
+  Port2: false
+  Port3: false
+  Port4: false
+EARC Status:
+  mSupportEarc: true
+  mEarcStatus: ARC
+HdmiAudioCapabilities:
+  []

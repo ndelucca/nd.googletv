@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Included>
+    <Decoders>
+        <MediaCodec name="OMX.realtek.ext.video.decoder">
+            <!-- HEVC Video Decoder -->
+            <Type name="video/hevc">
+                <Limit name="size" min="2x2" max="8192x4352" />
+                <Limit name="concurrent-instances" max="1" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+            </Type>
+        </MediaCodec>
+    </Decoders>
+</Included>

@@ -1,0 +1,8 @@
+au.com.stan.and
+com.google.android.apps.tv.launcherx
+com.google.android.play.games
+com.google.android.syncadapters.calendar
+com.google.android.tungsten.setupwraith
+com.google.android.videos
+com.tcl.smartalexa
+tv.wuaki.apptv

@@ -1,0 +1,6 @@
+com.crunchyroll.crunchyroid
+com.neilturner.aerialviews
+com.spotify.tv.android
+me.efesser.flauncher
+nl.giejay.android.tv.immich
+org.jellyfin.androidtv

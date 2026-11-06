@@ -1,0 +1,6 @@
+     27 TaskPersister
+     26 ContentProviderRecord
+     20 MediaSessionRecord
+     17 ActivityThread
+      4 WifiVendorHal
+      1 ThermalHalWrapper

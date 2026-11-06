@@ -1,0 +1,6 @@
+cpu0: governor=performance min=900000 max=1300000
+cpu1: governor=performance min=900000 max=1300000
+cpu2: governor=performance min=900000 max=1300000
+cpu3: governor=performance min=900000 max=1300000
+available_governors: conservative ondemand userspace powersave performance 
+available_frequencies: 900000 1000000 1100000 1300000 1300000 

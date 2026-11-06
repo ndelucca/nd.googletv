@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Included>
+    <Decoders>
+        <!-- Dolby Vision -->
+        <MediaCodec name="OMX.realtek.video.dvhe.stn.decoder">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="concurrent-instances" max="2" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvhe.dtr.decoder">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="2" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvhe.st.decoder">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="2" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvav.se.decoder">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="2" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvhe.stn.decoder.secure">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="1" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+                <Feature name="secure-playback" required="true"/>
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvhe.dtr.decoder.secure">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="1" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+                <Feature name="secure-playback" required="true"/>
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvhe.st.decoder.secure">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="1" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+                <Feature name="secure-playback" required="true"/>
+            </Type>
+        </MediaCodec>
+
+        <MediaCodec name="OMX.realtek.video.dvav.se.decoder.secure">
+            <Type name="video/dolby-vision">
+                <Limit name="size" min="2x2" max="4096x2176" />
+                <Limit name="bitrate" range="1-80000000" />
+                <Limit name="concurrent-instances" max="1" />
+                <Feature name="adaptive-playback" />
+                <Feature name="tunneled-playback" />
+                <Feature name="secure-playback" required="true"/>
+            </Type>
+        </MediaCodec>
+    </Decoders>
+</Included>

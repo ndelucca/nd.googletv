@@ -1,0 +1,2 @@
+Linux localhost 4.14.198+ #2 SMP PREEMPT Mon Jan 19 12:04:49 CST 2026 armv7l
+Linux version 4.14.198+ (root@6d291bb2d1e2) (gcc version 6.4.1 20170707 (Realtek ASDK-6.4.1 Build 2641)) #2 SMP PREEMPT Mon Jan 19 12:04:49 CST 2026

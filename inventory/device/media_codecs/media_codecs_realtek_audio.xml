@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Included>
+    <Decoders>
+        <MediaCodec name="OMX.realtek.audio.dolby.ac3.decoder">
+            <Type name="audio/ac3">
+                <Limit name="concurrent-instances" max="2" />
+            </Type>
+        </MediaCodec>
+        <MediaCodec name="OMX.realtek.audio.dolby.eac3.decoder">
+            <Type name="audio/eac3">
+                <Limit name="concurrent-instances" max="2" />
+            </Type>
+        </MediaCodec>
+        <MediaCodec name="OMX.realtek.audio.decoder">
+            <Type name="audio/vnd.dts">
+                <Limit name="concurrent-instances" max="2" />
+            </Type>
+            <Type name="audio/vnd.dts.hd">
+                <Limit name="concurrent-instances" max="2" />
+            </Type>
+            <Type name="audio/vnd.dts.hd;profile=lbr">
+                <Limit name="concurrent-instances" max="2" />
+            </Type>
+        </MediaCodec>
+    </Decoders>
+</Included>

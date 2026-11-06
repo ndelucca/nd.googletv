@@ -1,0 +1,14 @@
+2026-11-06 02:04:20	package disable com.google.android.onetimeinitializer
+2026-11-06 02:04:21	package disable com.google.android.feedback
+2026-11-06 02:04:21	package disable com.google.android.sss.authbridge
+2026-11-06 02:04:22	package disable android.autoinstalls.config.google.gtvpai
+2026-11-06 02:04:23	package disable com.google.android.partnersetup
+2026-11-06 02:04:24	package disable com.android.camera2
+2026-11-06 02:04:24	package disable com.android.messaging
+2026-11-06 02:04:25	package disable com.android.printspooler
+2026-11-06 02:04:25	package disable org.chromium.webview_shell
+2026-11-06 02:04:26	package disable com.android.hotspot2.osulogin
+2026-11-06 02:04:27	package disable com.android.soundpicker
+2026-11-06 02:04:27	package disable com.android.dreams.basic
+2026-11-06 02:04:27	package disable com.google.android.apps.tv.dreamx
+2026-11-06 02:04:28	package disable com.google.android.marvin.talkback

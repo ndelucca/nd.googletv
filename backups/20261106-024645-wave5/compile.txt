@@ -1,0 +1,2 @@
+com.spotify.tv.android speed
+com.android.systemui speed

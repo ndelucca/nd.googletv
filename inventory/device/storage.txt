@@ -1,0 +1,12 @@
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/root             1.9G  1.8G  117M  95% /
+/dev/block/mmcblk0p14 1.2G  1.1G   18M  99% /product
+/dev/block/dm-1       472M  415M   47M  90% /vendor
+/dev/block/mmcblk0p17  10G  4.4G  5.5G  45% /data
+/dev/block/mmcblk0p7   27M  804K   25M   4% /cache
+/dev/block/mmcblk0p8   22M  2.5M   18M  13% /userdata
+/dev/block/mmcblk0p10 6.7M   55K  6.1M   1% /impdata
+/dev/block/mmcblk0p12  30M  1.0M   28M   4% /tclconfig
+/dev/block/mmcblk0p11 6.7M  360K  5.8M   6% /persist
+/dev/block/mmcblk0p9   14M  141K   13M   2% /rtdata
+/dev/fuse              10G  4.4G  5.5G  45% /storage/emulated

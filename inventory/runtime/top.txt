@@ -1,0 +1,93 @@
+Tasks: 309 total,   1 running, 308 sleeping,   0 stopped,   0 zombie
+  Mem: 16777216T total,  2006320K used,  93011968 free,   4673536 buffers
+ Swap:  1048572K total,   562528K used,   486044K free,   394184K cached
+400%cpu  77%user   0%nice  57%sys 266%idle   0%iow   0%irq   0%sirq   0%host
+   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+  1571 u0_a62       10 -10 1.3G  95M  62M S 42.8   4.6   4:15.55 me.efesser.flauncher
+   344 system       -3  -8 134M  13M 8.3M S 40.0   0.6   4:42.17 surfaceflinger
+  2986 shell        20   0  11M 3.4M 2.7M R 22.8   0.1   0:00.12 top -b -n 2 -d 3 -m 40
+  1784 u0_a101      20   0 2.0G 154M  74M S  8.5   7.5   0:38.02 com.spotify.tv.android
+   333 audioserver  20   0  80M 5.9M 4.0M S  8.5   0.2   0:32.07 audioserver
+   293 system       -3  -8  87M 3.8M 3.3M S  8.5   0.1   1:09.45 android.hardware.graphics.composer-rtk@2.4-service
+   281 audioserver  20   0  50M 2.6M 2.2M S  5.7   0.1   0:15.84 android.hardware.audio.service
+  3229 root          0 -20    0    0    0 I  2.8   0.0   0:01.66 [kworker/u9:3]
+  1787 system       30  10  68M 2.0M 1.9M S  2.8   0.1   0:20.18 rtkm_scene /vendor/data/scene_bionic.conf /vendor/data/scene_labels.txt
+  2095 system       20   0 1.2G  26M  11M S  2.8   1.2   0:01.16 com.tcl.system.server
+   562 root         20   0    0    0    0 D  2.8   0.0   0:06.71 [hdmi_task]
+   360 root         20   0 242M 2.1M 1.1M S  2.8   0.1   0:58.98 sitatvservice all 7
+  2408 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:2]
+  3578 root         20   0    0    0    0 I  0.0   0.0   0:00.03 [kworker/3:2]
+  3545 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:2]
+  3392 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:2]
+  3285 u0_a34       20   0 1.2G  67M  43M S  0.0   3.2   0:01.21 com.google.android.youtube.tv.recommendations
+  3177 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kbase_event]
+  3025 root         20   0    0    0    0 I  0.0   0.0   0:00.17 [kworker/u8:7]
+  3024 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u8:6]
+  3018 u0_a107      20   0 1.9G  41M  22M S  0.0   1.9   0:03.89 nl.giejay.android.tv.immich
+  2893 u0_a30       20   0 1.4G 104M  57M S  0.0   5.0   0:11.04 com.android.vending
+  2471 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kbase_event]
+  2402 u0_a87       20   0 1.9G  68M  40M S  0.0   3.3   0:07.28 org.jellyfin.androidtv
+  2051 u0_a30       20   0 1.3G  67M  31M S  0.0   3.2   0:02.13 com.android.vending:background
+  1942 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kbase_event]
+  1431 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kbase_event]
+  1333 u0_a36       20   0 1.6G 123M  39M S  0.0   6.0   0:25.12 com.netflix.ninja
+  1138 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kbase_event]
+  1025 u0_a34       20   0 1.4G  88M  25M S  0.0   4.2   0:13.49 com.google.android.youtube.tv
+  2619 root         20   0    0    0    0 I  0.0   0.0   0:00.17 [kworker/u8:0]
+   835 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/3:1]
+  3941 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:1]
+  3870 root         20   0    0    0    0 I  0.0   0.0   0:00.06 [kworker/2:1]
+  3835 root         20   0    0    0    0 I  0.0   0.0   0:00.11 [kworker/0:1]
+   713 root          0 -20    0    0    0 I  0.0   0.0   0:01.76 [kworker/u9:0]
+  2598 root         20   0    0    0    0 I  0.0   0.0   0:00.43 [kworker/1:0]
+  2534 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/2:0]
+  2517 root         20   0    0    0    0 I  0.0   0.0   0:00.10 [kworker/0:0]
+  2499 root         20   0    0    0    0 I  0.0   0.0   0:00.07 [kworker/3:0]
+
+
+
+Tasks: 309 total,   1 running, 308 sleeping,   0 stopped,   0 zombie
+  Mem: 16777216T total,  2006472K used,  92856320 free,   4673536 buffers
+ Swap:  1048572K total,   562272K used,   486300K free,   394184K cached
+400%cpu  66%user   1%nice  45%sys 288%idle   0%iow   0%irq   0%sirq   0%host
+   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+  1571 u0_a62       10 -10 1.3G  92M  62M S 40.6   4.4   4:15.70 me.efesser.flauncher
+   344 system       -3  -8 134M  13M 8.3M S 38.6   0.6   4:42.31 surfaceflinger
+   293 system       -3  -8  87M 3.8M 3.3M S  9.0   0.1   1:09.48 android.hardware.graphics.composer-rtk@2.4-service
+   333 audioserver  20   0  80M 5.9M 4.0M S  8.6   0.2   0:32.10 audioserver
+  1784 u0_a101      20   0 2.0G 154M  74M S  7.0   7.5   0:38.05 com.spotify.tv.android
+   360 root         20   0 242M 2.1M 1.1M S  5.0   0.1   0:58.99 sitatvservice all 7
+  2986 shell        20   0  11M 3.6M 2.7M R  3.3   0.1   0:00.20 top -b -n 2 -d 3 -m 40
+   281 audioserver  20   0  50M 2.6M 2.2M S  3.3   0.1   0:15.86 android.hardware.audio.service
+  1787 system       30  10  68M 2.0M 1.9M S  2.6   0.1   0:20.19 rtkm_scene /vendor/data/scene_bionic.conf /vendor/data/scene_labels.txt
+  1785 system       30  10  49M 1.9M 1.9M S  2.0   0.0   0:13.59 rtkm_ultraFace /vendor/data/ultraFace_bionic.conf face.jpg 0.9 0.5
+   199 logd         30  10  25M 4.9M 2.0M S  1.3   0.2   0:12.95 logd
+   725 root          0 -20    0    0    0 I  1.0   0.0   0:03.74 [kworker/u9:2]
+   501 system       20   0  25M 144K  68K S  1.0   0.0   0:10.67 audio_codec
+   325 root         30  10  16M 2.0M 2.0M S  1.0   0.0   0:09.94 rtdlog
+  3229 root          0 -20    0    0    0 I  0.6   0.0   0:01.67 [kworker/u9:3]
+  1025 u0_a34       20   0 1.4G  88M  25M S  0.6   4.2   0:13.49 com.google.android.youtube.tv
+  1525 system       20   0 1.4G  44M  22M S  0.6   2.1   0:10.20 com.tcl.tv
+   562 root         20   0    0    0    0 D  0.6   0.0   0:06.72 [hdmi_task]
+   136 root         20   0    0    0    0 D  0.6   0.0   0:05.10 [film_mode_detec]
+  2402 u0_a87       20   0 1.9G  68M  40M S  0.3   3.3   0:07.28 org.jellyfin.androidtv
+   726 system       18  -2 2.1G 111M  57M S  0.3   5.4   2:27.12 system_server
+   515 root         20   0  12M 1.8M 1.8M S  0.3   0.0   0:00.16 rtk_burn_key
+   500 mediacodec   20   0  51M 2.7M 2.2M S  0.3   0.1   0:22.84 media.codec hw/android.hardware.media.omx@1.0-service
+   321 system       20   0  21M 2.1M 2.0M S  0.3   0.1   0:00.31 vendor.tcl.earc@1.0-service
+   137 root         20   0    0    0    0 D  0.3   0.0   0:00.81 [VPQ_detect_tsk]
+   135 root         20   0    0    0    0 D  0.3   0.0   0:00.75 [new_game_mode_t]
+   127 root         20   0    0    0    0 D  0.3   0.0   0:00.82 [fix_lastline_ts]
+   124 root         20   0    0    0    0 D  0.3   0.0   0:02.71 [vsc_tsk]
+   120 root         20   0    0    0    0 D  0.3   0.0   0:01.74 [avd_detect_tsk]
+     9 root         20   0    0    0    0 I  0.3   0.0   0:03.48 [rcu_preempt]
+  2408 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:2]
+  3578 root         20   0    0    0    0 I  0.0   0.0   0:00.03 [kworker/3:2]
+  3545 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:2]
+  3392 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:2]
+  3285 u0_a34       20   0 1.2G  67M  43M S  0.0   3.2   0:01.21 com.google.android.youtube.tv.recommendations
+  3177 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kbase_event]
+  3025 root         20   0    0    0    0 I  0.0   0.0   0:00.17 [kworker/u8:7]
+  3024 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u8:6]
+  3018 u0_a107      20   0 1.9G  41M  22M S  0.0   1.9   0:03.89 nl.giejay.android.tv.immich
+  2893 u0_a30       20   0 1.4G 104M  57M S  0.0   5.0   0:11.04 com.android.vending

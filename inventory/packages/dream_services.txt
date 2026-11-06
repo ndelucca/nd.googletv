@@ -1,0 +1,16 @@
+5 services found:
+  Service #0:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    com.tcl.gallery/.module_gallery.service.ScreensaverService
+  Service #1:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    com.tcl.gallery/.module_screensaver.view.service.InfoScreensaverWallService
+  Service #2:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    com.neilturner.aerialviews/.ui.screensaver.DreamActivity
+  Service #3:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    nl.giejay.android.tv.immich/.screensaver.ScreenSaverService
+  Service #4:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    org.jellyfin.androidtv/.integration.dream.LibraryDreamService
