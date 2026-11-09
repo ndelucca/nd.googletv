@@ -21,26 +21,26 @@
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
     com.neilturner.aerialviews/.ui.MainActivity
   Activity #7:
-    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
-    me.efesser.flauncher/.MainActivity
-  Activity #8:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     com.netflix.ninja/.MainActivity
-  Activity #9:
+  Activity #8:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     com.tcl.gallery/.module_gallery.activity.MainActivity
-  Activity #10:
+  Activity #9:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     com.tcl.partnercustomizer/.tkey.WithIcon
-  Activity #11:
+  Activity #10:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     com.tcl.ui_mediaCenter/.main.MainActivity
-  Activity #12:
+  Activity #11:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     com.crunchyroll.crunchyroid/.splash.ui.SplashActivity
-  Activity #13:
+  Activity #12:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     com.spotify.tv.android/com.spotify.app.androidtv.MainActivity
+  Activity #13:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    dev.plume/.MainActivity
   Activity #14:
     priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
     nl.giejay.android.tv.immich/.MainActivity

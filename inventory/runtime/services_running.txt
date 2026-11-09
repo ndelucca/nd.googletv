@@ -32,6 +32,7 @@
   * u0 com.google.android.gms/.location.geocode.GeocodeService
   * u0 com.google.android.gms/.location.persistent.LocationPersistentService
   * u0 com.google.android.gms/.play.integrity.api.service.IntegrityApiPersistentService
+  * u0 com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService
   * u0 com.google.android.gms/com.google.android.location.fused.FusedLocationService
   * u0 com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService
   * u0 com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService
@@ -47,9 +48,12 @@
   * u0 com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService
   * u0 com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService
   * u0 com.spotify.tv.android/com.spotify.androidtv.foregroundmediaservice.ForegroundMediaService
+  * u0 com.spotify.tv.android/com.spotify.androidtv.medialibraryservice.AndroidTvMediaLibraryService
   * u0 com.tcl.tv/.service.FunctionService
   * u0 com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0
   * u0 com.tcl.tvinput/.TDTVInputService
   * u0 com.tcl.tvinput/.passthroughinput.TvPassThroughService
   * u0 com.tcl.tvinput/.server.DataUpdateService
+  * u0 dev.plume/.HomeOverride
   * u0 org.jellyfin.androidtv/org.acra.sender.JobSenderService
+  * u0 org.jellyfin.androidtv/org.jellyfin.playback.media3.session.AndroidMediaService

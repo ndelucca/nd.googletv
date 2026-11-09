@@ -42,5 +42,26 @@ while read -r pkg _; do
   printf '%s %s\n' "$pkg" "${s:-unknown}"
 done < <(conf_wave_lines "$CONFIG_DIR/compile.conf") >"$dir/compile.txt"
 
+# "<package> <installed versionCode | absent>" for every app in apps.conf
+while read -r pkg _; do
+  v="$(tv_shell pm list packages --show-versioncode "$pkg" | sed -nE "s/^package:${pkg//./\\.} versionCode:([0-9]+)$/\1/p")"
+  printf '%s %s\n' "$pkg" "${v:-absent}"
+done < <(conf_wave_lines "$CONFIG_DIR/apps.conf") >"$dir/apps.txt"
+
+# Apps that packages.conf uninstalls: "<package> <versionCode>", plus a copy of their APKs in
+# apks/<package>/ (kept out of git by .gitignore) so rollback.sh can reinstall them. App data is not kept.
+: >"$dir/uninstall.txt"
+while read -r pkg action _; do
+  [[ "$action" == "uninstall" ]] || continue
+  paths="$(tv_shell pm path "$pkg" 2>/dev/null | sed -n 's/^package://p' || true)"
+  [[ -z "$paths" ]] && continue   # already gone
+  v="$(tv_shell pm list packages --show-versioncode "$pkg" | sed -nE "s/^package:${pkg//./\\.} versionCode:([0-9]+)$/\1/p")"
+  mkdir -p "$dir/apks/$pkg"
+  while read -r p; do
+    tv_adb pull "$p" "$dir/apks/$pkg/" >/dev/null || die "could not copy $p — not uninstalling without a backup"
+  done <<<"$paths"
+  printf '%s %s\n' "$pkg" "${v:-unknown}" >>"$dir/uninstall.txt"
+done < <(conf_wave_lines "$CONFIG_DIR/packages.conf")
+
 log "backup written to ${dir#"$REPO_ROOT"/}"
 echo "$dir"

@@ -9,10 +9,10 @@ ThermalStatusListeners:
 	broadcasts count: -1
 Thermal Status: 0
 Cached temperatures:
-	Temperature{mValue=62.0, mType=0, mName=cpu, mStatus=0}
+	Temperature{mValue=61.0, mType=0, mName=cpu, mStatus=0}
 HAL Ready: true
 HAL connection:
 	ThermalHAL 2.0 connected: yes
 Current temperatures from HAL:
-	Temperature{mValue=64.0, mType=0, mName=cpu, mStatus=0}
+	Temperature{mValue=60.0, mType=0, mName=cpu, mStatus=0}
 Current cooling devices from HAL:

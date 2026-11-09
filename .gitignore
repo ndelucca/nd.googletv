@@ -1,3 +1,4 @@
 .inventory.*/
 *.apk
 verify-screens/
+.cache/

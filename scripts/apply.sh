@@ -20,7 +20,10 @@ if [[ $APPLY -eq 1 ]]; then
 fi
 
 rc=0
-for step in packages settings appops compile home; do
+# apps first (a new launcher must exist), then home (packages never disables the HOME in use).
+# appops before settings: enabling an accessibility service binds it at once, and TCL's
+# APP_AUTO_START gate refuses that bind (and the system never retries) unless the op is allowed.
+for step in apps home packages appops settings compile; do
   "$REPO_ROOT/scripts/apply-$step.sh" "${args[@]}" || rc=1
 done
 

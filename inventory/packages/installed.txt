@@ -129,7 +129,7 @@ com.tcl.usercenter
 com.tcl.versionUpdateApp
 com.tcl.waterfall.overseas
 com.tvos
-me.efesser.flauncher
+dev.plume
 nl.giejay.android.tv.immich
 org.chromium.webview_shell
 org.jellyfin.androidtv

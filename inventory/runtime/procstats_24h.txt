@@ -1,342 +1,248 @@
 AGGREGATED OVER LAST 24 HOURS:
   * system / 1000 / v30:
-         TOTAL: 100% (74MB-103MB-160MB/64MB-86MB-138MB/153MB-175MB-316MB over 46)
-    Persistent: 100% (74MB-103MB-160MB/64MB-86MB-138MB/153MB-175MB-316MB over 46)
-  * com.android.bluetooth / 1002 / v30:
-         TOTAL: 100% (8.9MB-11MB-22MB/1.8MB-6.0MB-15MB/32MB-54MB-121MB over 46)
-    Persistent: 100% (8.9MB-11MB-22MB/1.8MB-6.0MB-15MB/32MB-54MB-121MB over 46)
+         TOTAL: 100% (75MB-92MB-123MB/57MB-69MB-87MB/92MB-118MB-255MB over 44)
+    Persistent: 100% (75MB-92MB-123MB/57MB-69MB-87MB/92MB-118MB-255MB over 44)
   * com.android.systemui / u0a79 / v30:
-         TOTAL: 100% (16MB-21MB-39MB/5.7MB-13MB-27MB/66MB-75MB-158MB over 44)
-    Persistent: 100% (16MB-21MB-39MB/5.7MB-13MB-27MB/66MB-75MB-158MB over 44)
+         TOTAL: 100% (15MB-19MB-31MB/4.6MB-8.6MB-22MB/28MB-38MB-144MB over 43)
+    Persistent: 100% (15MB-19MB-31MB/4.6MB-8.6MB-22MB/28MB-38MB-144MB over 43)
+  * com.android.bluetooth / 1002 / v30:
+         TOTAL: 100% (8.6MB-10MB-20MB/748KB-2.8MB-15MB/19MB-25MB-118MB over 43)
+    Persistent: 100% (8.6MB-10MB-20MB/748KB-2.8MB-15MB/19MB-25MB-118MB over 43)
   * com.tcl.tvinput / 1000 / v610086294:
-         TOTAL: 100% (6.8MB-8.0MB-13MB/0.98MB-4.0MB-6.4MB/30MB-52MB-108MB over 47)
-        Imp Fg: 100% (6.8MB-8.0MB-13MB/0.98MB-4.0MB-6.4MB/30MB-52MB-108MB over 47)
+         TOTAL: 100% (6.4MB-7.4MB-11MB/836KB-3.5MB-6.7MB/21MB-25MB-109MB over 43)
+        Imp Fg: 100% (6.4MB-7.4MB-11MB/836KB-3.5MB-6.7MB/21MB-25MB-109MB over 43)
   * com.android.se / 1068 / v30:
-         TOTAL: 100% (4.2MB-4.9MB-8.5MB/88KB-1.2MB-3.6MB/19MB-41MB-95MB over 46)
-    Persistent: 100% (4.2MB-4.9MB-8.5MB/88KB-1.2MB-3.6MB/19MB-41MB-95MB over 46)
+         TOTAL: 100% (4.3MB-4.6MB-6.9MB/4.0KB-337KB-3.6MB/16MB-19MB-95MB over 43)
+    Persistent: 100% (4.3MB-4.6MB-6.9MB/4.0KB-337KB-3.6MB/16MB-19MB-95MB over 43)
   * com.android.tv.settings / 1000 / v10400:
-         TOTAL: 100% (7.0MB-14MB-30MB/2.7MB-8.2MB-20MB/61MB-74MB-123MB over 62)
-           Top: 0.17% (30MB-30MB-30MB/20MB-20MB-20MB/100MB-100MB-100MB over 1)
-       Service: 100% (7.0MB-14MB-28MB/2.7MB-8.0MB-20MB/61MB-73MB-123MB over 61)
-    Service Rs: 0.05%
+         TOTAL: 100% (12MB-20MB-41MB/848KB-7.9MB-26MB/26MB-37MB-138MB over 47)
+           Top: 0.08% (41MB-41MB-41MB/26MB-26MB-26MB/78MB-78MB-78MB over 1)
+       Service: 100% (12MB-19MB-28MB/848KB-7.5MB-20MB/26MB-36MB-138MB over 46)
   * com.google.android.ext.services / u0a82 / v311313000:
-         TOTAL: 100% (6.6MB-8.7MB-13MB/0.89MB-3.2MB-6.8MB/46MB-64MB-105MB over 48)
-        Imp Fg: 100% (6.6MB-8.7MB-13MB/0.89MB-3.2MB-6.8MB/46MB-64MB-105MB over 48)
+         TOTAL: 100% (7.9MB-8.5MB-9.9MB/4.0KB-0.96MB-5.3MB/17MB-22MB-110MB over 44)
+        Imp Fg: 100% (7.9MB-8.5MB-9.9MB/4.0KB-0.96MB-5.3MB/17MB-22MB-110MB over 44)
   * com.google.android.tv.remote.service / u0a12 / v95855584:
-         TOTAL: 100% (8.3MB-11MB-19MB/532KB-4.5MB-11MB/26MB-63MB-141MB over 62)
-        Imp Fg: 100% (8.3MB-11MB-19MB/532KB-4.5MB-11MB/26MB-63MB-141MB over 62)
-  * com.google.android.gms / u0a9 / v264330115:
-         TOTAL: 100% (53MB-96MB-165MB/18MB-73MB-158MB/131MB-171MB-352MB over 74)
-        Imp Fg: 100% (53MB-96MB-165MB/18MB-73MB-158MB/131MB-171MB-352MB over 74)
-  * com.tcl.tv / 1000 / v20511:
-         TOTAL: 100% (21MB-32MB-62MB/5.5MB-14MB-47MB/35MB-64MB-154MB over 46)
-    Persistent: 100% (21MB-32MB-62MB/5.5MB-14MB-47MB/35MB-64MB-154MB over 46)
-  * com.android.providers.media.module / u0a85 / v30:
-         TOTAL: 100% (8.8MB-14MB-24MB/156KB-5.8MB-20MB/32MB-55MB-124MB over 46)
-    Persistent: 100% (8.8MB-14MB-24MB/156KB-5.8MB-20MB/32MB-55MB-124MB over 46)
-  * com.android.providers.tv / u0a29 / v30:
-         TOTAL: 100% (8.1MB-20MB-43MB/1.6MB-5.7MB-8.2MB/31MB-53MB-104MB over 46)
-    Persistent: 100% (8.1MB-20MB-43MB/1.6MB-5.7MB-8.2MB/31MB-53MB-104MB over 46)
-  * com.tcl.system.server / 1000 / v1001:
-         TOTAL: 100% (5.5MB-6.4MB-7.1MB/756KB-3.0MB-4.3MB/25MB-45MB-99MB over 46)
-    Persistent: 100% (5.5MB-6.4MB-7.1MB/756KB-3.0MB-4.3MB/25MB-45MB-99MB over 46)
-        Imp Fg: 0.05%
-  * com.google.android.apps.mediashell / u0a23 / v446070112:
-         TOTAL: 100% (22MB-31MB-43MB/9.9MB-22MB-33MB/65MB-82MB-143MB over 50)
-        Imp Fg: 94% (22MB-32MB-40MB/9.9MB-22MB-33MB/65MB-78MB-143MB over 37)
-       Service: 6.2% (22MB-31MB-43MB/13MB-22MB-29MB/138MB-93MB-138MB over 13)
-      Receiver: 0.02%
-  * com.tcl.guard / 1000 / v10110:
-         TOTAL: 100% (8.8MB-15MB-32MB/1.7MB-9.3MB-23MB/43MB-57MB-129MB over 46)
-    Persistent: 100% (8.8MB-15MB-32MB/1.7MB-9.3MB-23MB/43MB-57MB-129MB over 46)
-  * com.tcl.settings / 1000 / v10610:
-         TOTAL: 97% (8.6MB-20MB-52MB/700KB-13MB-44MB/53MB-67MB-129MB over 52)
-        Imp Fg: 97% (8.6MB-20MB-52MB/700KB-13MB-44MB/53MB-67MB-129MB over 52)
-      Receiver: 0.08%
-      (Cached): 0.47% (9.6MB-23MB-38MB/5.1MB-19MB-33MB/132MB-123MB-139MB over 9)
+         TOTAL: 100% (8.7MB-11MB-20MB/4.0KB-1.7MB-12MB/18MB-28MB-141MB over 46)
+        Imp Fg: 100% (8.7MB-11MB-20MB/4.0KB-1.7MB-12MB/18MB-28MB-141MB over 46)
   * com.google.android.inputmethod.latin / u0a56 / v175783349:
-         TOTAL: 96% (14MB-23MB-44MB/4.9MB-15MB-33MB/64MB-91MB-175MB over 50)
-        Imp Bg: 96% (14MB-23MB-44MB/4.9MB-15MB-33MB/64MB-91MB-175MB over 50)
-  * com.spotify.tv.android / u0a101 / v147600562:
-         TOTAL: 96% (79MB-130MB-203MB/37MB-111MB-187MB/176MB-181MB-292MB over 59)
-           Top: 1.2% (114MB-163MB-203MB/107MB-151MB-187MB/257MB-247MB-290MB over 14)
-        Imp Fg: 4.8% (79MB-120MB-198MB/37MB-99MB-181MB/176MB-161MB-292MB over 45)
-    Service Rs: 90%
-  * com.google.android.katniss:interactor / u0a19 / v15040477:
-         TOTAL: 93% (33MB-49MB-82MB/13MB-31MB-65MB/63MB-94MB-201MB over 33)
-        Imp Fg: 93% (33MB-49MB-82MB/13MB-31MB-65MB/63MB-94MB-201MB over 33)
-  * com.tcl.ttvs / 1000 / v104555:
-         TOTAL: 93% (14MB-17MB-25MB/7.2MB-11MB-21MB/39MB-56MB-130MB over 29)
-    Persistent: 93% (14MB-17MB-25MB/7.2MB-11MB-21MB/39MB-56MB-130MB over 29)
-  * com.tcl.miracast / 1000 / v200000249:
-         TOTAL: 93% (5.6MB-8.0MB-13MB/4.0KB-2.5MB-7.6MB/44MB-62MB-107MB over 45)
-        Imp Fg: 93% (5.6MB-8.0MB-13MB/4.0KB-2.5MB-7.6MB/44MB-62MB-107MB over 45)
-      Receiver: 0.01%
-  * com.tcl.overseasappshow / 1000 / v1030000:
-         TOTAL: 92% (11MB-18MB-35MB/1.9MB-9.9MB-21MB/62MB-77MB-118MB over 43)
-        Imp Fg: 92% (11MB-18MB-35MB/1.9MB-9.9MB-21MB/62MB-77MB-118MB over 43)
-    Service Rs: 0.03%
-  * com.tcl.usercenter / u0a49 / v4021:
-         TOTAL: 91% (11MB-20MB-27MB/1.5MB-13MB-20MB/62MB-88MB-113MB over 62)
-        Imp Fg: 91% (11MB-20MB-27MB/1.5MB-13MB-20MB/62MB-88MB-113MB over 62)
-    Service Rs: 0.01%
-      Receiver: 0.01%
-      (Cached): 0.05% (13MB-13MB-13MB/8.1MB-8.1MB-8.1MB/105MB-105MB-105MB over 1)
-  * com.tcl.tv.tclhome_passive / u0a72 / v10229:
-         TOTAL: 91% (8.9MB-15MB-26MB/4.0MB-8.1MB-16MB/54MB-64MB-97MB over 34)
-        Imp Fg: 91% (8.9MB-15MB-26MB/4.0MB-8.1MB-16MB/54MB-64MB-97MB over 34)
-  * com.tcl.dashboard / u0a32 / v1682:
-         TOTAL: 91% (10MB-17MB-27MB/2.7MB-11MB-18MB/63MB-72MB-96MB over 41)
-        Imp Fg: 91% (10MB-17MB-27MB/2.7MB-11MB-18MB/63MB-72MB-96MB over 41)
-    Service Rs: 0.04%
-  * me.efesser.flauncher / u0a62 / v366:
-         TOTAL: 60% (35MB-50MB-85MB/20MB-36MB-71MB/74MB-102MB-171MB over 46)
-           Top: 60% (35MB-50MB-85MB/20MB-36MB-71MB/74MB-102MB-171MB over 46)
-        (Home): 38% (31MB-40MB-59MB/8.5MB-26MB-47MB/74MB-91MB-130MB over 20)
-  * com.google.android.youtube.tv / u0a34 / v530340320:
-         TOTAL: 37% (90MB-176MB-256MB/75MB-155MB-234MB/218MB-220MB-286MB over 8)
-           Top: 37% (90MB-176MB-256MB/75MB-155MB-234MB/218MB-220MB-286MB over 8)
-        Imp Fg: 0.10%
-        Imp Bg: 0.04%
-       Service: 0.12%
-      Receiver: 0.06%
-    (Last Act): 52% (78MB-96MB-119MB/50MB-71MB-100MB/152MB-155MB-219MB over 27)
-      (Cached): 9.4% (16MB-49MB-91MB/11MB-39MB-58MB/127MB-114MB-155MB over 39)
-  * com.netflix.ninja / u0a36 / v27249:
-         TOTAL: 7.1% (96MB-118MB-146MB/81MB-102MB-130MB/178MB-182MB-237MB over 67)
-           Top: 0.99% (115MB-131MB-146MB/105MB-111MB-130MB/237MB-224MB-237MB over 18)
-        Imp Bg: 0.01%
-       Service: 6.1% (96MB-113MB-131MB/81MB-98MB-125MB/178MB-166MB-203MB over 49)
-      (Cached): 0.03%
+         TOTAL: 100% (16MB-32MB-62MB/36KB-10MB-37MB/29MB-40MB-177MB over 44)
+        Imp Fg: 0.01%
+        Imp Bg: 100% (16MB-32MB-62MB/36KB-10MB-37MB/29MB-40MB-177MB over 44)
+  * com.google.android.gms / u0a9 / v264330115:
+         TOTAL: 100% (30MB-88MB-155MB/17MB-70MB-145MB/124MB-126MB-315MB over 68)
+        Imp Fg: 100% (30MB-88MB-155MB/17MB-70MB-145MB/124MB-126MB-315MB over 68)
+  * com.android.providers.media.module / u0a85 / v30:
+         TOTAL: 100% (11MB-13MB-16MB/4.0KB-1.0MB-13MB/18MB-23MB-118MB over 43)
+    Persistent: 100% (11MB-13MB-16MB/4.0KB-1.0MB-13MB/18MB-23MB-118MB over 43)
+  * com.tcl.tv / 1000 / v20511:
+         TOTAL: 100% (24MB-35MB-62MB/7.4MB-12MB-45MB/29MB-38MB-154MB over 43)
+    Persistent: 100% (24MB-35MB-62MB/7.4MB-12MB-45MB/29MB-38MB-154MB over 43)
+  * com.android.providers.tv / u0a29 / v30:
+         TOTAL: 100% (8.3MB-12MB-17MB/600KB-6.1MB-11MB/24MB-31MB-104MB over 43)
+    Persistent: 100% (8.3MB-12MB-17MB/600KB-6.1MB-11MB/24MB-31MB-104MB over 43)
+  * com.google.android.apps.mediashell / u0a23 / v446070112:
+         TOTAL: 100% (21MB-30MB-53MB/9.1MB-19MB-44MB/33MB-48MB-139MB over 44)
+        Imp Fg: 0.11%
+       Service: 100% (21MB-30MB-53MB/9.1MB-19MB-44MB/33MB-48MB-139MB over 44)
+  * com.tcl.system.server / 1000 / v1001:
+         TOTAL: 100% (5.3MB-7.5MB-12MB/796KB-3.2MB-8.9MB/21MB-25MB-100MB over 43)
+    Persistent: 100% (5.3MB-7.5MB-12MB/796KB-3.2MB-8.9MB/21MB-25MB-100MB over 43)
+  * com.tcl.guard / 1000 / v10110:
+         TOTAL: 100% (7.7MB-9.8MB-15MB/1.6MB-4.1MB-8.6MB/22MB-26MB-106MB over 43)
+    Persistent: 100% (7.7MB-9.8MB-15MB/1.6MB-4.1MB-8.6MB/22MB-26MB-106MB over 43)
   * com.tcl.tv:privileged_process0 / 1000 / v20511:
-         TOTAL: 5.7% (11MB-13MB-15MB/488KB-3.8MB-9.6MB/79MB-49MB-79MB over 20)
-    Persistent: 5.7% (11MB-13MB-15MB/488KB-3.8MB-9.6MB/79MB-49MB-79MB over 20)
-  * com.tcl.bi:service / u0a60 / v20500:
-         TOTAL: 2.7% (15MB-31MB-39MB/6.5MB-24MB-32MB/114MB-114MB-121MB over 10)
-        Imp Fg: 2.7% (15MB-31MB-39MB/6.5MB-24MB-32MB/114MB-114MB-121MB over 10)
-       Service: 0.01%
-      (Cached): 2.8% (15MB-16MB-16MB/11MB-11MB-12MB/78MB-78MB-78MB over 3)
-  * com.android.vending / u0a30 / v85341708:
-         TOTAL: 1.2% (56MB-82MB-102MB/16MB-51MB-72MB/208MB-174MB-212MB over 4)
-           Top: 0.31% (102MB-102MB-102MB/72MB-72MB-72MB/208MB-208MB-208MB over 1)
-        Imp Fg: 0.39%
-        Imp Bg: 0.43% (56MB-76MB-90MB/16MB-44MB-61MB/212MB-163MB-212MB over 3)
-       Service: 0.02%
-      Receiver: 0.07%
-    (Last Act): 1.6% (66MB-81MB-97MB/43MB-61MB-72MB/144MB-137MB-171MB over 10)
-      (Cached): 3.7% (48MB-67MB-85MB/8.3MB-40MB-56MB/180MB-162MB-205MB over 20)
-  * com.google.android.gms.unstable / u0a9 / v264330115:
-         TOTAL: 1.1% (35MB-49MB-61MB/21MB-27MB-31MB/208MB-190MB-211MB over 5)
-        Imp Fg: 0.81%
-        Imp Bg: 0.24% (35MB-49MB-61MB/21MB-27MB-31MB/208MB-190MB-211MB over 5)
-       Service: 0.05%
-    (Last Act): 0.04%
-      (Cached): 40% (15MB-37MB-73MB/476KB-20MB-58MB/157MB-120MB-210MB over 35)
-  * com.android.vending:background / u0a30 / v85341708:
-         TOTAL: 0.90% (37MB-42MB-52MB/25MB-26MB-26MB/78MB-103MB-168MB over 4)
-        Imp Fg: 0.53%
-        Imp Bg: 0.21% (52MB-52MB-52MB/26MB-26MB-26MB/168MB-168MB-168MB over 1)
-       Service: 0.11% (37MB-38MB-39MB/25MB-26MB-26MB/78MB-82MB-86MB over 3)
-      Receiver: 0.06%
-    (Last Act): 1.1%
-      (Cached): 6.5% (28MB-52MB-84MB/9.5MB-36MB-72MB/158MB-131MB-174MB over 37)
-  * com.google.process.gservices / u0a9 / v30:
-         TOTAL: 0.65%
-        Imp Fg: 0.47%
-        Imp Bg: 0.13%
-       Service: 0.01%
-      Receiver: 0.04%
-    (Last Act): 4.6% (7.4MB-7.4MB-7.4MB/4.3MB-4.3MB-4.3MB/96MB-96MB-96MB over 1)
-      (Cached): 12% (5.5MB-10MB-21MB/844KB-4.9MB-6.8MB/85MB-74MB-100MB over 38)
-  * org.jellyfin.androidtv / u0a87 / v191099:
-         TOTAL: 0.59% (52MB-83MB-114MB/42MB-69MB-91MB/212MB-160MB-212MB over 11)
-           Top: 0.44% (52MB-83MB-114MB/42MB-69MB-91MB/212MB-160MB-212MB over 11)
-        Imp Bg: 0.14%
-    (Last Act): 0.44%
-      (Cached): 2.2% (34MB-40MB-51MB/3.7MB-22MB-36MB/99MB-71MB-99MB over 27)
-  * nl.giejay.android.tv.immich / u0a107 / v148:
-         TOTAL: 0.47% (39MB-51MB-74MB/25MB-31MB-46MB/109MB-127MB-177MB over 9)
-           Top: 0.41% (39MB-51MB-74MB/25MB-31MB-46MB/109MB-127MB-177MB over 9)
-        Imp Bg: 0.07%
-    (Last Act): 0.23%
-      (Cached): 2.3% (15MB-29MB-38MB/6.4MB-16MB-22MB/63MB-94MB-142MB over 13)
-  * com.tcl.versionUpdateApp / 1000 / v11201:
-         TOTAL: 0.46% (14MB-23MB-33MB/5.3MB-16MB-21MB/124MB-118MB-130MB over 12)
-        Imp Fg: 0.44% (14MB-23MB-33MB/5.3MB-16MB-21MB/124MB-118MB-130MB over 12)
-      Receiver: 0.02%
-      (Cached): 0.13%
-  * com.crunchyroll.crunchyroid / u0a97 / v22374:
-         TOTAL: 0.44% (66MB-90MB-114MB/44MB-77MB-101MB/149MB-153MB-206MB over 8)
-           Top: 0.43% (66MB-90MB-114MB/44MB-77MB-101MB/149MB-153MB-206MB over 8)
-  * com.google.android.permissioncontroller / u0a81 / v311311000:
-         TOTAL: 0.41% (12MB-12MB-12MB/7.0MB-7.0MB-7.0MB/82MB-82MB-82MB over 1)
-        Imp Fg: 0.39% (12MB-12MB-12MB/7.0MB-7.0MB-7.0MB/82MB-82MB-82MB over 1)
-       Service: 0.01%
-      Receiver: 0.01%
-      (Cached): 20% (5.6MB-9.4MB-17MB/0.00-4.7MB-11MB/85MB-69MB-103MB over 35)
-  * com.neilturner.aerialviews / u0a106 / v148:
-         TOTAL: 0.40% (91MB-98MB-112MB/69MB-78MB-89MB/201MB-199MB-204MB over 4)
-           Top: 0.27% (91MB-98MB-112MB/69MB-78MB-89MB/201MB-199MB-204MB over 4)
-        Imp Fg: 0.02%
-        Imp Bg: 0.10%
-    (Last Act): 0.20% (19MB-19MB-19MB/15MB-15MB-15MB/79MB-79MB-79MB over 1)
-      (Cached): 6.1% (22MB-42MB-79MB/60KB-27MB-59MB/161MB-102MB-168MB over 22)
-  * com.google.process.gapps / u0a9 / v30:
-         TOTAL: 0.21%
-        Imp Fg: 0.17%
-        Imp Bg: 0.04%
-      Receiver: 0.01%
-    (Last Act): 1.2%
-      (Cached): 8.2% (5.2MB-7.7MB-12MB/708KB-3.4MB-5.7MB/86MB-71MB-99MB over 24)
-  * com.google.android.youtube.tv.recommendations / u0a34 / v530340320:
-         TOTAL: 0.17%
-        Imp Bg: 0.17%
-      (Cached): 77% (13MB-28MB-53MB/0.99MB-17MB-40MB/104MB-97MB-130MB over 55)
-  * com.tcl.useragreement / u0a42 / v10927:
-         TOTAL: 0.13% (14MB-18MB-22MB/8.8MB-11MB-14MB/93MB-100MB-107MB over 2)
-        Imp Fg: 0.11% (14MB-18MB-22MB/8.8MB-11MB-14MB/93MB-100MB-107MB over 2)
-      Receiver: 0.01%
-  * com.google.android.katniss:search / u0a19 / v15040477:
-         TOTAL: 0.12%
-        Imp Bg: 0.04%
-      Receiver: 0.08%
-      (Cached): 81% (19MB-30MB-49MB/3.6MB-18MB-34MB/64MB-106MB-183MB over 30)
-  * com.android.settings.intelligence / u0a57 / v30:
-         TOTAL: 0.10%
-        Imp Fg: 0.10%
-      (Cached): 5.4% (4.4MB-6.3MB-9.1MB/4.0KB-2.1MB-3.8MB/50MB-45MB-68MB over 20)
-  * android.process.acore / u0a14 / v30:
-         TOTAL: 0.08%
-        Imp Fg: 0.03%
-        Imp Bg: 0.05%
-    (Last Act): 0.67%
-      (Cached): 7.7% (6.8MB-8.9MB-23MB/0.00-4.0MB-14MB/96MB-64MB-104MB over 21)
-  * com.google.android.tts / u0a51 / v210688738:
-         TOTAL: 0.08%
-      Receiver: 0.07%
-      (Cached): 11% (12MB-32MB-53MB/0.00-25MB-43MB/124MB-94MB-141MB over 25)
-  * com.google.android.packageinstaller / u0a22 / v30:
-         TOTAL: 0.06%
-           Top: 0.03%
-        Imp Bg: 0.03%
-      Receiver: 0.01%
-      (Cached): 9.9% (4.4MB-8.4MB-23MB/0.00-3.9MB-13MB/94MB-66MB-94MB over 26)
-  * com.tcl.partnercustomizer / 1000 / v947:
-         TOTAL: 0.05%
-        Imp Bg: 0.04%
-      Receiver: 0.01%
-      (Cached): 29% (15MB-22MB-33MB/8.9MB-13MB-19MB/99MB-104MB-115MB over 15)
-  * android.process.media / u0a13 / v30:
-         TOTAL: 0.05%
-        Imp Fg: 0.03%
-      Receiver: 0.02%
+         TOTAL: 100% (12MB-12MB-14MB/560KB-2.5MB-5.0MB/21MB-21MB-57MB over 44)
+    Persistent: 100% (12MB-12MB-14MB/560KB-2.5MB-5.0MB/21MB-21MB-57MB over 44)
+  * com.tcl.settings / 1000 / v10610:
+         TOTAL: 100% (8.5MB-11MB-15MB/788KB-5.3MB-9.8MB/26MB-26MB-66MB over 42)
+        Imp Fg: 100% (8.5MB-11MB-15MB/788KB-5.3MB-9.8MB/26MB-26MB-66MB over 42)
+      (Cached): 0.04% (29MB-29MB-29MB/25MB-25MB-25MB/130MB-130MB-130MB over 1)
+  * com.netflix.ninja / u0a36 / v27249:
+         TOTAL: 99% (96MB-134MB-182MB/22MB-74MB-133MB/45MB-110MB-236MB over 79)
+           Top: 0.12% (115MB-138MB-162MB/105MB-119MB-133MB/236MB-214MB-236MB over 2)
+       Service: 99% (96MB-134MB-182MB/22MB-73MB-123MB/45MB-107MB-183MB over 77)
+  * com.spotify.tv.android / u0a101 / v147600562:
+         TOTAL: 99% (88MB-125MB-166MB/45MB-88MB-157MB/101MB-132MB-245MB over 61)
+           Top: 0.09% (137MB-147MB-166MB/118MB-130MB-157MB/245MB-236MB-245MB over 5)
+        Imp Fg: 99% (88MB-123MB-156MB/45MB-84MB-137MB/101MB-123MB-245MB over 56)
+  * me.efesser.flauncher / u0a62 / v366:
+         TOTAL: 65% (34MB-48MB-58MB/8.6MB-23MB-36MB/39MB-53MB-72MB over 30)
+           Top: 65% (34MB-48MB-58MB/8.6MB-23MB-36MB/39MB-53MB-72MB over 30)
+        (Home): 32% (35MB-42MB-47MB/1.9MB-9.9MB-31MB/21MB-34MB-68MB over 12)
     (Last Act): 0.24%
-      (Cached): 2.2% (6.3MB-8.1MB-16MB/832KB-4.1MB-8.6MB/85MB-92MB-99MB over 13)
-  * com.google.android.partnersetup / u0a78 / v1114:
-         TOTAL: 0.04%
-        Imp Bg: 0.04%
-      (Cached): 35% (6.5MB-13MB-15MB/1.5MB-4.4MB-5.1MB/80MB-82MB-99MB over 16)
-  * com.tcl.ui_mediaCenter / 1000 / v600003032:
-         TOTAL: 0.02%
-      Receiver: 0.02%
-      (Cached): 0.69% (9.0MB-9.4MB-10.0MB/1.5MB-4.7MB-7.0MB/108MB-101MB-108MB over 11)
-  * com.google.android.apps.nbu.smartconnect.tv / u0a11 / v7951:
-         TOTAL: 0.02%
-      Receiver: 0.02%
-      (Cached): 16% (6.6MB-10MB-17MB/4.0KB-5.4MB-11MB/99MB-72MB-112MB over 27)
-  * com.amazon.amazonvideo.livingroom / u0a54 / v606024130:
-         TOTAL: 0.02%
+  * com.neilturner.aerialviews / u0a106 / v148:
+         TOTAL: 23% (81MB-95MB-105MB/62MB-73MB-80MB/115MB-124MB-185MB over 12)
+           Top: 23% (81MB-95MB-105MB/62MB-73MB-80MB/115MB-124MB-185MB over 12)
+        Imp Fg: 0.01%
         Imp Bg: 0.02%
-      (Cached): 0.05% (22MB-22MB-22MB/16MB-16MB-16MB/113MB-113MB-113MB over 1)
-  * com.tcl.suspension / 1000 / v3235:
-         TOTAL: 0.02%
-      Receiver: 0.02%
-      (Cached): 8.1% (5.8MB-7.8MB-12MB/592KB-3.1MB-9.1MB/107MB-69MB-107MB over 22)
-  * com.android.providers.calendar / u0a21 / v30:
-         TOTAL: 0.02%
+    (Last Act): 0.02%
+      (Cached): 21% (22MB-33MB-84MB/20KB-15MB-67MB/39MB-55MB-176MB over 29)
+  * com.google.android.youtube.tv / u0a34 / v530340320:
+         TOTAL: 8.8% (98MB-144MB-232MB/70MB-110MB-175MB/123MB-152MB-203MB over 4)
+           Top: 8.7% (98MB-144MB-232MB/70MB-110MB-175MB/123MB-152MB-203MB over 4)
         Imp Fg: 0.01%
+        Imp Bg: 0.01%
+       Service: 0.08%
+    (Last Act): 24% (63MB-78MB-91MB/2.4MB-29MB-65MB/39MB-64MB-120MB over 11)
+      (Cached): 67% (19MB-69MB-108MB/7.5MB-32MB-90MB/44MB-77MB-215MB over 40)
+  * dev.plume / u0a74 / v10:
+         TOTAL: 3.1% (23MB-46MB-73MB/11MB-27MB-44MB/72MB-98MB-141MB over 15)
+           Top: 2.9% (23MB-46MB-73MB/11MB-27MB-44MB/72MB-98MB-141MB over 15)
+        Imp Fg: 0.20%
+        (Home): 0.10% (27MB-34MB-40MB/11MB-17MB-23MB/137MB-105MB-137MB over 2)
+  * com.tvlauncher / u0a63 / v10602:
+         TOTAL: 0.46% (25MB-61MB-86MB/13MB-46MB-68MB/110MB-112MB-147MB over 9)
+           Top: 0.46% (25MB-61MB-86MB/13MB-46MB-68MB/110MB-112MB-147MB over 9)
+        (Home): 0.10% (23MB-28MB-32MB/8.4MB-15MB-21MB/108MB-80MB-108MB over 2)
+    (Last Act): 0.05%
+  * com.google.android.gms.unstable / u0a9 / v264330115:
+         TOTAL: 0.28% (54MB-57MB-59MB/18MB-21MB-24MB/213MB-216MB-218MB over 2)
+        Imp Fg: 0.23% (54MB-57MB-59MB/18MB-21MB-24MB/213MB-216MB-218MB over 2)
+        Imp Bg: 0.01%
+       Service: 0.03%
+      (Cached): 69% (10MB-18MB-79MB/156KB-7.1MB-59MB/29MB-43MB-191MB over 43)
+  * com.android.vending / u0a30 / v85341708:
+         TOTAL: 0.26%
+           Top: 0.08%
+        Imp Fg: 0.09%
+        Imp Bg: 0.07%
+       Service: 0.02%
       Receiver: 0.01%
+    (Last Act): 1.8% (65MB-83MB-113MB/47MB-63MB-85MB/120MB-133MB-176MB over 18)
+      (Cached): 88% (34MB-56MB-113MB/708KB-28MB-97MB/35MB-73MB-209MB over 32)
+  * com.google.android.permissioncontroller / u0a81 / v311311000:
+         TOTAL: 0.24% (10MB-10MB-10MB/5.4MB-5.4MB-5.4MB/44MB-44MB-44MB over 1)
+           Top: 0.05%
+        Imp Fg: 0.19% (10MB-10MB-10MB/5.4MB-5.4MB-5.4MB/44MB-44MB-44MB over 1)
+      (Cached): 80% (6.5MB-12MB-46MB/4.0KB-5.7MB-28MB/23MB-41MB-127MB over 47)
+  * org.jellyfin.androidtv / u0a87 / v191099:
+         TOTAL: 0.22% (48MB-67MB-96MB/40MB-57MB-80MB/191MB-134MB-191MB over 5)
+           Top: 0.12% (48MB-67MB-96MB/40MB-57MB-80MB/191MB-134MB-191MB over 5)
+        Imp Bg: 0.11%
+    (Last Act): 0.09%
+      (Cached): 99% (34MB-47MB-65MB/3.3MB-30MB-46MB/56MB-65MB-103MB over 48)
+  * com.android.vending:background / u0a30 / v85341708:
+         TOTAL: 0.17%
+        Imp Fg: 0.08%
+        Imp Bg: 0.06%
+       Service: 0.03%
+    (Last Act): 0.65% (36MB-40MB-44MB/22MB-25MB-26MB/71MB-76MB-90MB over 7)
+      (Cached): 99% (27MB-40MB-97MB/1.6MB-24MB-74MB/36MB-65MB-169MB over 42)
+  * nl.giejay.android.tv.immich / u0a107 / v148:
+         TOTAL: 0.14% (34MB-53MB-73MB/24MB-36MB-57MB/173MB-118MB-173MB over 6)
+           Top: 0.12% (34MB-53MB-73MB/24MB-36MB-57MB/173MB-118MB-173MB over 6)
+        Imp Bg: 0.02%
     (Last Act): 0.04%
-      (Cached): 45% (5.0MB-8.3MB-15MB/64KB-3.4MB-6.1MB/86MB-71MB-102MB over 35)
-  * com.android.keychain / 1000 / v30:
+      (Cached): 3.5% (20MB-28MB-40MB/4.6MB-18MB-27MB/112MB-68MB-112MB over 20)
+  * com.crunchyroll.crunchyroid / u0a97 / v22374:
+         TOTAL: 0.12% (83MB-115MB-155MB/72MB-106MB-147MB/190MB-172MB-210MB over 4)
+           Top: 0.11% (83MB-115MB-155MB/72MB-106MB-147MB/190MB-172MB-210MB over 4)
+        Imp Bg: 0.01%
+       Service: 0.01%
+      (Cached): 0.09% (47MB-52MB-54MB/28MB-32MB-35MB/77MB-74MB-77MB over 3)
+  * com.google.process.gservices / u0a9 / v30:
+         TOTAL: 0.09%
+        Imp Fg: 0.07%
+        Imp Bg: 0.02%
+    (Last Act): 3.4% (5.8MB-5.9MB-6.0MB/1.5MB-2.3MB-2.8MB/19MB-19MB-20MB over 3)
+      (Cached): 97% (5.4MB-5.9MB-6.8MB/44KB-2.0MB-4.5MB/18MB-22MB-90MB over 39)
+  * com.android.settings.intelligence / u0a57 / v30:
+         TOTAL: 0.07%
+        Imp Fg: 0.07%
+      (Cached): 13% (4.9MB-6.7MB-18MB/120KB-2.1MB-5.7MB/26MB-32MB-80MB over 24)
+  * com.google.android.youtube.tv.recommendations / u0a34 / v530340320:
+         TOTAL: 0.06%
+        Imp Bg: 0.06%
+      (Cached): 84% (13MB-31MB-76MB/1.4MB-20MB-67MB/32MB-66MB-120MB over 42)
+  * com.google.process.gapps / u0a9 / v30:
+         TOTAL: 0.02%
+        Imp Fg: 0.01%
+    (Last Act): 0.16%
+      (Cached): 62% (5.2MB-8.8MB-30MB/12KB-3.7MB-19MB/22MB-35MB-100MB over 40)
+  * com.google.android.tts / u0a51 / v210693698:
+         TOTAL: 0.01%
+        Imp Bg: 0.01%
+      (Cached): 79% (11MB-19MB-73MB/4.0KB-9.0MB-57MB/26MB-41MB-139MB over 41)
+  * android.process.acore / u0a14 / v30:
          TOTAL: 0.01%
         Imp Fg: 0.01%
-      (Cached): 2.8% (5.2MB-6.5MB-8.9MB/2.2MB-2.8MB-3.8MB/93MB-85MB-94MB over 15)
-  * com.android.localtransport / 1000 / v30:
+    (Last Act): 0.33%
+      (Cached): 49% (6.9MB-18MB-51MB/32KB-9.0MB-42MB/25MB-54MB-105MB over 24)
+  * com.tcl.partnercustomizer / 1000 / v947:
          TOTAL: 0.01%
-        Imp Fg: 0.01%
-      (Cached): 0.70% (5.3MB-5.7MB-6.0MB/1.6MB-3.0MB-3.4MB/94MB-93MB-94MB over 10)
-  * com.google.android.apps.tv.dreamx / u0a28 / v556208:
-         TOTAL: 0.01%
-      Receiver: 0.01%
-      (Cached): 1.2% (16MB-23MB-29MB/13MB-19MB-23MB/104MB-102MB-111MB over 5)
-  * WebViewLoader-armeabi-v7a / 1000 / v0:
-         TOTAL: 0.01%
-    Persistent: 0.01%
-  * com.android.externalstorage / u0a10 / v30:
+        Imp Bg: 0.01%
+      (Cached): 6.5% (9.8MB-19MB-63MB/624KB-8.5MB-45MB/24MB-34MB-113MB over 13)
+  * com.android.providers.calendar / u0a21 / v30:
          TOTAL: 0.01%
       Receiver: 0.01%
-      (Cached): 7.8% (4.1MB-5.2MB-6.4MB/0.00-2.0MB-4.1MB/95MB-62MB-95MB over 21)
-  * com.android.vending:instant_app_installer / u0a30 / v85341708:
-         TOTAL: 0.01%
-      (Cached): 3.0% (32MB-38MB-49MB/20MB-28MB-40MB/120MB-117MB-123MB over 5)
-  * com.tcl.assistant / 1000 / v610106446:
-         TOTAL: 0.01%
-      Receiver: 0.01%
-      (Cached): 0.03%
-  * com.tcl.micmanager / 1000 / v160:
-         TOTAL: 0.01%
-      Receiver: 0.01%
-      (Cached): 32% (5.6MB-8.0MB-15MB/504KB-3.4MB-5.4MB/93MB-75MB-94MB over 28)
-  * com.android.messaging / u0a75 / v1000100:
-         TOTAL: 0.01%
-      (Cached): 0.14% (6.6MB-6.7MB-6.8MB/0.97MB-2.5MB-4.3MB/100MB-96MB-100MB over 3)
-  * com.google.android.youtube.tvmusic / u0a39 / v112007300:
-         TOTAL: 0.01%
-           Top: 0.01%
-      (Cached): 6.7% (8.2MB-12MB-22MB/12KB-5.4MB-13MB/122MB-63MB-122MB over 20)
-  * com.android.dynsystem:dynsystem / 1000 / v30:
-      (Cached): 1.2% (5.3MB-5.6MB-6.0MB/612KB-2.4MB-3.4MB/94MB-90MB-94MB over 11)
-  * com.android.dynsystem / 1000 / v30:
-      (Cached): 0.64% (5.2MB-5.4MB-5.8MB/872KB-2.6MB-3.4MB/93MB-90MB-93MB over 9)
-  * com.tcl.logkit / 1000 / v27:
-  * com.android.shell / 2000 / v30:
-      (Cached): 6.6% (4.2MB-5.3MB-6.4MB/0.00-1.7MB-3.8MB/95MB-68MB-95MB over 18)
-  * com.google.android.onetimeinitializer / u0a76 / v30:
-      (Cached): 0.63% (5.4MB-5.5MB-5.6MB/3.4MB-3.5MB-3.5MB/93MB-88MB-93MB over 3)
+    (Last Act): 0.02%
+      (Cached): 76% (5.1MB-12MB-38MB/32KB-5.4MB-29MB/24MB-43MB-101MB over 30)
   * com.tcl.tcl_bt_rcu_service / 1000 / v2:
+         TOTAL: 0.01%
+       Service: 0.01%
+  * android.process.media / u0a13 / v30:
+         TOTAL: 0.01%
+    (Last Act): 0.02%
+      (Cached): 26% (4.9MB-9.8MB-30MB/184KB-3.4MB-8.1MB/27MB-45MB-99MB over 19)
+  * com.android.keychain / 1000 / v30:
+      (Cached): 0.05% (5.7MB-5.7MB-5.7MB/3.1MB-3.1MB-3.1MB/94MB-94MB-94MB over 1)
+  * com.google.android.packageinstaller / u0a22 / v30:
+      (Cached): 3.7% (4.4MB-7.2MB-12MB/124KB-2.1MB-4.8MB/94MB-46MB-94MB over 11)
+  * com.google.android.apps.nbu.smartconnect.tv / u0a11 / v7951:
+      (Cached): 11% (6.7MB-9.7MB-14MB/1.1MB-5.8MB-11MB/31MB-52MB-112MB over 9)
+  * com.android.vending:instant_app_installer / u0a30 / v85341708:
+      (Cached): 33% (22MB-31MB-63MB/13MB-22MB-54MB/31MB-56MB-104MB over 12)
   * com.tcl.gallery / 1000 / v610097304:
+  * WebViewLoader-armeabi-v7a / 1000 / v0:
+  * com.tcl.ui_mediaCenter / 1000 / v600003032:
+      (Cached): 0.06% (9.8MB-9.8MB-9.9MB/6.9MB-6.9MB-6.9MB/108MB-107MB-108MB over 2)
+  * com.android.localtransport / 1000 / v30:
+      (Cached): 0.05% (5.8MB-5.8MB-5.8MB/3.2MB-3.2MB-3.2MB/94MB-94MB-94MB over 1)
+  * com.tcl.suspension / 1000 / v3235:
+      (Cached): 0.50% (5.8MB-10MB-14MB/0.91MB-6.2MB-9.6MB/106MB-83MB-108MB over 3)
+  * com.google.android.youtube.tvmusic / u0a39 / v112007300:
+      (Cached): 100% (8.3MB-9.0MB-18MB/8.0KB-1.1MB-11MB/17MB-22MB-121MB over 43)
+  * com.android.dynsystem / 1000 / v30:
+      (Cached): 0.26% (5.6MB-5.7MB-5.8MB/3.2MB-3.2MB-3.2MB/94MB-94MB-94MB over 2)
+  * com.android.dynsystem:dynsystem / 1000 / v30:
+      (Cached): 0.35% (5.8MB-5.9MB-6.0MB/3.4MB-3.4MB-3.4MB/94MB-94MB-94MB over 2)
+  * com.android.externalstorage / u0a10 / v30:
+      (Cached): 0.48% (4.2MB-5.6MB-6.3MB/540KB-2.6MB-3.6MB/95MB-74MB-95MB over 3)
+  * com.android.shell / 2000 / v30:
+      (Cached): 0.49% (4.3MB-5.8MB-6.6MB/2.0MB-3.2MB-3.8MB/96MB-75MB-96MB over 3)
 
 Run time Stats:
-  SOff/Norm: +6h35m17s823ms
-   SOn/Norm: +6h23m50s363ms
-        Mod: +32s678ms
-        Low: +1s837ms
-      TOTAL: +12h59m42s701ms
+  SOff/Norm: +14h45m42s115ms
+        Mod: +19s795ms
+        Low: +5s585ms
+       Crit: +247ms
+   SOn/Norm: +8h55m53s519ms
+        Mod: +5s606ms
+      TOTAL: +23h42m6s867ms
 
 Memory usage:
-  Kernel : 131MB (203 samples)
-  Native : 254MB (203 samples)
-  Persist: 246MB (994 samples)
-  Top: 102MB (278 samples)
-  ImpFg: 297MB (2076 samples)
-  ImpBg: 24MB (774 samples)
-  Service: 21MB (1032 samples)
-  Receivr: 226KB (1398 samples)
-  Home: 15MB (60 samples)
-  LastAct: 51MB (592 samples)
-  CchAct: 9.2MB (156 samples)
-  CchCAct: 408KB (39 samples)
-  CchEmty: 102MB (1749 samples)
-  Cached : 221MB (203 samples)
-  Free   : 135MB (203 samples)
-  Z-Ram  : 70MB (203 samples)
-  TOTAL  : 1.6GB
-  ServRst: 117MB (691 samples)
+  Kernel : 137MB (179 samples)
+  Native : 253MB (179 samples)
+  Persist: 209MB (864 samples)
+  Top: 65MB (306 samples)
+  ImpFg: 267MB (1859 samples)
+  ImpBg: 31MB (1226 samples)
+  Service: 190MB (1546 samples)
+  Receivr: 13KB (1096 samples)
+  Home: 13MB (16 samples)
+  LastAct: 21MB (551 samples)
+  CchAct: 111MB (345 samples)
+  CchCAct: 81KB (51 samples)
+  CchEmty: 205MB (1117 samples)
+  Cached : 165MB (179 samples)
+  Free   : 115MB (179 samples)
+  Z-Ram  : 154MB (179 samples)
+  TOTAL  : 1.9GB
+  ServRst: 2.3KB (280 samples)
 
 PSS collection stats:
-  Internal Single: 1463x over +17s197ms
-  Internal All Procs (Memory Change): 86x over +824ms
-  Internal All Procs (Polling): 160x over +1s602ms
+  Internal Single: 932x over +10s940ms
+  Internal All Procs (Memory Change): 120x over +1s277ms
+  Internal All Procs (Polling): 258x over +2s589ms
   External: 0x over 0
-  External Slow: 532x over +1m25s305ms
+  External Slow: 457x over +1m25s962ms

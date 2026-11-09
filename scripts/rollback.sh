@@ -28,6 +28,23 @@ while read -r p; do
   report change "$p" "disable"; do_or_show tv_shell pm disable-user --user 0 "$p"
 done < <(comm -13 <(echo "$now") "$dir/disabled.txt")
 
+log "uninstalled apps"
+if [[ -f "$dir/uninstall.txt" ]]; then
+  while read -r pkg was; do
+    [[ -z "$pkg" ]] && continue
+    if tv_shell pm list packages | grep -qxF "package:$pkg"; then report ok "$pkg" "installed"; continue; fi
+    apks=("$dir/apks/$pkg"/*.apk)
+    if [[ ! -f "${apks[0]}" ]]; then
+      report skip "$pkg" "no APK in this backup (APKs stay out of git) — reinstall it from the Play Store"; continue
+    fi
+    report change "$pkg" "reinstall versionCode $was (its data was not kept)"
+    [[ $APPLY -eq 1 ]] || continue
+    if (( ${#apks[@]} > 1 )); then out="$(tv_adb install-multiple -r "${apks[@]}" 2>&1 || true)"
+    else out="$(tv_adb install -r "${apks[0]}" 2>&1 || true)"; fi
+    tv_shell pm list packages | grep -qxF "package:$pkg" || report fail "$pkg" "reinstall failed: $(tail -n1 <<<"$out")"
+  done <"$dir/uninstall.txt"
+fi
+
 log "settings"
 while read -r ns key val; do
   [[ -z "$ns" ]] && continue
@@ -73,6 +90,21 @@ want="$(cat "$dir/home.txt")"
 cur="$(tv_shell cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME | tail -n1)"
 if [[ "$cur" == "$want" ]]; then report ok "home" "$want"
 else report change "home" "$cur -> $want"; do_or_show tv_shell cmd package set-home-activity --user 0 "$want"; fi
+
+log "apps"
+if [[ -f "$dir/apps.txt" ]]; then
+  while read -r pkg was; do
+    [[ -z "$pkg" ]] && continue
+    now="$(tv_shell pm list packages --show-versioncode "$pkg" | sed -nE "s/^package:${pkg//./\\.} versionCode:([0-9]+)$/\1/p")"
+    if [[ "$was" == "absent" && -n "$now" ]]; then
+      report change "$pkg" "uninstall (not installed at backup time)"; do_or_show tv_adb uninstall "$pkg"
+    elif [[ "$was" != "absent" && -n "$now" && "$now" != "$was" ]]; then
+      report skip "$pkg" "versionCode $now, backup had $was (Android can't downgrade; reinstall by hand if needed)"
+    else
+      report ok "$pkg" "${now:-absent}"
+    fi
+  done <"$dir/apps.txt"
+fi
 
 print_totals
 [[ $APPLY -eq 1 ]] && log "done — reboot the TV (Settings → System → Restart) to settle everything"

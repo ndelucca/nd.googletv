@@ -1,2 +1,2 @@
- 03:04:57 up 17 min,  0 users,  load average: 28.61, 30.23, 21.39
-loadavg: 28.61 30.23 21.39 8/2360 2966
+ 13:24:09 up 7 min,  0 users,  load average: 26.79, 22.55, 11.46
+loadavg: 26.79 22.55 11.46 3/2365 2606

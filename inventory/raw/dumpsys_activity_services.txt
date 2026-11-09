@@ -1,92 +1,117 @@
 ACTIVITY MANAGER SERVICES (dumpsys activity services)
   User 0 active services:
-  * ServiceRecord{a51bfae u0 com.google.android.gms/.play.integrity.api.service.IntegrityApiPersistentService}
+  * ServiceRecord{60c374d u0 com.google.android.gms/.play.integrity.api.service.IntegrityApiPersistentService}
     intent={cmp=com.google.android.gms/.play.integrity.api.service.IntegrityApiPersistentService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m59s989ms startingBgTimeout=--
-    lastActivity=-16m42s122ms restartTime=-16m59s989ms createdFromFg=true
+    createTime=-7m20s826ms startingBgTimeout=--
+    lastActivity=-7m11s86ms restartTime=-7m20s826ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
 
-  * ServiceRecord{e6520f u0 com.google.android.gms/.chimera.PersistentInternalBoundBrokerService}
+  * ServiceRecord{5bfb292 u0 com.google.android.gms/.chimera.PersistentInternalBoundBrokerService}
     intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.kids.INVALIDATION_SERVICE cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m47s383ms startingBgTimeout=--
-    lastActivity=-16m47s383ms restartTime=-16m47s383ms createdFromFg=true
+    createTime=-7m14s369ms startingBgTimeout=--
+    lastActivity=-7m14s369ms restartTime=-7m14s369ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{e818464 CREATE}:
+    * IntentBindRecord{fd7d70 CREATE}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.kids.INVALIDATION_SERVICE cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService}
-      binder=android.os.BinderProxy@cd406cd
+      binder=android.os.BinderProxy@cc6b8e9
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{fe78b82 ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}}
+      * Client AppBindRecord{a29e96e ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}}
         Per-process Connections:
-          ConnectionRecord{380cb6e u0 CR com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:@f83e2e9}
+          ConnectionRecord{187201d u0 CR com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:@c36f0f4}
     All Connections:
-      ConnectionRecord{380cb6e u0 CR com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:@f83e2e9}
+      ConnectionRecord{187201d u0 CR com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:@c36f0f4}
 
-  * ServiceRecord{e0a4945 u0 com.google.android.tv.remote.service/.DiscoveryService}
+  * ServiceRecord{9e66eb2 u0 com.google.android.tv.remote.service/.DiscoveryService}
     intent={cmp=com.google.android.tv.remote.service/.DiscoveryService}
     packageName=com.google.android.tv.remote.service
     processName=com.google.android.tv.remote.service
     baseDir=/data/app/~~DMQdR9CwHbDEwJFDaL96kw==/com.google.android.tv.remote.service-w1oN967Id995wyRnEaRmug==/base.apk
     dataDir=/data/user/0/com.google.android.tv.remote.service
-    app=ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}
+    app=ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=1
     recentCallingPackage=com.google.android.tv.remote.service
     isForeground=true foregroundId=8765 foregroundNoti=Notification(channel=atv_remote_service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE)
-    createTime=-17m6s38ms startingBgTimeout=--
-    lastActivity=-17m6s37ms restartTime=-17m6s37ms createdFromFg=true
+    createTime=-7m25s652ms startingBgTimeout=--
+    lastActivity=-7m25s651ms restartTime=-7m25s651ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{aa43293 CREATE}:
+    * IntentBindRecord{20c180f CREATE}:
       intent={cmp=com.google.android.tv.remote.service/.DiscoveryService}
       binder=null
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{482d0 ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}}
+      * Client AppBindRecord{915009c ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}}
         Per-process Connections:
-          ConnectionRecord{a5e5bc u0 CR com.google.android.tv.remote.service/.DiscoveryService:@4aaddaf}
+          ConnectionRecord{6a0b8bd u0 CR com.google.android.tv.remote.service/.DiscoveryService:@a0b0814}
     All Connections:
-      ConnectionRecord{a5e5bc u0 CR com.google.android.tv.remote.service/.DiscoveryService:@4aaddaf}
+      ConnectionRecord{6a0b8bd u0 CR com.google.android.tv.remote.service/.DiscoveryService:@a0b0814}
 
-  * ServiceRecord{4a5a971 u0 com.tcl.tvinput/.TDTVInputService}
+  * ServiceRecord{e88b503 u0 com.tcl.tvinput/.TDTVInputService}
     intent={act=android.media.tv.TvInputService cmp=com.tcl.tvinput/.TDTVInputService}
     packageName=com.tcl.tvinput
     processName=com.tcl.tvinput
     permission=android.permission.BIND_TV_INPUT
     baseDir=/product/app/TIF_TvInput/TIF_TvInput.apk
     dataDir=/data/user_de/0/com.tcl.tvinput
-    app=ProcessRecord{bf24d2a 1071:com.tcl.tvinput/1000}
+    app=ProcessRecord{3ae87af 1082:com.tcl.tvinput/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m14s824ms startingBgTimeout=--
-    lastActivity=-16m53s591ms restartTime=-17m14s615ms createdFromFg=true
+    createTime=-7m33s560ms startingBgTimeout=--
+    lastActivity=-7m18s798ms restartTime=-7m33s453ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{ea742c9 CREATE}:
+    * IntentBindRecord{8c8faa5 CREATE}:
       intent={act=android.media.tv.TvInputService cmp=com.tcl.tvinput/.TDTVInputService}
-      binder=android.os.BinderProxy@406ddce
+      binder=android.os.BinderProxy@a8f2e7a
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{9d564ef ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{b7c262b ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{7818e91 u0 CR FGSA com.tcl.tvinput/.TDTVInputService:@53d00b8}
+          ConnectionRecord{d819a9a u0 CR FGSA com.tcl.tvinput/.TDTVInputService:@ecf0345}
     All Connections:
-      ConnectionRecord{7818e91 u0 CR FGSA com.tcl.tvinput/.TDTVInputService:@53d00b8}
+      ConnectionRecord{d819a9a u0 CR FGSA com.tcl.tvinput/.TDTVInputService:@ecf0345}
 
-  * ServiceRecord{476fbfc u0 org.jellyfin.androidtv/org.acra.sender.JobSenderService}
+  * ServiceRecord{d379f11 u0 dev.plume/.HomeOverride}
+    intent={cmp=dev.plume/.HomeOverride}
+    packageName=dev.plume
+    processName=dev.plume
+    permission=android.permission.BIND_ACCESSIBILITY_SERVICE
+    baseDir=/data/app/~~OJ1KV1v3eIBR_dHwBE_rOQ==/dev.plume-pKHqbdOHpejJj1kUE0Pj_Q==/base.apk
+    dataDir=/data/user/0/dev.plume
+    app=ProcessRecord{1ab418 1580:dev.plume/u0a74}
+    hasBindingWhitelistingBgActivityStarts=true
+    allowWhileInUsePermissionInFgs=true
+    startForegroundCount=0
+    recentCallingPackage=android
+    createTime=-7m27s894ms startingBgTimeout=--
+    lastActivity=-7m27s727ms restartTime=-7m27s727ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{7daa4f7 CREATE}:
+      intent={cmp=dev.plume/.HomeOverride}
+      binder=android.os.BinderProxy@465af64
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{61455cd ProcessRecord{b96429f 730:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{435998d u0 CR FGSA CAPS dev.plume/.HomeOverride:@676aa24}
+    All Connections:
+      ConnectionRecord{435998d u0 CR FGSA CAPS dev.plume/.HomeOverride:@676aa24}
+
+  * ServiceRecord{7bf8a88 u0 org.jellyfin.androidtv/org.acra.sender.JobSenderService}
     intent={cmp=org.jellyfin.androidtv/org.acra.sender.JobSenderService}
     packageName=org.jellyfin.androidtv
     processName=org.jellyfin.androidtv:acra
@@ -97,1327 +122,1356 @@ ACTIVITY MANAGER SERVICES (dumpsys activity services)
     allowWhileInUsePermissionInFgs=false
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-3m36s39ms startingBgTimeout=--
-    lastActivity=-3m36s39ms restartTime=-- createdFromFg=true
+    createTime=-3m55s535ms startingBgTimeout=--
+    lastActivity=-3m55s535ms restartTime=-- createdFromFg=true
 
-  * ServiceRecord{4ff1e6e u0 com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
+  * ServiceRecord{21d0b10 u0 com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
     intent={cmp=com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
     packageName=com.android.providers.media.module
     processName=com.android.providers.media.module
     permission=android.permission.BIND_EXTERNAL_STORAGE_SERVICE
     baseDir=/apex/com.android.mediaprovider/priv-app/MediaProvider/MediaProvider.apk
     dataDir=/data/user/0/com.android.providers.media.module
-    app=ProcessRecord{f90faf2 1548:com.android.providers.media.module/u0a85}
+    app=ProcessRecord{3807fac 1502:com.android.providers.media.module/u0a85}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m9s654ms startingBgTimeout=--
-    lastActivity=-17m9s207ms restartTime=-17m9s207ms createdFromFg=true
+    createTime=-7m28s451ms startingBgTimeout=--
+    lastActivity=-7m28s336ms restartTime=-7m28s336ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{8584285 CREATE}:
+    * IntentBindRecord{5f39c21 CREATE}:
       intent={cmp=com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
-      binder=android.os.BinderProxy@9b708da
+      binder=android.os.BinderProxy@4d1b846
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{a3d610b ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{f94fa07 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{be8cdfd u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@63d2a54}
+          ConnectionRecord{ea8e95f u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@afcedfe}
     All Connections:
-      ConnectionRecord{be8cdfd u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@63d2a54}
+      ConnectionRecord{ea8e95f u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@afcedfe}
 
-  * ServiceRecord{adabca9 u0 com.spotify.tv.android/com.spotify.androidtv.foregroundmediaservice.ForegroundMediaService}
+  * ServiceRecord{e170fd0 u0 com.spotify.tv.android/com.spotify.androidtv.foregroundmediaservice.ForegroundMediaService}
     intent={cmp=com.spotify.tv.android/com.spotify.androidtv.foregroundmediaservice.ForegroundMediaService}
     packageName=com.spotify.tv.android
     processName=com.spotify.tv.android
     baseDir=/data/app/~~kjpS6l2UnUiZfD41PGRS6A==/com.spotify.tv.android-axpXj6wttEPLEf0Yos3Vgw==/base.apk
     dataDir=/data/user/0/com.spotify.tv.android
-    app=ProcessRecord{1a93a4f 1784:com.spotify.tv.android/u0a101}
+    app=ProcessRecord{2be5576 3936:com.spotify.tv.android/u0a101}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=1
     recentCallingPackage=com.spotify.tv.android
     isForeground=true foregroundId=1001 foregroundNoti=Notification(channel=spotify-media shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 category=transport vis=PRIVATE)
-    createTime=-3m44s46ms startingBgTimeout=--
-    lastActivity=-3m44s45ms restartTime=-3m44s45ms createdFromFg=true
+    createTime=-4m27s575ms startingBgTimeout=--
+    lastActivity=-4m27s574ms restartTime=-4m27s574ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{e77b05f u0 com.tcl.tv/.service.FunctionService}
+  * ServiceRecord{fafffb9 u0 com.tcl.tv/.service.FunctionService}
     intent={cmp=com.tcl.tv/.service.FunctionService}
     packageName=com.tcl.tv
     processName=com.tcl.tv
     baseDir=/product/app/TIF_LiveTV/TIF_LiveTV.apk
     dataDir=/data/user/0/com.tcl.tv
-    app=ProcessRecord{608e153 1525:com.tcl.tv/1000}
+    app=ProcessRecord{6cd440c 1538:com.tcl.tv/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.tcl.tvinput
-    createTime=-16m53s325ms startingBgTimeout=--
-    lastActivity=-16m53s325ms restartTime=-16m53s325ms createdFromFg=true
+    createTime=-7m18s531ms startingBgTimeout=--
+    lastActivity=-7m18s530ms restartTime=-7m18s530ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{8f7fffb u0 com.android.bluetooth/.btservice.AdapterService}
+  * ServiceRecord{f06c734 u0 org.jellyfin.androidtv/org.jellyfin.playback.media3.session.AndroidMediaService}
+    intent={act=android.media.browse.MediaBrowserService cmp=org.jellyfin.androidtv/org.jellyfin.playback.media3.session.AndroidMediaService}
+    packageName=org.jellyfin.androidtv
+    processName=org.jellyfin.androidtv
+    baseDir=/data/app/~~GmYLoRtTCFiHlw3mfqj_ZA==/org.jellyfin.androidtv-jvxBn27XU6mU_pp-OKT6oA==/base.apk
+    dataDir=/data/user/0/org.jellyfin.androidtv
+    app=null
+    allowWhileInUsePermissionInFgs=false
+    startForegroundCount=0
+    recentCallingPackage=com.android.bluetooth
+    createTime=-7m27s127ms startingBgTimeout=--
+    lastActivity=-7m27s127ms restartTime=-- createdFromFg=true
+
+  * ServiceRecord{8b5dc50 u0 com.android.bluetooth/.btservice.AdapterService}
     intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m15s399ms startingBgTimeout=--
-    lastActivity=-17m15s238ms restartTime=-17m15s238ms createdFromFg=true
+    createTime=-7m34s85ms startingBgTimeout=--
+    lastActivity=-7m33s843ms restartTime=-7m33s843ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{935dbe8 CREATE}:
+    * IntentBindRecord{cccd95d CREATE}:
       intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
-      binder=android.os.BinderProxy@25f8201
+      binder=android.os.BinderProxy@86112d2
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{a0cd8a6 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{57d2fa3 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{69ed40e u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@7e82a09}
+          ConnectionRecord{2180d71 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8f4af18}
     All Connections:
-      ConnectionRecord{69ed40e u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@7e82a09}
+      ConnectionRecord{2180d71 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8f4af18}
 
-  * ServiceRecord{f5f5d1c u0 com.tcl.tvinput/.server.DataUpdateService}
+  * ServiceRecord{25704ba u0 com.tcl.tvinput/.server.DataUpdateService}
     intent={act=com.tcl.tvinput.action.SYNC pkg=com.tcl.tvinput}
     packageName=com.tcl.tvinput
     processName=com.tcl.tvinput
     baseDir=/product/app/TIF_TvInput/TIF_TvInput.apk
     dataDir=/data/user_de/0/com.tcl.tvinput
-    app=ProcessRecord{bf24d2a 1071:com.tcl.tvinput/1000}
+    app=ProcessRecord{3ae87af 1082:com.tcl.tvinput/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.tcl.tv
-    createTime=-13m18s415ms startingBgTimeout=--
-    lastActivity=-13m18s414ms restartTime=-13m18s414ms createdFromFg=true
+    createTime=-3m40s27ms startingBgTimeout=--
+    lastActivity=-3m40s26ms restartTime=-3m40s26ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{7df02e7 CREATE}:
+    * IntentBindRecord{5e322a0 CREATE}:
       intent={act=com.tcl.tvinput.action.SYNC pkg=com.tcl.tvinput}
-      binder=android.os.BinderProxy@280ce94
+      binder=android.os.BinderProxy@e02ae59
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{a413d3d ProcessRecord{608e153 1525:com.tcl.tv/1000}}
+      * Client AppBindRecord{a198a1e ProcessRecord{6cd440c 1538:com.tcl.tv/1000}}
         Per-process Connections:
-          ConnectionRecord{8cc168f u0 CR com.tcl.tvinput/.server.DataUpdateService:@d08d1ee}
+          ConnectionRecord{8d41e5 u0 CR com.tcl.tvinput/.server.DataUpdateService:@42cdcdc}
     All Connections:
-      ConnectionRecord{8cc168f u0 CR com.tcl.tvinput/.server.DataUpdateService:@d08d1ee}
+      ConnectionRecord{8d41e5 u0 CR com.tcl.tvinput/.server.DataUpdateService:@42cdcdc}
 
-  * ServiceRecord{69c2dc4 u0 com.android.systemui/.ImageWallpaper}
+  * ServiceRecord{3c82eaa u0 com.android.systemui/.ImageWallpaper}
     intent={act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper}
     packageName=com.android.systemui
     processName=com.android.systemui
     permission=android.permission.BIND_WALLPAPER
     baseDir=/system/system_ext/priv-app/SystemUI/SystemUI.apk
     dataDir=/data/user_de/0/com.android.systemui
-    app=ProcessRecord{75dfbcd 987:com.android.systemui/u0a79}
+    app=ProcessRecord{6708cc0 1008:com.android.systemui/u0a79}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m15s308ms startingBgTimeout=--
-    lastActivity=-17m14s880ms restartTime=-17m15s158ms createdFromFg=true
+    createTime=-7m33s992ms startingBgTimeout=--
+    lastActivity=-7m33s612ms restartTime=-7m33s912ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{89dd932 CREATE}:
+    * IntentBindRecord{62922ff CREATE}:
       intent={act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper}
-      binder=android.os.BinderProxy@20ee683
+      binder=android.os.BinderProxy@867c8cc
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{6e64000 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{d26d715 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{7d62d64 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@4e65af7}
-          ConnectionRecord{9c621ca u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@fa16935}
+          ConnectionRecord{89df73a u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@9a66e65}
+          ConnectionRecord{ed36e43 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@484a7f2}
     All Connections:
-      ConnectionRecord{7d62d64 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@4e65af7}
-      ConnectionRecord{9c621ca u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@fa16935}
+      ConnectionRecord{ed36e43 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@484a7f2}
+      ConnectionRecord{89df73a u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@9a66e65}
 
-  * ServiceRecord{3f33572 u0 com.google.android.gms/.auth.setup.devicesignals.LockScreenService}
+  * ServiceRecord{cf971ad u0 com.google.android.gms/.auth.setup.devicesignals.LockScreenService}
     intent={cmp=com.google.android.gms/.auth.setup.devicesignals.LockScreenService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m48s537ms startingBgTimeout=--
-    lastActivity=-16m48s535ms restartTime=-16m48s535ms createdFromFg=true
+    createTime=-7m14s836ms startingBgTimeout=--
+    lastActivity=-7m14s835ms restartTime=-7m14s835ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{26f6ecc u0 com.google.android.gms/.gcm.GcmService}
+  * ServiceRecord{608d763 u0 com.google.android.gms/.gcm.GcmService}
     intent={pkg=com.google.android.gms cmp=com.google.android.gms/.gcm.GcmService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     permission=com.google.android.gtalkservice.permission.GTALK_SERVICE
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-17m2s241ms startingBgTimeout=--
-    lastActivity=-16m31s615ms restartTime=-17m2s240ms createdFromFg=true
+    createTime=-7m21s380ms startingBgTimeout=--
+    lastActivity=-7m5s451ms restartTime=-7m21s373ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=4
 
-  * ServiceRecord{ba68fe9 u0 com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService}
+  * ServiceRecord{98eb3c3 u0 com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService}
     intent={cmp=com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-17m3s376ms startingBgTimeout=--
-    lastActivity=-16m44s928ms restartTime=-17m3s375ms createdFromFg=true
+    createTime=-7m22s141ms startingBgTimeout=--
+    lastActivity=-7m12s861ms restartTime=-7m22s140ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
 
-  * ServiceRecord{4e309e7 u0 com.google.android.gms/.chimera.PersistentApiService}
+  * ServiceRecord{2f6b0e u0 com.google.android.gms/.chimera.PersistentApiService}
     intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.phenotype.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-17m10s52ms startingBgTimeout=--
-    lastActivity=-2m42s716ms restartTime=-17m10s51ms createdFromFg=true
+    createTime=-7m27s352ms startingBgTimeout=--
+    lastActivity=-2m26s727ms restartTime=-7m27s230ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{7897039}:
+    * IntentBindRecord{e502a2a}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.pseudonymous.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@acc567e
+      binder=android.os.BinderProxy@b76f01b
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{ecf67df}:
+    * IntentBindRecord{eaea5b8}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.presencemanager.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@56f5c2c
+      binder=android.os.BinderProxy@b2acf91
       requested=true received=true hasBound=false doRebind=true
-    * IntentBindRecord{487d6f5 CREATE}:
+    * IntentBindRecord{79ebef6 CREATE}:
       intent={act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms}
-      binder=android.os.BinderProxy@7d35c8a
+      binder=android.os.BinderProxy@50a72f7
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{7eca2fb ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}}
+      * Client AppBindRecord{6846564 ProcessRecord{19716e5 1347:com.google.android.inputmethod.latin/u0a56}}
         Per-process Connections:
-          ConnectionRecord{69bd42f u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@bb0820e}
-      * Client AppBindRecord{28c0f18 ProcessRecord{a302f15 1025:com.google.android.youtube.tv/u0a34}}
+          ConnectionRecord{2796134 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@929bc07}
+      * Client AppBindRecord{c9bd3cd ProcessRecord{413042e 3408:com.google.android.youtube.tv/u0a34}}
         Per-process Connections:
-          ConnectionRecord{99386ac u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@a97ac5f}
-      * Client AppBindRecord{6cbed71 ProcessRecord{bef158e 1365:com.google.android.inputmethod.latin/u0a56}}
+          ConnectionRecord{ee98af3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@4c38962}
+      * Client AppBindRecord{66fd482 ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}}
         Per-process Connections:
-          ConnectionRecord{94b6fd3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@5c75c2}
-      * Client AppBindRecord{d92b756 ProcessRecord{e724684 3285:com.google.android.youtube.tv.recommendations/u0a34}}
+          ConnectionRecord{8ed5ed8 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@24659bb}
+      * Client AppBindRecord{ee94793 ProcessRecord{e27c6f9 895:com.google.android.youtube.tv.recommendations/u0a34}}
         Per-process Connections:
-          ConnectionRecord{d089e7c u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@9f6016f}
-    * IntentBindRecord{dd873d7}:
+          ConnectionRecord{25c5703 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@9f0bbb2}
+    * IntentBindRecord{bd473d0}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@7bf04c4
+      binder=android.os.BinderProxy@79edfc9
       requested=true received=true hasBound=false doRebind=true
-    * IntentBindRecord{360efad}:
+    * IntentBindRecord{54ab6ce}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.common.telemetry.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@61af2e2
+      binder=android.os.BinderProxy@5d6c9ef
       requested=true received=true hasBound=false doRebind=true
-    * IntentBindRecord{c467673}:
+    * IntentBindRecord{bd4fcfc}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.auth.aang.events.services.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@209a930
+      binder=android.os.BinderProxy@5acaf85
       requested=true received=true hasBound=false doRebind=true
-    * IntentBindRecord{ac9d9a9}:
+    * IntentBindRecord{ddf71da}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.udc.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@9f95b2e
+      binder=android.os.BinderProxy@570160b
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{c8806cf}:
+    * IntentBindRecord{ef2ece8}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.facs.cache.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@b18285c
+      binder=android.os.BinderProxy@50dbf01
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{8bd6765 CREATE}:
+    * IntentBindRecord{2d2d1a6 CREATE}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.phenotype.service.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@b43fc3a
+      binder=android.os.BinderProxy@c0807e7
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{1a840eb ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}}
+      * Client AppBindRecord{57def94 ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}}
         Per-process Connections:
-          ConnectionRecord{a866618 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@a8df5fb}
-          ConnectionRecord{d9be6a2 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@ec25a6d}
-          ConnectionRecord{e109ba6 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@6dc7101}
-      * Client AppBindRecord{92d6e48 ProcessRecord{accb345 2526:com.google.android.gms.unstable/u0a9}}
+          ConnectionRecord{6dccd50 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@dd1713}
+          ConnectionRecord{afe7946 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@3c6c121}
+          ConnectionRecord{cab44d1 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@d3ea7f8}
+      * Client AppBindRecord{6164a3d ProcessRecord{f9e3413 2392:com.google.android.gms.unstable/u0a9}}
         Per-process Connections:
-          ConnectionRecord{531c511 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@4a0138}
-    * IntentBindRecord{3a214e1}:
+          ConnectionRecord{d7c21c2 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@2a00e0d}
+    * IntentBindRecord{a4a6232}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.auth.account.workaccount.START cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@565a206
+      binder=android.os.BinderProxy@433b83
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{a4800c7}:
+    * IntentBindRecord{3147100}:
       intent={act=com.google.android.gms.pseudonymous.service.START pkg=com.google.android.gms}
-      binder=android.os.BinderProxy@1cf26f4
+      binder=android.os.BinderProxy@224d39
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{7ca1e1d}:
+    * IntentBindRecord{5386f7e}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE cmp=com.google.android.gms/.chimera.PersistentApiService}
-      binder=android.os.BinderProxy@da9d892
+      binder=android.os.BinderProxy@4740cdf
       requested=true received=true hasBound=false doRebind=false
     All Connections:
-      ConnectionRecord{531c511 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@4a0138}
-      ConnectionRecord{94b6fd3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@5c75c2}
-      ConnectionRecord{e109ba6 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@6dc7101}
-      ConnectionRecord{d089e7c u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@9f6016f}
-      ConnectionRecord{a866618 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@a8df5fb}
-      ConnectionRecord{99386ac u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@a97ac5f}
-      ConnectionRecord{69bd42f u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@bb0820e}
-      ConnectionRecord{d9be6a2 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@ec25a6d}
+      ConnectionRecord{6dccd50 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@dd1713}
+      ConnectionRecord{8ed5ed8 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@24659bb}
+      ConnectionRecord{d7c21c2 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@2a00e0d}
+      ConnectionRecord{afe7946 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@3c6c121}
+      ConnectionRecord{ee98af3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@4c38962}
+      ConnectionRecord{2796134 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@929bc07}
+      ConnectionRecord{25c5703 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@9f0bbb2}
+      ConnectionRecord{cab44d1 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@d3ea7f8}
 
-  * ServiceRecord{32d725d u0 com.google.android.gms/.location.geocode.GeocodeService}
+  * ServiceRecord{88eaf73 u0 com.google.android.gms/.location.geocode.GeocodeService}
     intent={act=com.android.location.service.GeocodeProvider cmp=com.google.android.gms/.location.geocode.GeocodeService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m9s188ms startingBgTimeout=--
-    lastActivity=-17m9s188ms restartTime=-17m9s188ms createdFromFg=true
+    createTime=-7m27s957ms startingBgTimeout=--
+    lastActivity=-7m27s956ms restartTime=-7m27s956ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{439e263 CREATE}:
+    * IntentBindRecord{4cf9d2c CREATE}:
       intent={act=com.android.location.service.GeocodeProvider cmp=com.google.android.gms/.location.geocode.GeocodeService}
-      binder=android.os.BinderProxy@b31be60
+      binder=android.os.BinderProxy@a5183f5
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{a6f7f19 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{f68058a ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{962434 u0 CR !FG !VIS com.google.android.gms/.location.geocode.GeocodeService:@c83ab07}
+          ConnectionRecord{bec6fe2 u0 CR !FG !VIS com.google.android.gms/.location.geocode.GeocodeService:@1c640ad}
     All Connections:
-      ConnectionRecord{962434 u0 CR !FG !VIS com.google.android.gms/.location.geocode.GeocodeService:@c83ab07}
+      ConnectionRecord{bec6fe2 u0 CR !FG !VIS com.google.android.gms/.location.geocode.GeocodeService:@1c640ad}
 
-  * ServiceRecord{63c1da4 u0 com.google.android.gms/.chimera.PersistentBoundBrokerService}
+  * ServiceRecord{fffcf85 u0 com.google.android.gms/.chimera.PersistentBoundBrokerService}
     intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.clearcut.bootcount.service.START cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m59s622ms startingBgTimeout=--
-    lastActivity=-3m21s984ms restartTime=-16m59s621ms createdFromFg=true
+    createTime=-7m21s526ms startingBgTimeout=--
+    lastActivity=-7m9s505ms restartTime=-7m21s525ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{88ebde CREATE}:
+    * IntentBindRecord{3b697fb CREATE}:
       intent={act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService}
-      binder=android.os.BinderProxy@dde41bf
+      binder=android.os.BinderProxy@e2f6018
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{864608c ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{4036a71 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{b737f0c u0 CR FGS com.google.android.gms/.chimera.PersistentBoundBrokerService:@e54ca3f}
-    * IntentBindRecord{6ff3d5}:
+          ConnectionRecord{3dcd38b u0 CR FGS com.google.android.gms/.chimera.PersistentBoundBrokerService:@23ab55a}
+    * IntentBindRecord{448f056}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.gmscompliance.service.START cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService}
-      binder=android.os.BinderProxy@7b3e7ea
+      binder=android.os.BinderProxy@4ccb8d7
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{13f3adb}:
+    * IntentBindRecord{8c665c4}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.clearcut.bootcount.service.START cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService}
-      binder=android.os.BinderProxy@c3cf978
+      binder=android.os.BinderProxy@9133cad
       requested=true received=true hasBound=false doRebind=true
     All Connections:
-      ConnectionRecord{b737f0c u0 CR FGS com.google.android.gms/.chimera.PersistentBoundBrokerService:@e54ca3f}
+      ConnectionRecord{3dcd38b u0 CR FGS com.google.android.gms/.chimera.PersistentBoundBrokerService:@23ab55a}
 
-  * ServiceRecord{2f23cef u0 com.android.bluetooth/.gatt.GattService}
+  * ServiceRecord{44f3ed7 u0 com.android.bluetooth/.gatt.GattService}
     intent={cmp=com.android.bluetooth/.gatt.GattService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.bluetooth
-    createTime=-17m11s873ms startingBgTimeout=--
-    lastActivity=-17m11s225ms restartTime=-17m11s870ms createdFromFg=true
+    createTime=-7m31s111ms startingBgTimeout=--
+    lastActivity=-7m30s242ms restartTime=-7m31s108ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{4c8f851 CREATE}:
+    * IntentBindRecord{47bbbe2 CREATE}:
       intent={act=android.bluetooth.IBluetoothGatt cmp=com.android.bluetooth/.gatt.GattService}
-      binder=android.os.BinderProxy@4e098b6
+      binder=android.os.BinderProxy@eba0b73
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{4eca9b7 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{2a61a30 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{7bd46a7 u0 CR IMP com.android.bluetooth/.gatt.GattService:@7e82a09}
+          ConnectionRecord{da76a4e u0 CR IMP com.android.bluetooth/.gatt.GattService:@8f4af18}
     All Connections:
-      ConnectionRecord{7bd46a7 u0 CR IMP com.android.bluetooth/.gatt.GattService:@7e82a09}
+      ConnectionRecord{da76a4e u0 CR IMP com.android.bluetooth/.gatt.GattService:@8f4af18}
 
-  * ServiceRecord{5f3483a u0 com.android.networkstack.inprocess/com.android.server.NetworkStackService}
+  * ServiceRecord{42981a1 u0 com.android.networkstack.inprocess/com.android.server.NetworkStackService}
     intent={act=android.net.INetworkStackConnector.InProcess cmp=com.android.networkstack.inprocess/com.android.server.NetworkStackService}
     packageName=com.android.networkstack.inprocess
     processName=system
     permission=android.permission.MAINLINE_NETWORK_STACK
     baseDir=/system/priv-app/InProcessNetworkStack/InProcessNetworkStack.apk
     dataDir=/data/user_de/0/com.android.networkstack.inprocess
-    app=ProcessRecord{4428ca6 726:system/1000}
+    app=ProcessRecord{b96429f 730:system/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m14s608ms startingBgTimeout=--
-    lastActivity=-17m14s608ms restartTime=-17m14s608ms createdFromFg=true
+    createTime=-7m33s515ms startingBgTimeout=--
+    lastActivity=-7m33s515ms restartTime=-7m33s515ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{f043524 CREATE}:
+    * IntentBindRecord{dd3f6a9 CREATE}:
       intent={act=android.net.INetworkStackConnector.InProcess cmp=com.android.networkstack.inprocess/com.android.server.NetworkStackService}
-      binder=com.android.server.NetworkStackService$NetworkStackConnector@ad3c88d
+      binder=com.android.server.NetworkStackService$NetworkStackConnector@81db42e
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{d558a42 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{b1febcf ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{6aa6365 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@eb945c}
+          ConnectionRecord{62f9608 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@7bf2fab}
     All Connections:
-      ConnectionRecord{6aa6365 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@eb945c}
+      ConnectionRecord{62f9608 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@7bf2fab}
 
-  * ServiceRecord{9321dee u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService}
+  * ServiceRecord{fbcd75 u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService}
     intent={cmp=com.android.bluetooth/.avrcpcontroller.AvrcpControllerService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.bluetooth
-    createTime=-17m11s74ms startingBgTimeout=--
-    lastActivity=-17m11s73ms restartTime=-17m11s73ms createdFromFg=true
+    createTime=-7m30s199ms startingBgTimeout=--
+    lastActivity=-7m30s198ms restartTime=-7m30s198ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
 
-  * ServiceRecord{cfe67f1 u0 com.google.android.tv.remote.service/.RemoteService}
+  * ServiceRecord{12f9c4 u0 com.google.android.tv.remote.service/.RemoteService}
     intent={cmp=com.google.android.tv.remote.service/.RemoteService}
     packageName=com.google.android.tv.remote.service
     processName=com.google.android.tv.remote.service
     baseDir=/data/app/~~DMQdR9CwHbDEwJFDaL96kw==/com.google.android.tv.remote.service-w1oN967Id995wyRnEaRmug==/base.apk
     dataDir=/data/user/0/com.google.android.tv.remote.service
-    app=ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}
+    app=ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=1
     recentCallingPackage=com.google.android.tv.remote.service
     isForeground=true foregroundId=8765 foregroundNoti=Notification(channel=atv_remote_service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE)
-    createTime=-17m9s577ms startingBgTimeout=--
-    lastActivity=-16m57s466ms restartTime=-17m9s556ms createdFromFg=true
+    createTime=-7m27s961ms startingBgTimeout=--
+    lastActivity=-7m21s162ms restartTime=-7m27s960ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
     Bindings:
-    * IntentBindRecord{e982a53}:
+    * IntentBindRecord{78aa95c}:
       intent={act=com.google.android.tv.remote.service.VIRTUAL_REMOTE_IME pkg=com.google.android.tv.remote.service}
-      binder=android.os.BinderProxy@2e17f90
+      binder=android.os.BinderProxy@ecc5465
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{8416089 ProcessRecord{bef158e 1365:com.google.android.inputmethod.latin/u0a56}}
+      * Client AppBindRecord{9d4e53a ProcessRecord{19716e5 1347:com.google.android.inputmethod.latin/u0a56}}
         Per-process Connections:
-          ConnectionRecord{98973ee u0 com.google.android.tv.remote.service/.RemoteService:@81bdd69}
+          ConnectionRecord{6a5af1d u0 com.google.android.tv.remote.service/.RemoteService:@58a5bf4}
     All Connections:
-      ConnectionRecord{98973ee u0 com.google.android.tv.remote.service/.RemoteService:@81bdd69}
+      ConnectionRecord{6a5af1d u0 com.google.android.tv.remote.service/.RemoteService:@58a5bf4}
 
-  * ServiceRecord{c403204 u0 com.google.android.gms/com.google.android.location.fused.FusedLocationService}
+  * ServiceRecord{edb12c u0 com.google.android.gms/com.google.android.location.fused.FusedLocationService}
     intent={act=com.android.location.service.FusedLocationProvider cmp=com.google.android.gms/com.google.android.location.fused.FusedLocationService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m9s262ms startingBgTimeout=--
-    lastActivity=-17m9s247ms restartTime=-17m9s247ms createdFromFg=true
+    createTime=-7m27s972ms startingBgTimeout=--
+    lastActivity=-7m27s971ms restartTime=-7m27s971ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{236088e CREATE}:
+    * IntentBindRecord{25975eb CREATE}:
       intent={act=com.android.location.service.FusedLocationProvider cmp=com.google.android.gms/com.google.android.location.fused.FusedLocationService}
-      binder=android.os.BinderProxy@37118af
+      binder=android.os.BinderProxy@c6ff48
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{30704bc ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{32d1e1 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{5685296 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.fused.FusedLocationService:@4d5edb1}
+          ConnectionRecord{cadf0df u0 CR !FG !VIS com.google.android.gms/com.google.android.location.fused.FusedLocationService:@c5b637e}
     All Connections:
-      ConnectionRecord{5685296 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.fused.FusedLocationService:@4d5edb1}
+      ConnectionRecord{cadf0df u0 CR !FG !VIS com.google.android.gms/com.google.android.location.fused.FusedLocationService:@c5b637e}
 
-  * ServiceRecord{6556911 u0 com.google.android.gms/.gcm.nts.SchedulerService}
+  * ServiceRecord{e9b3202 u0 com.google.android.gms/.gcm.nts.SchedulerService}
     intent={pkg=com.google.android.gms cmp=com.google.android.gms/.gcm.nts.SchedulerService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-17m0s12ms startingBgTimeout=--
-    lastActivity=-16m41s843ms restartTime=-17m0s11ms createdFromFg=true
+    createTime=-7m20s814ms startingBgTimeout=--
+    lastActivity=-7m10s529ms restartTime=-7m20s812ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
 
-  * ServiceRecord{4e6146d u0 com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl}
+  * ServiceRecord{69c1b06 u0 com.spotify.tv.android/com.spotify.androidtv.medialibraryservice.AndroidTvMediaLibraryService}
+    intent={act=android.media.browse.MediaBrowserService cmp=com.spotify.tv.android/com.spotify.androidtv.medialibraryservice.AndroidTvMediaLibraryService}
+    packageName=com.spotify.tv.android
+    processName=com.spotify.tv.android
+    baseDir=/data/app/~~kjpS6l2UnUiZfD41PGRS6A==/com.spotify.tv.android-axpXj6wttEPLEf0Yos3Vgw==/base.apk
+    dataDir=/data/user/0/com.spotify.tv.android
+    app=null
+    allowWhileInUsePermissionInFgs=false
+    startForegroundCount=0
+    recentCallingPackage=com.android.bluetooth
+    createTime=-7m27s178ms startingBgTimeout=--
+    lastActivity=-7m27s178ms restartTime=-- createdFromFg=true
+
+  * ServiceRecord{bd847c9 u0 com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl}
     intent={act=android.service.autofill.InlineSuggestionRenderService cmp=com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl}
     packageName=com.google.android.ext.services
     processName=com.google.android.ext.services
     permission=android.permission.BIND_INLINE_SUGGESTION_RENDER_SERVICE
     baseDir=/apex/com.android.extservices/priv-app/GoogleExtServices/GoogleExtServices.apk
     dataDir=/data/user/0/com.google.android.ext.services
-    app=ProcessRecord{97056cc 1219:com.google.android.ext.services/u0a82}
+    app=ProcessRecord{18d975e 1225:com.google.android.ext.services/u0a82}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m13s970ms startingBgTimeout=--
-    lastActivity=-15m20s942ms restartTime=-17m13s863ms createdFromFg=true
+    createTime=-7m32s703ms startingBgTimeout=--
+    lastActivity=-5m41s319ms restartTime=-7m32s542ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{2d67c45 CREATE}:
+    * IntentBindRecord{d5785c7 CREATE}:
       intent={act=android.service.autofill.InlineSuggestionRenderService cmp=com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl}
-      binder=android.os.BinderProxy@18e1f9a
+      binder=android.os.BinderProxy@7f0c7f4
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{24090cb ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{929ab1d ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{b89c3ca u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@9865335}
-          ConnectionRecord{be04da4 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@6bfd437}
-          ConnectionRecord{beca879 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@cee3140}
-          ConnectionRecord{cffe81e u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@92fc459}
-          ConnectionRecord{eb015ce u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@1d25ac9}
+          ConnectionRecord{366036 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@7432dd1}
+          ConnectionRecord{1ae16cb u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@7c5fd9a}
+          ConnectionRecord{67bd60d u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@e3608a4}
+          ConnectionRecord{9c9ce56 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@9a50071}
+          ConnectionRecord{9f89de0 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@b5a8fe3}
     All Connections:
-      ConnectionRecord{eb015ce u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@1d25ac9}
-      ConnectionRecord{be04da4 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@6bfd437}
-      ConnectionRecord{cffe81e u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@92fc459}
-      ConnectionRecord{b89c3ca u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@9865335}
-      ConnectionRecord{beca879 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@cee3140}
+      ConnectionRecord{366036 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@7432dd1}
+      ConnectionRecord{1ae16cb u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@7c5fd9a}
+      ConnectionRecord{9c9ce56 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@9a50071}
+      ConnectionRecord{9f89de0 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@b5a8fe3}
+      ConnectionRecord{67bd60d u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@e3608a4}
 
-  * ServiceRecord{c0ede8a u0 com.android.systemui/.volume.vendor.tcl.audioinvoke.AudioInvokeService}
+  * ServiceRecord{f43c08 u0 com.android.systemui/.volume.vendor.tcl.audioinvoke.AudioInvokeService}
     intent={cmp=com.android.systemui/.volume.vendor.tcl.audioinvoke.AudioInvokeService}
     packageName=com.android.systemui
     processName=com.android.systemui
     baseDir=/system/system_ext/priv-app/SystemUI/SystemUI.apk
     dataDir=/data/user_de/0/com.android.systemui
-    app=ProcessRecord{75dfbcd 987:com.android.systemui/u0a79}
+    app=ProcessRecord{6708cc0 1008:com.android.systemui/u0a79}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.systemui
-    createTime=-17m13s413ms startingBgTimeout=--
-    lastActivity=-17m13s413ms restartTime=-17m13s413ms createdFromFg=true
+    createTime=-7m32s304ms startingBgTimeout=--
+    lastActivity=-7m32s303ms restartTime=-7m32s303ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{262376e u0 com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService}
+  * ServiceRecord{74fd310 u0 com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService}
     intent={cmp=com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService}
     packageName=com.spotify.tv.android
     processName=com.spotify.tv.android
     baseDir=/data/app/~~kjpS6l2UnUiZfD41PGRS6A==/com.spotify.tv.android-axpXj6wttEPLEf0Yos3Vgw==/base.apk
     dataDir=/data/user/0/com.spotify.tv.android
-    app=ProcessRecord{1a93a4f 1784:com.spotify.tv.android/u0a101}
+    app=ProcessRecord{2be5576 3936:com.spotify.tv.android/u0a101}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.apps.mediashell
-    createTime=-3m45s778ms startingBgTimeout=--
-    lastActivity=-3m45s776ms restartTime=-3m45s776ms createdFromFg=true
+    createTime=-4m30s730ms startingBgTimeout=--
+    lastActivity=-4m30s729ms restartTime=-4m30s729ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{99db0a8 CREATE}:
+    * IntentBindRecord{e4ee192 CREATE}:
       intent={cmp=com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService}
-      binder=android.os.BinderProxy@de797c1
+      binder=android.os.BinderProxy@93cb763
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{c1e9b66 ProcessRecord{91acb64 1979:com.google.android.apps.mediashell/u0a23}}
+      * Client AppBindRecord{84c6f60 ProcessRecord{45dec0e 1995:com.google.android.apps.mediashell/u0a23}}
         Per-process Connections:
-          ConnectionRecord{8977ee9 u0 CR com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:@61d9b70}
+          ConnectionRecord{c459bd3 u0 CR com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:@f73d1c2}
     All Connections:
-      ConnectionRecord{8977ee9 u0 CR com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:@61d9b70}
+      ConnectionRecord{c459bd3 u0 CR com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:@f73d1c2}
 
-  * ServiceRecord{daa64c0 u0 com.android.bluetooth/.a2dp.A2dpService}
+  * ServiceRecord{e13dd5a u0 com.android.bluetooth/.a2dp.A2dpService}
     intent={act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m15s393ms startingBgTimeout=--
-    lastActivity=-17m11s177ms restartTime=-17m11s177ms createdFromFg=true
+    createTime=-7m34s77ms startingBgTimeout=--
+    lastActivity=-7m30s232ms restartTime=-7m30s232ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{3456ea7}:
+    * IntentBindRecord{6badc19}:
       intent={act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService}
-      binder=android.os.BinderProxy@8712f54
+      binder=android.os.BinderProxy@f584de
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{394eefd ProcessRecord{519035 960:com.android.tv.settings/1000}}
+      * Client AppBindRecord{8b966bf ProcessRecord{2d3f97d 981:com.android.tv.settings/1000}}
         Per-process Connections:
-          ConnectionRecord{f6c2943 u0 com.android.bluetooth/.a2dp.A2dpService:@76f6ef2}
-      * Client AppBindRecord{be907f2 ProcessRecord{4428ca6 726:system/1000}}
+          ConnectionRecord{6ac5a u0 com.android.bluetooth/.a2dp.A2dpService:@85a4405}
+      * Client AppBindRecord{af9218c ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{49ffb72 u0 com.android.bluetooth/.a2dp.A2dpService:@cc9807d}
-          ConnectionRecord{b7ac3e2 u0 com.android.bluetooth/.a2dp.A2dpService:@964ad}
+          ConnectionRecord{afe0e48 u0 com.android.bluetooth/.a2dp.A2dpService:@bd760eb}
+          ConnectionRecord{b8164c6 u0 com.android.bluetooth/.a2dp.A2dpService:@51c2aa1}
     All Connections:
-      ConnectionRecord{b7ac3e2 u0 com.android.bluetooth/.a2dp.A2dpService:@964ad}
-      ConnectionRecord{f6c2943 u0 com.android.bluetooth/.a2dp.A2dpService:@76f6ef2}
-      ConnectionRecord{49ffb72 u0 com.android.bluetooth/.a2dp.A2dpService:@cc9807d}
+      ConnectionRecord{b8164c6 u0 com.android.bluetooth/.a2dp.A2dpService:@51c2aa1}
+      ConnectionRecord{6ac5a u0 com.android.bluetooth/.a2dp.A2dpService:@85a4405}
+      ConnectionRecord{afe0e48 u0 com.android.bluetooth/.a2dp.A2dpService:@bd760eb}
 
-  * ServiceRecord{2de3299 u0 com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
+  * ServiceRecord{99ce604 u0 com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
     intent={cmp=com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.bluetooth
-    createTime=-17m10s790ms startingBgTimeout=--
-    lastActivity=-17m7s803ms restartTime=-17m10s788ms createdFromFg=true
+    createTime=-7m29s990ms startingBgTimeout=--
+    lastActivity=-7m27s44ms restartTime=-7m29s989ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{9d04e43}:
+    * IntentBindRecord{29420d5}:
       intent={act=android.media.browse.MediaBrowserService cmp=com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
-      binder=android.os.BinderProxy@5becc0
+      binder=android.os.BinderProxy@4d110ea
       requested=true received=true hasBound=false doRebind=false
 
-  * ServiceRecord{4bc531e u0 com.google.android.tv.remote.service/.AtvRemoteProviderService}
+  * ServiceRecord{d05278f u0 com.google.android.tv.remote.service/.AtvRemoteProviderService}
     intent={act=com.android.media.tv.remoteprovider.TvRemoteProvider cmp=com.google.android.tv.remote.service/.AtvRemoteProviderService}
     packageName=com.google.android.tv.remote.service
     processName=com.google.android.tv.remote.service
     permission=android.permission.BIND_TV_REMOTE_SERVICE
     baseDir=/data/app/~~DMQdR9CwHbDEwJFDaL96kw==/com.google.android.tv.remote.service-w1oN967Id995wyRnEaRmug==/base.apk
     dataDir=/data/user/0/com.google.android.tv.remote.service
-    app=ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}
+    app=ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m13s710ms startingBgTimeout=--
-    lastActivity=-17m7s125ms restartTime=-17m13s562ms createdFromFg=true
+    createTime=-7m32s481ms startingBgTimeout=--
+    lastActivity=-7m25s971ms restartTime=-7m32s328ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{5c67df9 CREATE}:
+    * IntentBindRecord{f27afdb CREATE}:
       intent={act=com.google.android.tv.remote.service.AtvRemoteProviderService cmp=com.google.android.tv.remote.service/.AtvRemoteProviderService}
-      binder=android.os.BinderProxy@77bb13e
+      binder=android.os.BinderProxy@9dcca78
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{39f8b9f ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}}
+      * Client AppBindRecord{982f551 ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}}
         Per-process Connections:
-          ConnectionRecord{220501b u0 CR com.google.android.tv.remote.service/.AtvRemoteProviderService:@a430a2a}
-    * IntentBindRecord{37314ec CREATE}:
+          ConnectionRecord{777cbd8 u0 CR com.google.android.tv.remote.service/.AtvRemoteProviderService:@5f25abb}
+    * IntentBindRecord{12751b6 CREATE}:
       intent={act=com.android.media.tv.remoteprovider.TvRemoteProvider cmp=com.google.android.tv.remote.service/.AtvRemoteProviderService}
-      binder=android.os.BinderProxy@2e800b5
+      binder=android.os.BinderProxy@1676eb7
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{dfda34a ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{5501624 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{e9a58c3 u0 CR FGS com.google.android.tv.remote.service/.AtvRemoteProviderService:@dc2ac72}
+          ConnectionRecord{2944ff4 u0 CR FGS com.google.android.tv.remote.service/.AtvRemoteProviderService:@5b42dc7}
     All Connections:
-      ConnectionRecord{220501b u0 CR com.google.android.tv.remote.service/.AtvRemoteProviderService:@a430a2a}
-      ConnectionRecord{e9a58c3 u0 CR FGS com.google.android.tv.remote.service/.AtvRemoteProviderService:@dc2ac72}
+      ConnectionRecord{2944ff4 u0 CR FGS com.google.android.tv.remote.service/.AtvRemoteProviderService:@5b42dc7}
+      ConnectionRecord{777cbd8 u0 CR com.google.android.tv.remote.service/.AtvRemoteProviderService:@5f25abb}
 
-  * ServiceRecord{71fe992 u0 com.android.systemui/.SystemUIService}
+  * ServiceRecord{ca46d7c u0 com.android.systemui/.SystemUIService}
     intent={cmp=com.android.systemui/.SystemUIService}
     packageName=com.android.systemui
     processName=com.android.systemui
     baseDir=/system/system_ext/priv-app/SystemUI/SystemUI.apk
     dataDir=/data/user_de/0/com.android.systemui
-    app=ProcessRecord{75dfbcd 987:com.android.systemui/u0a79}
+    app=ProcessRecord{6708cc0 1008:com.android.systemui/u0a79}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m15s136ms startingBgTimeout=--
-    lastActivity=-17m15s135ms restartTime=-17m15s135ms createdFromFg=true
+    createTime=-7m33s833ms startingBgTimeout=--
+    lastActivity=-7m33s832ms restartTime=-7m33s832ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{cef7010 u0 com.google.android.apps.mediashell/.CastReceiverService}
+  * ServiceRecord{e1ff4c1 u0 com.google.android.apps.mediashell/.CastReceiverService}
     intent={cmp=com.google.android.apps.mediashell/.CastReceiverService}
     packageName=com.google.android.apps.mediashell
     processName=com.google.android.apps.mediashell
     baseDir=/data/app/~~-TH0LWAGoPSgCQkx4gHIKA==/com.google.android.apps.mediashell-81uRpa4Wds5ZEnzA7UHQuQ==/base.apk
     dataDir=/data/user/0/com.google.android.apps.mediashell
-    app=ProcessRecord{91acb64 1979:com.google.android.apps.mediashell/u0a23}
+    app=ProcessRecord{45dec0e 1995:com.google.android.apps.mediashell/u0a23}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=1
     recentCallingPackage=com.google.android.apps.mediashell
-    createTime=-16m59s609ms startingBgTimeout=-16m29s600ms
-    lastActivity=-3m53s220ms restartTime=-16m59s608ms createdFromFg=false
+    createTime=-7m21s240ms startingBgTimeout=-6m51s238ms
+    lastActivity=-3m13s603ms restartTime=-7m21s239ms createdFromFg=false
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{1fb42bb}:
+    * IntentBindRecord{db0958d}:
       intent={act=com.google.cast.action.BIND pkg=com.google.android.apps.mediashell}
-      binder=android.os.BinderProxy@df293d8
+      binder=android.os.BinderProxy@9ced342
       requested=true received=true hasBound=false doRebind=true
 
-  * ServiceRecord{de9a4f0 u0 com.android.se/.SecureElementService}
+  * ServiceRecord{be2f3ac u0 com.android.se/.SecureElementService}
     intent={cmp=com.android.se/.SecureElementService}
     packageName=com.android.se
     processName=com.android.se
     baseDir=/system/app/SecureElement/SecureElement.apk
     dataDir=/data/user/0/com.android.se
-    app=ProcessRecord{2ff3d3e 1136:com.android.se/1068}
+    app=ProcessRecord{3ce6ff1 1114:com.android.se/1068}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.se
-    createTime=-17m13s857ms startingBgTimeout=--
-    lastActivity=-17m13s855ms restartTime=-17m13s855ms createdFromFg=true
+    createTime=-7m32s735ms startingBgTimeout=--
+    lastActivity=-7m32s733ms restartTime=-7m32s733ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{c319e80 u0 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
+  * ServiceRecord{7524ca9 u0 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
     intent={act=com.google.android.gms.clearcut.service.START pkg=com.google.android.gms}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.tv.remote.service
-    createTime=-17m12s583ms startingBgTimeout=--
-    lastActivity=-2m52s504ms restartTime=-17m12s429ms createdFromFg=true
+    createTime=-7m31s360ms startingBgTimeout=--
+    lastActivity=-1m58s250ms restartTime=-7m31s53ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{a64f331 CREATE}:
+    * IntentBindRecord{87a3f53}:
       intent={act=com.google.android.gms.clearcut.service.START pkg=com.google.android.gms}
-      binder=android.os.BinderProxy@7faaa16
+      binder=android.os.BinderProxy@88a7090
       requested=true received=true hasBound=false doRebind=false
-      * Client AppBindRecord{8914f97 ProcessRecord{7b57b9b 3584:com.google.android.youtube.tvmusic/u0a39}}
-        Per-process Connections:
-          ConnectionRecord{92f9aa3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@8fe49d2}
-    * IntentBindRecord{1e91584 CREATE}:
+    * IntentBindRecord{9dfd89 CREATE}:
       intent={act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms}
-      binder=android.os.BinderProxy@ce4916d
+      binder=android.os.BinderProxy@77ae18e
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{8ef51a2 ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}}
+      * Client AppBindRecord{1df7daf ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}}
         Per-process Connections:
-          ConnectionRecord{d9f0df8 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@642d15b}
-      * Client AppBindRecord{e114e33 ProcessRecord{91acb64 1979:com.google.android.apps.mediashell/u0a23}}
+          ConnectionRecord{ae89139 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@7b94500}
+      * Client AppBindRecord{8ce05bc ProcessRecord{45dec0e 1995:com.google.android.apps.mediashell/u0a23}}
         Per-process Connections:
-          ConnectionRecord{406d63a u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@5bb6965}
-    * IntentBindRecord{1a405f0}:
+          ConnectionRecord{fa3a0d1 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@1aef3f8}
+    * IntentBindRecord{dfe945}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.libs.gmscorelogger.service.START cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
-      binder=android.os.BinderProxy@445d769
+      binder=android.os.BinderProxy@8c7889a
       requested=true received=true hasBound=false doRebind=true
-    * IntentBindRecord{d94e5ee CREATE}:
+    * IntentBindRecord{9b045cb}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.clearcut.service.START cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
-      binder=android.os.BinderProxy@a889a8f
-      requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{4db911c ProcessRecord{accb345 2526:com.google.android.gms.unstable/u0a9}}
-        Per-process Connections:
-          ConnectionRecord{c4af17b u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@d97d50a}
-    * IntentBindRecord{f5b8125 CREATE}:
-      intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.usagereporting.service.START cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
-      binder=android.os.BinderProxy@2ed72fa
-      requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{f7e50ab ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}}
-        Per-process Connections:
-          ConnectionRecord{5acaefc u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@a5603ef}
-          ConnectionRecord{cda6877 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@c871a76}
-    * IntentBindRecord{49ea308}:
-      intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
-      binder=android.os.BinderProxy@d680aa1
+      binder=android.os.BinderProxy@b53c1a8
       requested=true received=true hasBound=false doRebind=false
-    * IntentBindRecord{20fc4c6}:
+    * IntentBindRecord{79ad4c1 CREATE}:
+      intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.usagereporting.service.START cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
+      binder=android.os.BinderProxy@8059466
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{a7b73a7 ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}}
+        Per-process Connections:
+          ConnectionRecord{1b3fc19 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@cf60f60}
+          ConnectionRecord{7ef52b6 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@8565a51}
+    * IntentBindRecord{df75054}:
+      intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
+      binder=android.os.BinderProxy@1befbfd
+      requested=true received=true hasBound=false doRebind=false
+    * IntentBindRecord{1c690f2}:
       intent={act=com.google.android.chimera.BoundService.START dat=chimera-action:com.google.android.gms.time.trustedtime.service.START cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService}
-      binder=android.os.BinderProxy@5cf4c87
+      binder=android.os.BinderProxy@ee1a343
       requested=true received=true hasBound=false doRebind=true
     All Connections:
-      ConnectionRecord{406d63a u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@5bb6965}
-      ConnectionRecord{d9f0df8 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@642d15b}
-      ConnectionRecord{92f9aa3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@8fe49d2}
-      ConnectionRecord{5acaefc u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@a5603ef}
-      ConnectionRecord{cda6877 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@c871a76}
-      ConnectionRecord{c4af17b u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@d97d50a}
+      ConnectionRecord{fa3a0d1 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@1aef3f8}
+      ConnectionRecord{ae89139 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@7b94500}
+      ConnectionRecord{7ef52b6 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@8565a51}
+      ConnectionRecord{1b3fc19 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@cf60f60}
 
-  * ServiceRecord{58fbe93 u0 com.netflix.ninja/.NetflixService}
+  * ServiceRecord{ab16d3c u0 com.netflix.ninja/.NetflixService}
     intent={cmp=com.netflix.ninja/.NetflixService}
     packageName=com.netflix.ninja
     processName=com.netflix.ninja
     baseDir=/data/app/~~7RissMDFTGiDMLqAjN66yQ==/com.netflix.ninja-R5ctnUfM0osjoGnv3Q5H2w==/base.apk
     dataDir=/data/user/0/com.netflix.ninja
-    app=ProcessRecord{5940096 1333:com.netflix.ninja/u0a36}
+    app=ProcessRecord{95f7f62 3777:com.netflix.ninja/u0a36}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.netflix.ninja
-    createTime=-3m54s39ms startingBgTimeout=--
-    lastActivity=-3m54s37ms restartTime=-3m54s39ms createdFromFg=true
+    createTime=-4m43s891ms startingBgTimeout=--
+    lastActivity=-4m43s889ms restartTime=-4m43s891ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{9fee7b4 CREATE}:
+    * IntentBindRecord{ea31dc0 CREATE}:
       intent={cmp=com.netflix.ninja/.NetflixService}
-      binder=android.os.BinderProxy@559afdd
+      binder=android.os.BinderProxy@1045af9
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{cb36752 ProcessRecord{5940096 1333:com.netflix.ninja/u0a36}}
+      * Client AppBindRecord{828ca3e ProcessRecord{95f7f62 3777:com.netflix.ninja/u0a36}}
         Per-process Connections:
-          ConnectionRecord{37baec9 u0 CR com.netflix.ninja/.NetflixService:@2f71ed0}
+          ConnectionRecord{a4ffc1a u0 CR com.netflix.ninja/.NetflixService:@53bfac5}
     All Connections:
-      ConnectionRecord{37baec9 u0 CR com.netflix.ninja/.NetflixService:@2f71ed0}
+      ConnectionRecord{a4ffc1a u0 CR com.netflix.ninja/.NetflixService:@53bfac5}
 
-  * ServiceRecord{c07891c u0 com.android.bluetooth/.hid.HidDeviceService}
+  * ServiceRecord{60f5798 u0 com.android.bluetooth/.hid.HidDeviceService}
     intent={cmp=com.android.bluetooth/.hid.HidDeviceService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.bluetooth
-    createTime=-17m11s72ms startingBgTimeout=--
-    lastActivity=-17m11s71ms restartTime=-17m11s71ms createdFromFg=true
+    createTime=-7m30s186ms startingBgTimeout=--
+    lastActivity=-7m30s186ms restartTime=-7m30s186ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{d4a2a23}:
+    * IntentBindRecord{f1309f}:
       intent={act=android.bluetooth.IBluetoothHidDevice cmp=com.android.bluetooth/.hid.HidDeviceService}
-      binder=android.os.BinderProxy@b7ccb20
+      binder=android.os.BinderProxy@d7c55ec
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{4c66cd9 ProcessRecord{519035 960:com.android.tv.settings/1000}}
+      * Client AppBindRecord{a6adb5 ProcessRecord{2d3f97d 981:com.android.tv.settings/1000}}
         Per-process Connections:
-          ConnectionRecord{909ea4a u0 com.android.bluetooth/.hid.HidDeviceService:@2ed03b5}
+          ConnectionRecord{8875614 u0 com.android.bluetooth/.hid.HidDeviceService:@254f867}
     All Connections:
-      ConnectionRecord{909ea4a u0 com.android.bluetooth/.hid.HidDeviceService:@2ed03b5}
+      ConnectionRecord{8875614 u0 com.android.bluetooth/.hid.HidDeviceService:@254f867}
 
-  * ServiceRecord{ad5914a u0 com.google.android.ext.services/android.ext.services.notification.Assistant}
+  * ServiceRecord{d2e38d8 u0 com.google.android.ext.services/android.ext.services.notification.Assistant}
     intent={act=android.service.notification.NotificationAssistantService cmp=com.google.android.ext.services/android.ext.services.notification.Assistant}
     packageName=com.google.android.ext.services
     processName=com.google.android.ext.services
     permission=android.permission.BIND_NOTIFICATION_ASSISTANT_SERVICE
     baseDir=/apex/com.android.extservices/priv-app/GoogleExtServices/GoogleExtServices.apk
     dataDir=/data/user/0/com.google.android.ext.services
-    app=ProcessRecord{97056cc 1219:com.google.android.ext.services/u0a82}
+    app=ProcessRecord{18d975e 1225:com.google.android.ext.services/u0a82}
     whitelistManager=true
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m8s574ms startingBgTimeout=--
-    lastActivity=-17m8s574ms restartTime=-17m8s574ms createdFromFg=true
+    createTime=-7m27s847ms startingBgTimeout=--
+    lastActivity=-7m27s845ms restartTime=-7m27s845ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{67ca69e CREATE}:
+    * IntentBindRecord{ee34c4a CREATE}:
       intent={act=android.service.notification.NotificationAssistantService cmp=com.google.android.ext.services/android.ext.services.notification.Assistant}
-      binder=android.os.BinderProxy@a0b457f
+      binder=android.os.BinderProxy@34237bb
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{533794c ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{5cee4d8 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{992e6b5 u0 CR FGS com.google.android.ext.services/android.ext.services.notification.Assistant:@c01d2ec}
+          ConnectionRecord{1fa5bbb u0 CR FGS com.google.android.ext.services/android.ext.services.notification.Assistant:@a95804a}
     All Connections:
-      ConnectionRecord{992e6b5 u0 CR FGS com.google.android.ext.services/android.ext.services.notification.Assistant:@c01d2ec}
+      ConnectionRecord{1fa5bbb u0 CR FGS com.google.android.ext.services/android.ext.services.notification.Assistant:@a95804a}
 
-  * ServiceRecord{a563cb1 u0 com.google.android.gms/.location.persistent.LocationPersistentService}
+  * ServiceRecord{e7b34b4 u0 com.google.android.gms/.location.persistent.LocationPersistentService}
     intent={cmp=com.google.android.gms/.location.persistent.LocationPersistentService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m38s735ms startingBgTimeout=--
-    lastActivity=-16m38s733ms restartTime=-16m38s733ms createdFromFg=true
+    createTime=-7m9s401ms startingBgTimeout=--
+    lastActivity=-7m9s401ms restartTime=-7m9s401ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{445aaa3 u0 com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService}
+  * ServiceRecord{2659594 u0 com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService}
     intent={act=com.google.android.location.internal.action.FLP_FULL_POWER_LOCATION_RESULT pkg=com.google.android.gms cmp=com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m51s991ms startingBgTimeout=--
-    lastActivity=-16m51s987ms restartTime=-16m51s987ms createdFromFg=true
+    createTime=-7m17s833ms startingBgTimeout=--
+    lastActivity=-7m17s832ms restartTime=-7m17s832ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
 
-  * ServiceRecord{4f552d3 u0 com.android.tv.settings/.users.UserSwitchListenerService}
+  * ServiceRecord{11c6fa8 u0 com.android.tv.settings/.users.UserSwitchListenerService}
     intent={cmp=com.android.tv.settings/.users.UserSwitchListenerService}
     packageName=com.android.tv.settings
     processName=com.android.tv.settings
     baseDir=/system/system_ext/priv-app/TwoPanelSettingsOverlay/TwoPanelSettingsOverlay.apk
     dataDir=/data/user_de/0/com.android.tv.settings
-    app=ProcessRecord{519035 960:com.android.tv.settings/1000}
+    app=ProcessRecord{2d3f97d 981:com.android.tv.settings/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.tv.settings
-    createTime=-17m12s284ms startingBgTimeout=--
-    lastActivity=-17m12s280ms restartTime=-17m12s280ms createdFromFg=true
+    createTime=-7m30s904ms startingBgTimeout=--
+    lastActivity=-7m30s903ms restartTime=-7m30s903ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{fe04564 u0 com.google.android.tv.remote.service/.AtvSearchAssistantService}
+  * ServiceRecord{e1e797 u0 com.google.android.tv.remote.service/.AtvSearchAssistantService}
     intent={act=AtvSearchAssistantService.localService cmp=com.google.android.tv.remote.service/.AtvSearchAssistantService}
     packageName=com.google.android.tv.remote.service
     processName=com.google.android.tv.remote.service
     permission=android.permission.BIND_TV_REMOTE_SERVICE
     baseDir=/data/app/~~DMQdR9CwHbDEwJFDaL96kw==/com.google.android.tv.remote.service-w1oN967Id995wyRnEaRmug==/base.apk
     dataDir=/data/user/0/com.google.android.tv.remote.service
-    app=ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}
+    app=ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.tv.remote.service
-    createTime=-17m7s111ms startingBgTimeout=--
-    lastActivity=-17m7s111ms restartTime=-17m7s111ms createdFromFg=true
+    createTime=-7m25s953ms startingBgTimeout=--
+    lastActivity=-7m25s952ms restartTime=-7m25s952ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{2a7fd95 CREATE}:
+    * IntentBindRecord{9e17031 CREATE}:
       intent={act=AtvSearchAssistantService.localService cmp=com.google.android.tv.remote.service/.AtvSearchAssistantService}
-      binder=android.os.BinderProxy@7088eaa
+      binder=android.os.BinderProxy@c11e316
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{b98ba9b ProcessRecord{8956540 1261:com.google.android.tv.remote.service/u0a12}}
+      * Client AppBindRecord{fd29497 ProcessRecord{43a931d 1262:com.google.android.tv.remote.service/u0a12}}
         Per-process Connections:
-          ConnectionRecord{ce9d2f7 u0 CR com.google.android.tv.remote.service/.AtvSearchAssistantService:@fdf9ef6}
+          ConnectionRecord{34ea216 u0 CR com.google.android.tv.remote.service/.AtvSearchAssistantService:@f2dcb31}
     All Connections:
-      ConnectionRecord{ce9d2f7 u0 CR com.google.android.tv.remote.service/.AtvSearchAssistantService:@fdf9ef6}
+      ConnectionRecord{34ea216 u0 CR com.google.android.tv.remote.service/.AtvSearchAssistantService:@f2dcb31}
 
-  * ServiceRecord{712226c u0 com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService}
-    intent={act=1784 cmp=com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService}
+  * ServiceRecord{678504f u0 com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService}
+    intent={act=3936 cmp=com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService}
     packageName=com.spotify.tv.android
     processName=com.spotify.tv.android
     baseDir=/data/app/~~kjpS6l2UnUiZfD41PGRS6A==/com.spotify.tv.android-axpXj6wttEPLEf0Yos3Vgw==/base.apk
     dataDir=/data/user/0/com.spotify.tv.android
-    app=ProcessRecord{1a93a4f 1784:com.spotify.tv.android/u0a101}
+    app=ProcessRecord{2be5576 3936:com.spotify.tv.android/u0a101}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.spotify.tv.android
-    createTime=-3m45s944ms startingBgTimeout=--
-    lastActivity=-3m45s943ms restartTime=-3m45s943ms createdFromFg=true
+    createTime=-4m30s878ms startingBgTimeout=--
+    lastActivity=-4m30s877ms restartTime=-4m30s877ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{7c4de38 CREATE}:
-      intent={act=1784 cmp=com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService}
-      binder=android.os.BinderProxy@1d7de11
+    * IntentBindRecord{9b97684 CREATE}:
+      intent={act=3936 cmp=com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService}
+      binder=android.os.BinderProxy@42bde6d
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{b8eb76 ProcessRecord{1a93a4f 1784:com.spotify.tv.android/u0a101}}
+      * Client AppBindRecord{9c11aa2 ProcessRecord{2be5576 3936:com.spotify.tv.android/u0a101}}
         Per-process Connections:
-          ConnectionRecord{4445f1f u0 CR IMP com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:@e29a2be}
+          ConnectionRecord{6bedaae u0 CR IMP com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:@43fa729}
     All Connections:
-      ConnectionRecord{4445f1f u0 CR IMP com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:@e29a2be}
+      ConnectionRecord{6bedaae u0 CR IMP com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:@43fa729}
 
-  * ServiceRecord{c9a8516 u0 com.google.android.gms/.fido.authenticator.service.AuthenticatorService}
+  * ServiceRecord{95905a u0 com.google.android.gms/.fido.authenticator.service.AuthenticatorService}
     intent={cmp=com.google.android.gms/.fido.authenticator.service.AuthenticatorService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m44s617ms startingBgTimeout=--
-    lastActivity=-16m44s609ms restartTime=-16m44s609ms createdFromFg=true
+    createTime=-7m12s677ms startingBgTimeout=--
+    lastActivity=-7m12s676ms restartTime=-7m12s676ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{d8bf624 u0 com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService}
+  * ServiceRecord{2458994 u0 com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService}
     intent={act=com.google.android.location.internal.GMS_NLP pkg=com.google.android.gms}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     permission=android.permission.ACCESS_COARSE_LOCATION
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-17m6s178ms startingBgTimeout=--
-    lastActivity=-16m33s764ms restartTime=-17m6s173ms createdFromFg=true
+    createTime=-7m24s661ms startingBgTimeout=--
+    lastActivity=-7m8s3ms restartTime=-7m24s660ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=9
 
-  * ServiceRecord{eaa149b u0 com.android.systemui/.dump.SystemUIAuxiliaryDumpService}
+  * ServiceRecord{226e477 u0 com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService}
+    intent={cmp=com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService}
+    packageName=com.google.android.gms
+    processName=com.google.android.gms
+    baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
+    dataDir=/data/user/0/com.google.android.gms
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
+    allowWhileInUsePermissionInFgs=true
+    startForegroundCount=0
+    recentCallingPackage=com.google.android.gms
+    createTime=-7m2s348ms startingBgTimeout=--
+    lastActivity=-7m2s295ms restartTime=-7m2s347ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{c83dc55 u0 com.android.systemui/.dump.SystemUIAuxiliaryDumpService}
     intent={cmp=com.android.systemui/.dump.SystemUIAuxiliaryDumpService}
     packageName=com.android.systemui
     processName=com.android.systemui
     permission=com.android.systemui.permission.SELF
     baseDir=/system/system_ext/priv-app/SystemUI/SystemUI.apk
     dataDir=/data/user_de/0/com.android.systemui
-    app=ProcessRecord{75dfbcd 987:com.android.systemui/u0a79}
+    app=ProcessRecord{6708cc0 1008:com.android.systemui/u0a79}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.systemui
-    createTime=-17m13s155ms startingBgTimeout=--
-    lastActivity=-17m13s155ms restartTime=-17m13s155ms createdFromFg=true
+    createTime=-7m32s164ms startingBgTimeout=--
+    lastActivity=-7m32s163ms restartTime=-7m32s163ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{d362d0c u0 com.google.android.gms/com.google.android.location.network.NetworkLocationService}
+  * ServiceRecord{68b5170 u0 com.google.android.gms/com.google.android.location.network.NetworkLocationService}
     intent={act=com.android.location.service.v3.NetworkLocationProvider cmp=com.google.android.gms/com.google.android.location.network.NetworkLocationService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     permission=android.permission.WRITE_SECURE_SETTINGS
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m9s429ms startingBgTimeout=--
-    lastActivity=-17m9s420ms restartTime=-17m9s420ms createdFromFg=true
+    createTime=-7m28s310ms startingBgTimeout=--
+    lastActivity=-7m28s309ms restartTime=-7m28s309ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{9be6577 CREATE}:
+    * IntentBindRecord{8a1e333 CREATE}:
       intent={act=com.android.location.service.v3.NetworkLocationProvider cmp=com.google.android.gms/com.google.android.location.network.NetworkLocationService}
-      binder=android.os.BinderProxy@a05a5e4
+      binder=android.os.BinderProxy@c9976f0
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{f4b4a4d ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{d34f469 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{3dd703f u0 CR !FG !VIS com.google.android.gms/com.google.android.location.network.NetworkLocationService:@865c45e}
+          ConnectionRecord{f2097b3 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.network.NetworkLocationService:@9efd122}
     All Connections:
-      ConnectionRecord{3dd703f u0 CR !FG !VIS com.google.android.gms/com.google.android.location.network.NetworkLocationService:@865c45e}
+      ConnectionRecord{f2097b3 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.network.NetworkLocationService:@9efd122}
 
-  * ServiceRecord{d4f3b11 u0 com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService}
+  * ServiceRecord{330942a u0 com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService}
     intent={act=com.google.android.location.internal.GoogleLocationManagerService.START pkg=com.google.android.gms}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-17m5s266ms startingBgTimeout=--
-    lastActivity=-16m38s715ms restartTime=-17m5s266ms createdFromFg=true
+    createTime=-7m24s818ms startingBgTimeout=--
+    lastActivity=-7m9s394ms restartTime=-7m24s817ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
     Bindings:
-    * IntentBindRecord{8404902 CREATE}:
+    * IntentBindRecord{43a3eee CREATE}:
       intent={act=com.google.android.location.internal.GoogleLocationManagerService.START pkg=com.google.android.gms}
-      binder=android.os.BinderProxy@329e213
+      binder=android.os.BinderProxy@60d7f8f
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{9693c50 ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}}
+      * Client AppBindRecord{837121c ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}}
         Per-process Connections:
-          ConnectionRecord{53b8f38 u0 CR WACT CAPS com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@8e78f9b}
+          ConnectionRecord{4fea915 u0 CR WACT CAPS com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@53a2cc}
     All Connections:
-      ConnectionRecord{53b8f38 u0 CR WACT CAPS com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@8e78f9b}
+      ConnectionRecord{4fea915 u0 CR WACT CAPS com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@53a2cc}
 
-  * ServiceRecord{741a38f u0 com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME}
+  * ServiceRecord{319f5d3 u0 com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME}
     intent={act=android.view.InputMethod cmp=com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME}
     packageName=com.google.android.inputmethod.latin
     processName=com.google.android.inputmethod.latin
     permission=android.permission.BIND_INPUT_METHOD
     baseDir=/data/app/~~uRALhbZMpfTrbPOIr796mQ==/com.google.android.inputmethod.latin-C3WQfq95SKJ4MLR5zXVyHw==/base.apk
     dataDir=/data/user/0/com.google.android.inputmethod.latin
-    app=ProcessRecord{bef158e 1365:com.google.android.inputmethod.latin/u0a56}
+    app=ProcessRecord{19716e5 1347:com.google.android.inputmethod.latin/u0a56}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m12s886ms startingBgTimeout=--
-    lastActivity=-17m12s748ms restartTime=-17m12s748ms createdFromFg=true
+    createTime=-7m31s816ms startingBgTimeout=--
+    lastActivity=-7m31s623ms restartTime=-7m31s623ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{80f3e49 CREATE}:
+    * IntentBindRecord{49f6e25 CREATE}:
       intent={act=android.view.InputMethod cmp=com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME}
-      binder=android.os.BinderProxy@8edf34e
+      binder=android.os.BinderProxy@10f5bfa
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{9c68c6f ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{eec85ab ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{2328189 u0 CR !FG IMPB !VIS com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:@14e8490}
+          ConnectionRecord{94e5dc u0 CR !FG IMPB !VIS com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:@a334a4f}
     All Connections:
-      ConnectionRecord{2328189 u0 CR !FG IMPB !VIS com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:@14e8490}
+      ConnectionRecord{94e5dc u0 CR !FG IMPB !VIS com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:@a334a4f}
 
-  * ServiceRecord{d6ae80d u0 com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0}
+  * ServiceRecord{febf093 u0 com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0}
     intent={cmp=com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0}
     packageName=com.tcl.tv
     processName=com.tcl.tv:privileged_process0
     baseDir=/product/app/TIF_LiveTV/TIF_LiveTV.apk
     dataDir=/data/user/0/com.tcl.tv
-    app=ProcessRecord{91323c8 1637:com.tcl.tv:privileged_process0/1000}
+    app=ProcessRecord{fe6d307 1803:com.tcl.tv:privileged_process0/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.tcl.tv
-    createTime=-13m16s749ms startingBgTimeout=--
-    lastActivity=-13m16s564ms restartTime=-13m16s564ms createdFromFg=true
+    createTime=-3m38s267ms startingBgTimeout=--
+    lastActivity=-3m38s59ms restartTime=-3m38s59ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{52dcd7c CREATE}:
+    * IntentBindRecord{8b13408 CREATE}:
       intent={cmp=com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0}
-      binder=android.os.BinderProxy@3047605
+      binder=android.os.BinderProxy@77dc7a1
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{1b9f65a ProcessRecord{608e153 1525:com.tcl.tv/1000}}
+      * Client AppBindRecord{ae73dc6 ProcessRecord{6cd440c 1538:com.tcl.tv/1000}}
         Per-process Connections:
-          ConnectionRecord{4cc1386 u0 CR WPRI com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@6bd5c61}
-          ConnectionRecord{e655c6b u0 CR IMP com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@99e55ba}
+          ConnectionRecord{aa18d21 u0 CR IMP com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@59a9f88}
+          ConnectionRecord{ce8da5d u0 CR WPRI com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@7fe2c34}
     All Connections:
-      ConnectionRecord{4cc1386 u0 CR WPRI com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@6bd5c61}
-      ConnectionRecord{e655c6b u0 CR IMP com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@99e55ba}
+      ConnectionRecord{aa18d21 u0 CR IMP com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@59a9f88}
+      ConnectionRecord{ce8da5d u0 CR WPRI com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@7fe2c34}
 
-  * ServiceRecord{566720b u0 com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService}
+  * ServiceRecord{d521d91 u0 com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService}
     intent={act=com.google.android.libraries.cast.tv.warg.service.START pkg=com.google.android.apps.mediashell}
     packageName=com.google.android.apps.mediashell
     processName=com.google.android.apps.mediashell
     baseDir=/data/app/~~-TH0LWAGoPSgCQkx4gHIKA==/com.google.android.apps.mediashell-81uRpa4Wds5ZEnzA7UHQuQ==/base.apk
     dataDir=/data/user/0/com.google.android.apps.mediashell
-    app=ProcessRecord{91acb64 1979:com.google.android.apps.mediashell/u0a23}
+    app=ProcessRecord{45dec0e 1995:com.google.android.apps.mediashell/u0a23}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.apps.mediashell
-    createTime=-16m55s361ms startingBgTimeout=--
-    lastActivity=-16m55s360ms restartTime=-16m55s360ms createdFromFg=false
+    createTime=-7m18s3ms startingBgTimeout=--
+    lastActivity=-7m18s2ms restartTime=-7m18s2ms createdFromFg=false
     Bindings:
-    * IntentBindRecord{260d6a6 CREATE}:
+    * IntentBindRecord{851d2cc CREATE}:
       intent={act=com.google.android.libraries.cast.tv.warg.service.START pkg=com.google.android.apps.mediashell}
-      binder=android.os.BinderProxy@f0628e7
+      binder=android.os.BinderProxy@ed91915
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{fbffc94 ProcessRecord{91acb64 1979:com.google.android.apps.mediashell/u0a23}}
+      * Client AppBindRecord{352442a ProcessRecord{45dec0e 1995:com.google.android.apps.mediashell/u0a23}}
         Per-process Connections:
-          ConnectionRecord{c85bdda u0 CR com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:@10cab85}
+          ConnectionRecord{aca6bb8 u0 CR com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:@72e0e1b}
     All Connections:
-      ConnectionRecord{c85bdda u0 CR com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:@10cab85}
+      ConnectionRecord{aca6bb8 u0 CR com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:@72e0e1b}
 
-  * ServiceRecord{9bdae06 u0 com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
+  * ServiceRecord{c3b96dd u0 com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
     intent={act=android.net.ITetheringConnector.InProcess cmp=com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
     packageName=com.android.networkstack.tethering.inprocess
     processName=system
     permission=android.permission.MAINLINE_NETWORK_STACK
     baseDir=/apex/com.android.tethering/priv-app/InProcessTethering/InProcessTethering.apk
     dataDir=/data/user_de/0/com.android.networkstack.tethering.inprocess
-    app=ProcessRecord{4428ca6 726:system/1000}
+    app=ProcessRecord{b96429f 730:system/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m14s608ms startingBgTimeout=--
-    lastActivity=-17m14s607ms restartTime=-17m14s607ms createdFromFg=true
+    createTime=-7m33s516ms startingBgTimeout=--
+    lastActivity=-7m33s515ms restartTime=-7m33s515ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{8d9808b CREATE}:
+    * IntentBindRecord{66bd187 CREATE}:
       intent={act=android.net.ITetheringConnector.InProcess cmp=com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
-      binder=com.android.networkstack.tethering.TetheringService$TetheringConnector@484568
+      binder=com.android.networkstack.tethering.TetheringService$TetheringConnector@b2988b4
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{a5b6d81 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{78e3cdd ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{962d0e1 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@6cb9a48}
+          ConnectionRecord{f2c0ab4 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@abf1b87}
     All Connections:
-      ConnectionRecord{962d0e1 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@6cb9a48}
+      ConnectionRecord{f2c0ab4 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@abf1b87}
 
-  * ServiceRecord{59cc38e u0 com.google.android.gms/.common.stats.GmsCoreStatsService}
+  * ServiceRecord{d319777 u0 com.google.android.gms/.common.stats.GmsCoreStatsService}
     intent={act=com.google.android.gms.common.stats.START cmp=com.google.android.gms/.common.stats.GmsCoreStatsService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.google.android.gms
-    createTime=-16m44s817ms startingBgTimeout=--
-    lastActivity=-16m44s817ms restartTime=-16m44s817ms createdFromFg=true
+    createTime=-7m12s801ms startingBgTimeout=--
+    lastActivity=-7m12s798ms restartTime=-7m12s798ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
 
-  * ServiceRecord{8de6bce u0 com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService}
+  * ServiceRecord{b0ca4d5 u0 com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService}
     intent={act=com.android.location.service.ActivityRecognitionProvider cmp=com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService}
     packageName=com.google.android.gms
     processName=com.google.android.gms
     baseDir=/data/app/~~XQRgs__el9waVFnKWa4A3w==/com.google.android.gms-4IoC8d4dVHpW8Z1sOGfkfw==/base.apk
     dataDir=/data/user/0/com.google.android.gms
-    app=ProcessRecord{5dea68 1399:com.google.android.gms/u0a9}
+    app=ProcessRecord{58dc9cd 1391:com.google.android.gms/u0a9}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m9s137ms startingBgTimeout=--
-    lastActivity=-17m9s130ms restartTime=-17m9s130ms createdFromFg=true
+    createTime=-7m27s905ms startingBgTimeout=--
+    lastActivity=-7m27s905ms restartTime=-7m27s905ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{7111e26 CREATE}:
+    * IntentBindRecord{e097052 CREATE}:
       intent={act=com.android.location.service.ActivityRecognitionProvider cmp=com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService}
-      binder=android.os.BinderProxy@dd9a67
+      binder=android.os.BinderProxy@ba9ff23
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{6105014 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{b307c20 ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{50c48c9 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:@861e0d0}
+          ConnectionRecord{7b1358c u0 CR !FG !VIS com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:@bb54abf}
     All Connections:
-      ConnectionRecord{50c48c9 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:@861e0d0}
+      ConnectionRecord{7b1358c u0 CR !FG !VIS com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:@bb54abf}
 
-  * ServiceRecord{fe8fefb u0 com.tcl.tvinput/.passthroughinput.TvPassThroughService}
+  * ServiceRecord{be0e967 u0 com.tcl.tvinput/.passthroughinput.TvPassThroughService}
     intent={act=android.media.tv.TvInputService cmp=com.tcl.tvinput/.passthroughinput.TvPassThroughService}
     packageName=com.tcl.tvinput
     processName=com.tcl.tvinput
     permission=android.permission.BIND_TV_INPUT
     baseDir=/product/app/TIF_TvInput/TIF_TvInput.apk
     dataDir=/data/user_de/0/com.tcl.tvinput
-    app=ProcessRecord{bf24d2a 1071:com.tcl.tvinput/1000}
+    app=ProcessRecord{3ae87af 1082:com.tcl.tvinput/1000}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=android
-    createTime=-17m14s838ms startingBgTimeout=--
-    lastActivity=-17m14s630ms restartTime=-17m14s630ms createdFromFg=true
+    createTime=-7m33s570ms startingBgTimeout=--
+    lastActivity=-7m33s470ms restartTime=-7m33s470ms createdFromFg=true
     Bindings:
-    * IntentBindRecord{d060bd CREATE}:
+    * IntentBindRecord{a36c9d9 CREATE}:
       intent={act=android.media.tv.TvInputService cmp=com.tcl.tvinput/.passthroughinput.TvPassThroughService}
-      binder=android.os.BinderProxy@560f6b2
+      binder=android.os.BinderProxy@1aa3f9e
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{51f7603 ProcessRecord{4428ca6 726:system/1000}}
+      * Client AppBindRecord{7136a7f ProcessRecord{b96429f 730:system/1000}}
         Per-process Connections:
-          ConnectionRecord{f3fa615 u0 CR FGSA com.tcl.tvinput/.passthroughinput.TvPassThroughService:@93673cc}
+          ConnectionRecord{657d38e u0 CR FGSA com.tcl.tvinput/.passthroughinput.TvPassThroughService:@1ef7789}
     All Connections:
-      ConnectionRecord{f3fa615 u0 CR FGSA com.tcl.tvinput/.passthroughinput.TvPassThroughService:@93673cc}
+      ConnectionRecord{657d38e u0 CR FGSA com.tcl.tvinput/.passthroughinput.TvPassThroughService:@1ef7789}
 
-  * ServiceRecord{6a909a2 u0 com.android.bluetooth/.hid.HidHostService}
+  * ServiceRecord{241a567 u0 com.android.bluetooth/.hid.HidHostService}
     intent={cmp=com.android.bluetooth/.hid.HidHostService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.bluetooth
-    createTime=-17m11s100ms startingBgTimeout=--
-    lastActivity=-17m11s97ms restartTime=-17m11s97ms createdFromFg=true
+    createTime=-7m30s218ms startingBgTimeout=--
+    lastActivity=-7m30s217ms restartTime=-7m30s217ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
     Bindings:
-    * IntentBindRecord{dac5980}:
+    * IntentBindRecord{af13a4c}:
       intent={act=android.bluetooth.IBluetoothHidHost cmp=com.android.bluetooth/.hid.HidHostService}
-      binder=android.os.BinderProxy@ea74bb9
+      binder=android.os.BinderProxy@b412a95
       requested=true received=true hasBound=true doRebind=false
-      * Client AppBindRecord{63cbfe ProcessRecord{519035 960:com.android.tv.settings/1000}}
+      * Client AppBindRecord{9f6b7aa ProcessRecord{2d3f97d 981:com.android.tv.settings/1000}}
         Per-process Connections:
-          ConnectionRecord{281883e u0 com.android.bluetooth/.hid.HidHostService:@a7150f9}
+          ConnectionRecord{c733426 u0 com.android.bluetooth/.hid.HidHostService:@a401b81}
     All Connections:
-      ConnectionRecord{281883e u0 com.android.bluetooth/.hid.HidHostService:@a7150f9}
+      ConnectionRecord{c733426 u0 com.android.bluetooth/.hid.HidHostService:@a401b81}
 
-  * ServiceRecord{3b4ef69 u0 com.android.bluetooth/.avrcp.AvrcpTargetService}
+  * ServiceRecord{b02ff14 u0 com.android.bluetooth/.avrcp.AvrcpTargetService}
     intent={cmp=com.android.bluetooth/.avrcp.AvrcpTargetService}
     packageName=com.android.bluetooth
     processName=com.android.bluetooth
     baseDir=/system/app/Bluetooth/Bluetooth.apk
     dataDir=/data/user_de/0/com.android.bluetooth
-    app=ProcessRecord{e78231a 968:com.android.bluetooth/1002}
+    app=ProcessRecord{8319673 989:com.android.bluetooth/1002}
     allowWhileInUsePermissionInFgs=true
     startForegroundCount=0
     recentCallingPackage=com.android.bluetooth
-    createTime=-17m11s92ms startingBgTimeout=--
-    lastActivity=-17m11s86ms restartTime=-17m11s86ms createdFromFg=true
+    createTime=-7m30s210ms startingBgTimeout=--
+    lastActivity=-7m30s209ms restartTime=-7m30s209ms createdFromFg=true
     startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
 
   Connection bindings to services:
-  * ConnectionRecord{b7ac3e2 u0 com.android.bluetooth/.a2dp.A2dpService:@964ad}
-    binding=AppBindRecord{be907f2 com.android.bluetooth/.a2dp.A2dpService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@964ad flags=0x0
-  * ConnectionRecord{531c511 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@4a0138}
-    binding=AppBindRecord{92d6e48 com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms.unstable}
-    conn=android.os.BinderProxy@4a0138 flags=0x1081
-  * ConnectionRecord{94b6fd3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@5c75c2}
-    binding=AppBindRecord{6cbed71 com.google.android.gms/.chimera.PersistentApiService:com.google.android.inputmethod.latin}
-    conn=android.os.BinderProxy@5c75c2 flags=0x1081
-  * ConnectionRecord{6aa6365 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@eb945c}
-    binding=AppBindRecord{d558a42 com.android.networkstack.inprocess/com.android.server.NetworkStackService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@eb945c flags=0x41
-  * ConnectionRecord{c85bdda u0 CR com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:@10cab85}
-    binding=AppBindRecord{fbffc94 com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:com.google.android.apps.mediashell}
-    conn=android.os.BinderProxy@10cab85 flags=0x1
-  * ConnectionRecord{2328189 u0 CR !FG IMPB !VIS com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:@14e8490}
-    binding=AppBindRecord{9c68c6f com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@14e8490 flags=0x40800005
-  * ConnectionRecord{eb015ce u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@1d25ac9}
-    binding=AppBindRecord{24090cb com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@1d25ac9 flags=0x4000001
-  * ConnectionRecord{909ea4a u0 com.android.bluetooth/.hid.HidDeviceService:@2ed03b5}
-    binding=AppBindRecord{4c66cd9 com.android.bluetooth/.hid.HidDeviceService:com.android.tv.settings}
-    conn=android.os.BinderProxy@2ed03b5 flags=0x0
-  * ConnectionRecord{37baec9 u0 CR com.netflix.ninja/.NetflixService:@2f71ed0}
-    binding=AppBindRecord{cb36752 com.netflix.ninja/.NetflixService:com.netflix.ninja}
-    activity=ActivityRecord{54d9935 u0 com.netflix.ninja/.MainActivity t7113}
-    conn=android.os.BinderProxy@2f71ed0 flags=0x1
-  * ConnectionRecord{a5e5bc u0 CR com.google.android.tv.remote.service/.DiscoveryService:@4aaddaf}
-    binding=AppBindRecord{482d0 com.google.android.tv.remote.service/.DiscoveryService:com.google.android.tv.remote.service}
-    conn=android.os.BinderProxy@4aaddaf flags=0x1
-  * ConnectionRecord{5685296 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.fused.FusedLocationService:@4d5edb1}
-    binding=AppBindRecord{30704bc com.google.android.gms/com.google.android.location.fused.FusedLocationService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@4d5edb1 flags=0x40000005
-  * ConnectionRecord{7d62d64 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@4e65af7}
-    binding=AppBindRecord{6e64000 com.android.systemui/.ImageWallpaper:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@4e65af7 flags=0x22005001
-  * ConnectionRecord{7818e91 u0 CR FGSA com.tcl.tvinput/.TDTVInputService:@53d00b8}
-    binding=AppBindRecord{9d564ef com.tcl.tvinput/.TDTVInputService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@53d00b8 flags=0x2000001
-  * ConnectionRecord{406d63a u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@5bb6965}
-    binding=AppBindRecord{e114e33 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.apps.mediashell}
-    conn=android.os.BinderProxy@5bb6965 flags=0x1081
-  * ConnectionRecord{8977ee9 u0 CR com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:@61d9b70}
-    binding=AppBindRecord{c1e9b66 com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:com.google.android.apps.mediashell}
-    conn=android.os.BinderProxy@61d9b70 flags=0x1
-  * ConnectionRecord{be8cdfd u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@63d2a54}
-    binding=AppBindRecord{a3d610b com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@63d2a54 flags=0x41
-  * ConnectionRecord{d9f0df8 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@642d15b}
-    binding=AppBindRecord{8ef51a2 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.tv.remote.service}
-    conn=android.os.BinderProxy@642d15b flags=0x1081
-  * ConnectionRecord{4cc1386 u0 CR WPRI com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@6bd5c61}
-    binding=AppBindRecord{1b9f65a com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:com.tcl.tv}
-    conn=android.os.BinderProxy@6bd5c61 flags=0x21
-  * ConnectionRecord{be04da4 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@6bfd437}
-    binding=AppBindRecord{24090cb com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@6bfd437 flags=0x4000001
-  * ConnectionRecord{962d0e1 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@6cb9a48}
-    binding=AppBindRecord{a5b6d81 com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@6cb9a48 flags=0x41
-  * ConnectionRecord{e109ba6 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@6dc7101}
-    binding=AppBindRecord{1a840eb com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms}
-    conn=android.os.BinderProxy@6dc7101 flags=0x1081
-  * ConnectionRecord{f6c2943 u0 com.android.bluetooth/.a2dp.A2dpService:@76f6ef2}
-    binding=AppBindRecord{394eefd com.android.bluetooth/.a2dp.A2dpService:com.android.tv.settings}
-    conn=android.os.BinderProxy@76f6ef2 flags=0x0
-  * ConnectionRecord{69ed40e u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@7e82a09}
-    binding=AppBindRecord{a0cd8a6 com.android.bluetooth/.btservice.AdapterService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@7e82a09 flags=0x41
-  * ConnectionRecord{7bd46a7 u0 CR IMP com.android.bluetooth/.gatt.GattService:@7e82a09}
-    binding=AppBindRecord{4eca9b7 com.android.bluetooth/.gatt.GattService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@7e82a09 flags=0x41
-  * ConnectionRecord{98973ee u0 com.google.android.tv.remote.service/.RemoteService:@81bdd69}
-    binding=AppBindRecord{8416089 com.google.android.tv.remote.service/.RemoteService:com.google.android.inputmethod.latin}
-    conn=android.os.BinderProxy@81bdd69 flags=0x0
-  * ConnectionRecord{50c48c9 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:@861e0d0}
-    binding=AppBindRecord{6105014 com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@861e0d0 flags=0x40000005
-  * ConnectionRecord{3dd703f u0 CR !FG !VIS com.google.android.gms/com.google.android.location.network.NetworkLocationService:@865c45e}
-    binding=AppBindRecord{f4b4a4d com.google.android.gms/com.google.android.location.network.NetworkLocationService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@865c45e flags=0x40000005
-  * ConnectionRecord{53b8f38 u0 CR WACT CAPS com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@8e78f9b}
-    binding=AppBindRecord{9693c50 com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:com.google.android.gms}
-    conn=android.os.BinderProxy@8e78f9b flags=0x1081
-  * ConnectionRecord{92f9aa3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@8fe49d2}
-    binding=AppBindRecord{8914f97 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.youtube.tvmusic}
-    conn=android.os.BinderProxy@8fe49d2 flags=0x1081
-  * ConnectionRecord{cffe81e u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@92fc459}
-    binding=AppBindRecord{24090cb com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@92fc459 flags=0x4000001
-  * ConnectionRecord{f3fa615 u0 CR FGSA com.tcl.tvinput/.passthroughinput.TvPassThroughService:@93673cc}
-    binding=AppBindRecord{51f7603 com.tcl.tvinput/.passthroughinput.TvPassThroughService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@93673cc flags=0x2000001
-  * ConnectionRecord{b89c3ca u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@9865335}
-    binding=AppBindRecord{24090cb com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@9865335 flags=0x4000001
-  * ConnectionRecord{e655c6b u0 CR IMP com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@99e55ba}
-    binding=AppBindRecord{1b9f65a com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:com.tcl.tv}
-    conn=android.os.BinderProxy@99e55ba flags=0x41
-  * ConnectionRecord{d089e7c u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@9f6016f}
-    binding=AppBindRecord{d92b756 com.google.android.gms/.chimera.PersistentApiService:com.google.android.youtube.tv.recommendations}
-    conn=android.os.BinderProxy@9f6016f flags=0x1081
-  * ConnectionRecord{220501b u0 CR com.google.android.tv.remote.service/.AtvRemoteProviderService:@a430a2a}
-    binding=AppBindRecord{39f8b9f com.google.android.tv.remote.service/.AtvRemoteProviderService:com.google.android.tv.remote.service}
-    conn=android.os.BinderProxy@a430a2a flags=0x1
-  * ConnectionRecord{5acaefc u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@a5603ef}
-    binding=AppBindRecord{f7e50ab com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.gms}
-    conn=android.os.BinderProxy@a5603ef flags=0x1081
-  * ConnectionRecord{281883e u0 com.android.bluetooth/.hid.HidHostService:@a7150f9}
-    binding=AppBindRecord{63cbfe com.android.bluetooth/.hid.HidHostService:com.android.tv.settings}
-    conn=android.os.BinderProxy@a7150f9 flags=0x0
-  * ConnectionRecord{a866618 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@a8df5fb}
-    binding=AppBindRecord{1a840eb com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms}
-    conn=android.os.BinderProxy@a8df5fb flags=0x1081
-  * ConnectionRecord{99386ac u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@a97ac5f}
-    binding=AppBindRecord{28c0f18 com.google.android.gms/.chimera.PersistentApiService:com.google.android.youtube.tv}
-    conn=android.os.BinderProxy@a97ac5f flags=0x1081
-  * ConnectionRecord{69bd42f u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@bb0820e}
-    binding=AppBindRecord{7eca2fb com.google.android.gms/.chimera.PersistentApiService:com.google.android.tv.remote.service}
-    conn=android.os.BinderProxy@bb0820e flags=0x1081
-  * ConnectionRecord{992e6b5 u0 CR FGS com.google.android.ext.services/android.ext.services.notification.Assistant:@c01d2ec}
-    binding=AppBindRecord{533794c com.google.android.ext.services/android.ext.services.notification.Assistant:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@c01d2ec flags=0x5000001
-  * ConnectionRecord{962434 u0 CR !FG !VIS com.google.android.gms/.location.geocode.GeocodeService:@c83ab07}
-    binding=AppBindRecord{a6f7f19 com.google.android.gms/.location.geocode.GeocodeService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@c83ab07 flags=0x40000005
-  * ConnectionRecord{cda6877 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@c871a76}
-    binding=AppBindRecord{f7e50ab com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.gms}
-    conn=android.os.BinderProxy@c871a76 flags=0x1081
-  * ConnectionRecord{49ffb72 u0 com.android.bluetooth/.a2dp.A2dpService:@cc9807d}
-    binding=AppBindRecord{be907f2 com.android.bluetooth/.a2dp.A2dpService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@cc9807d flags=0x0
-  * ConnectionRecord{beca879 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@cee3140}
-    binding=AppBindRecord{24090cb com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@cee3140 flags=0x4000001
-  * ConnectionRecord{8cc168f u0 CR com.tcl.tvinput/.server.DataUpdateService:@d08d1ee}
-    binding=AppBindRecord{a413d3d com.tcl.tvinput/.server.DataUpdateService:com.tcl.tv}
-    activity=ActivityRecord{ece6aa7 u0 com.tcl.tv/.TVActivity t7065}
-    conn=android.os.BinderProxy@d08d1ee flags=0x1
-  * ConnectionRecord{c4af17b u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@d97d50a}
-    binding=AppBindRecord{4db911c com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.gms.unstable}
-    conn=android.os.BinderProxy@d97d50a flags=0x1081
-  * ConnectionRecord{e9a58c3 u0 CR FGS com.google.android.tv.remote.service/.AtvRemoteProviderService:@dc2ac72}
-    binding=AppBindRecord{dfda34a com.google.android.tv.remote.service/.AtvRemoteProviderService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@dc2ac72 flags=0x4000001
-  * ConnectionRecord{4445f1f u0 CR IMP com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:@e29a2be}
-    binding=AppBindRecord{b8eb76 com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:com.spotify.tv.android}
-    conn=android.os.BinderProxy@e29a2be flags=0x41
-  * ConnectionRecord{b737f0c u0 CR FGS com.google.android.gms/.chimera.PersistentBoundBrokerService:@e54ca3f}
-    binding=AppBindRecord{864608c com.google.android.gms/.chimera.PersistentBoundBrokerService:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@e54ca3f flags=0x4000001
-  * ConnectionRecord{d9be6a2 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@ec25a6d}
-    binding=AppBindRecord{1a840eb com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms}
-    conn=android.os.BinderProxy@ec25a6d flags=0x1081
-  * ConnectionRecord{380cb6e u0 CR com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:@f83e2e9}
-    binding=AppBindRecord{fe78b82 com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:com.google.android.gms}
-    conn=android.os.BinderProxy@f83e2e9 flags=0x1
-  * ConnectionRecord{9c621ca u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@fa16935}
-    binding=AppBindRecord{6e64000 com.android.systemui/.ImageWallpaper:system}
-    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@fa16935 flags=0x22005001
-  * ConnectionRecord{ce9d2f7 u0 CR com.google.android.tv.remote.service/.AtvSearchAssistantService:@fdf9ef6}
-    binding=AppBindRecord{b98ba9b com.google.android.tv.remote.service/.AtvSearchAssistantService:com.google.android.tv.remote.service}
-    conn=android.os.BinderProxy@fdf9ef6 flags=0x1
+  * ConnectionRecord{4fea915 u0 CR WACT CAPS com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:@53a2cc}
+    binding=AppBindRecord{837121c com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService:com.google.android.gms}
+    conn=android.os.BinderProxy@53a2cc flags=0x1081
+  * ConnectionRecord{6dccd50 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@dd1713}
+    binding=AppBindRecord{57def94 com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms}
+    conn=android.os.BinderProxy@dd1713 flags=0x1081
+  * ConnectionRecord{fa3a0d1 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@1aef3f8}
+    binding=AppBindRecord{8ce05bc com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.apps.mediashell}
+    conn=android.os.BinderProxy@1aef3f8 flags=0x1081
+  * ConnectionRecord{bec6fe2 u0 CR !FG !VIS com.google.android.gms/.location.geocode.GeocodeService:@1c640ad}
+    binding=AppBindRecord{f68058a com.google.android.gms/.location.geocode.GeocodeService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@1c640ad flags=0x40000005
+  * ConnectionRecord{657d38e u0 CR FGSA com.tcl.tvinput/.passthroughinput.TvPassThroughService:@1ef7789}
+    binding=AppBindRecord{7136a7f com.tcl.tvinput/.passthroughinput.TvPassThroughService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@1ef7789 flags=0x2000001
+  * ConnectionRecord{3dcd38b u0 CR FGS com.google.android.gms/.chimera.PersistentBoundBrokerService:@23ab55a}
+    binding=AppBindRecord{4036a71 com.google.android.gms/.chimera.PersistentBoundBrokerService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@23ab55a flags=0x4000001
+  * ConnectionRecord{8ed5ed8 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@24659bb}
+    binding=AppBindRecord{66fd482 com.google.android.gms/.chimera.PersistentApiService:com.google.android.tv.remote.service}
+    conn=android.os.BinderProxy@24659bb flags=0x1081
+  * ConnectionRecord{8875614 u0 com.android.bluetooth/.hid.HidDeviceService:@254f867}
+    binding=AppBindRecord{a6adb5 com.android.bluetooth/.hid.HidDeviceService:com.android.tv.settings}
+    conn=android.os.BinderProxy@254f867 flags=0x0
+  * ConnectionRecord{d7c21c2 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@2a00e0d}
+    binding=AppBindRecord{6164a3d com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms.unstable}
+    conn=android.os.BinderProxy@2a00e0d flags=0x1081
+  * ConnectionRecord{afe7946 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@3c6c121}
+    binding=AppBindRecord{57def94 com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms}
+    conn=android.os.BinderProxy@3c6c121 flags=0x1081
+  * ConnectionRecord{8d41e5 u0 CR com.tcl.tvinput/.server.DataUpdateService:@42cdcdc}
+    binding=AppBindRecord{a198a1e com.tcl.tvinput/.server.DataUpdateService:com.tcl.tv}
+    activity=ActivityRecord{ad5a926 u0 com.tcl.tv/.TVActivity t7250}
+    conn=android.os.BinderProxy@42cdcdc flags=0x1
+  * ConnectionRecord{6bedaae u0 CR IMP com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:@43fa729}
+    binding=AppBindRecord{9c11aa2 com.spotify.tv.android/com.google.firebase.sessions.SessionLifecycleService:com.spotify.tv.android}
+    conn=android.os.BinderProxy@43fa729 flags=0x41
+  * ConnectionRecord{ed36e43 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@484a7f2}
+    binding=AppBindRecord{d26d715 com.android.systemui/.ImageWallpaper:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@484a7f2 flags=0x22005001
+  * ConnectionRecord{ee98af3 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@4c38962}
+    binding=AppBindRecord{c9bd3cd com.google.android.gms/.chimera.PersistentApiService:com.google.android.youtube.tv}
+    conn=android.os.BinderProxy@4c38962 flags=0x1081
+  * ConnectionRecord{b8164c6 u0 com.android.bluetooth/.a2dp.A2dpService:@51c2aa1}
+    binding=AppBindRecord{af9218c com.android.bluetooth/.a2dp.A2dpService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@51c2aa1 flags=0x0
+  * ConnectionRecord{a4ffc1a u0 CR com.netflix.ninja/.NetflixService:@53bfac5}
+    binding=AppBindRecord{828ca3e com.netflix.ninja/.NetflixService:com.netflix.ninja}
+    activity=ActivityRecord{8a09d44 u0 com.netflix.ninja/.MainActivity t7246}
+    conn=android.os.BinderProxy@53bfac5 flags=0x1
+  * ConnectionRecord{6a5af1d u0 com.google.android.tv.remote.service/.RemoteService:@58a5bf4}
+    binding=AppBindRecord{9d4e53a com.google.android.tv.remote.service/.RemoteService:com.google.android.inputmethod.latin}
+    conn=android.os.BinderProxy@58a5bf4 flags=0x0
+  * ConnectionRecord{aa18d21 u0 CR IMP com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@59a9f88}
+    binding=AppBindRecord{ae73dc6 com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:com.tcl.tv}
+    conn=android.os.BinderProxy@59a9f88 flags=0x41
+  * ConnectionRecord{2944ff4 u0 CR FGS com.google.android.tv.remote.service/.AtvRemoteProviderService:@5b42dc7}
+    binding=AppBindRecord{5501624 com.google.android.tv.remote.service/.AtvRemoteProviderService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@5b42dc7 flags=0x4000001
+  * ConnectionRecord{777cbd8 u0 CR com.google.android.tv.remote.service/.AtvRemoteProviderService:@5f25abb}
+    binding=AppBindRecord{982f551 com.google.android.tv.remote.service/.AtvRemoteProviderService:com.google.android.tv.remote.service}
+    conn=android.os.BinderProxy@5f25abb flags=0x1
+  * ConnectionRecord{435998d u0 CR FGSA CAPS dev.plume/.HomeOverride:@676aa24}
+    binding=AppBindRecord{61455cd dev.plume/.HomeOverride:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@676aa24 flags=0x2101001
+  * ConnectionRecord{aca6bb8 u0 CR com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:@72e0e1b}
+    binding=AppBindRecord{352442a com.google.android.apps.mediashell/com.google.android.libraries.cast.tv.warg.service.WargService:com.google.android.apps.mediashell}
+    conn=android.os.BinderProxy@72e0e1b flags=0x1
+  * ConnectionRecord{366036 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@7432dd1}
+    binding=AppBindRecord{929ab1d com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@7432dd1 flags=0x4000001
+  * ConnectionRecord{ae89139 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@7b94500}
+    binding=AppBindRecord{1df7daf com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.tv.remote.service}
+    conn=android.os.BinderProxy@7b94500 flags=0x1081
+  * ConnectionRecord{62f9608 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@7bf2fab}
+    binding=AppBindRecord{b1febcf com.android.networkstack.inprocess/com.android.server.NetworkStackService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@7bf2fab flags=0x41
+  * ConnectionRecord{1ae16cb u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@7c5fd9a}
+    binding=AppBindRecord{929ab1d com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@7c5fd9a flags=0x4000001
+  * ConnectionRecord{ce8da5d u0 CR WPRI com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:@7fe2c34}
+    binding=AppBindRecord{ae73dc6 com.tcl.tv/org.chromium.content.app.PrivilegedProcessService0:com.tcl.tv}
+    conn=android.os.BinderProxy@7fe2c34 flags=0x21
+  * ConnectionRecord{7ef52b6 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@8565a51}
+    binding=AppBindRecord{a7b73a7 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.gms}
+    conn=android.os.BinderProxy@8565a51 flags=0x1081
+  * ConnectionRecord{6ac5a u0 com.android.bluetooth/.a2dp.A2dpService:@85a4405}
+    binding=AppBindRecord{8b966bf com.android.bluetooth/.a2dp.A2dpService:com.android.tv.settings}
+    conn=android.os.BinderProxy@85a4405 flags=0x0
+  * ConnectionRecord{2180d71 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@8f4af18}
+    binding=AppBindRecord{57d2fa3 com.android.bluetooth/.btservice.AdapterService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8f4af18 flags=0x41
+  * ConnectionRecord{da76a4e u0 CR IMP com.android.bluetooth/.gatt.GattService:@8f4af18}
+    binding=AppBindRecord{2a61a30 com.android.bluetooth/.gatt.GattService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8f4af18 flags=0x41
+  * ConnectionRecord{2796134 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@929bc07}
+    binding=AppBindRecord{6846564 com.google.android.gms/.chimera.PersistentApiService:com.google.android.inputmethod.latin}
+    conn=android.os.BinderProxy@929bc07 flags=0x1081
+  * ConnectionRecord{9c9ce56 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@9a50071}
+    binding=AppBindRecord{929ab1d com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@9a50071 flags=0x4000001
+  * ConnectionRecord{89df73a u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@9a66e65}
+    binding=AppBindRecord{d26d715 com.android.systemui/.ImageWallpaper:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@9a66e65 flags=0x22005001
+  * ConnectionRecord{f2097b3 u0 CR !FG !VIS com.google.android.gms/com.google.android.location.network.NetworkLocationService:@9efd122}
+    binding=AppBindRecord{d34f469 com.google.android.gms/com.google.android.location.network.NetworkLocationService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@9efd122 flags=0x40000005
+  * ConnectionRecord{25c5703 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@9f0bbb2}
+    binding=AppBindRecord{ee94793 com.google.android.gms/.chimera.PersistentApiService:com.google.android.youtube.tv.recommendations}
+    conn=android.os.BinderProxy@9f0bbb2 flags=0x1081
+  * ConnectionRecord{6a0b8bd u0 CR com.google.android.tv.remote.service/.DiscoveryService:@a0b0814}
+    binding=AppBindRecord{915009c com.google.android.tv.remote.service/.DiscoveryService:com.google.android.tv.remote.service}
+    conn=android.os.BinderProxy@a0b0814 flags=0x1
+  * ConnectionRecord{94e5dc u0 CR !FG IMPB !VIS com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:@a334a4f}
+    binding=AppBindRecord{eec85ab com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@a334a4f flags=0x40800005
+  * ConnectionRecord{c733426 u0 com.android.bluetooth/.hid.HidHostService:@a401b81}
+    binding=AppBindRecord{9f6b7aa com.android.bluetooth/.hid.HidHostService:com.android.tv.settings}
+    conn=android.os.BinderProxy@a401b81 flags=0x0
+  * ConnectionRecord{1fa5bbb u0 CR FGS com.google.android.ext.services/android.ext.services.notification.Assistant:@a95804a}
+    binding=AppBindRecord{5cee4d8 com.google.android.ext.services/android.ext.services.notification.Assistant:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@a95804a flags=0x5000001
+  * ConnectionRecord{f2c0ab4 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@abf1b87}
+    binding=AppBindRecord{78e3cdd com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@abf1b87 flags=0x41
+  * ConnectionRecord{ea8e95f u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@afcedfe}
+    binding=AppBindRecord{f94fa07 com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@afcedfe flags=0x41
+  * ConnectionRecord{9f89de0 u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@b5a8fe3}
+    binding=AppBindRecord{929ab1d com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@b5a8fe3 flags=0x4000001
+  * ConnectionRecord{7b1358c u0 CR !FG !VIS com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:@bb54abf}
+    binding=AppBindRecord{b307c20 com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@bb54abf flags=0x40000005
+  * ConnectionRecord{afe0e48 u0 com.android.bluetooth/.a2dp.A2dpService:@bd760eb}
+    binding=AppBindRecord{af9218c com.android.bluetooth/.a2dp.A2dpService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@bd760eb flags=0x0
+  * ConnectionRecord{187201d u0 CR com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:@c36f0f4}
+    binding=AppBindRecord{a29e96e com.google.android.gms/.chimera.PersistentInternalBoundBrokerService:com.google.android.gms}
+    conn=android.os.BinderProxy@c36f0f4 flags=0x1
+  * ConnectionRecord{cadf0df u0 CR !FG !VIS com.google.android.gms/com.google.android.location.fused.FusedLocationService:@c5b637e}
+    binding=AppBindRecord{32d1e1 com.google.android.gms/com.google.android.location.fused.FusedLocationService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@c5b637e flags=0x40000005
+  * ConnectionRecord{1b3fc19 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:@cf60f60}
+    binding=AppBindRecord{a7b73a7 com.google.android.gms/.chimera.PersistentDirectBootAwareApiService:com.google.android.gms}
+    conn=android.os.BinderProxy@cf60f60 flags=0x1081
+  * ConnectionRecord{cab44d1 u0 CR WACT CAPS com.google.android.gms/.chimera.PersistentApiService:@d3ea7f8}
+    binding=AppBindRecord{57def94 com.google.android.gms/.chimera.PersistentApiService:com.google.android.gms}
+    conn=android.os.BinderProxy@d3ea7f8 flags=0x1081
+  * ConnectionRecord{67bd60d u0 CR FGS com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:@e3608a4}
+    binding=AppBindRecord{929ab1d com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@e3608a4 flags=0x4000001
+  * ConnectionRecord{d819a9a u0 CR FGSA com.tcl.tvinput/.TDTVInputService:@ecf0345}
+    binding=AppBindRecord{b7c262b com.tcl.tvinput/.TDTVInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@ecf0345 flags=0x2000001
+  * ConnectionRecord{34ea216 u0 CR com.google.android.tv.remote.service/.AtvSearchAssistantService:@f2dcb31}
+    binding=AppBindRecord{fd29497 com.google.android.tv.remote.service/.AtvSearchAssistantService:com.google.android.tv.remote.service}
+    conn=android.os.BinderProxy@f2dcb31 flags=0x1
+  * ConnectionRecord{c459bd3 u0 CR com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:@f73d1c2}
+    binding=AppBindRecord{84c6f60 com.spotify.tv.android/com.google.android.gms.cast.tv.internal.CastTvHostService:com.google.android.apps.mediashell}
+    conn=android.os.BinderProxy@f73d1c2 flags=0x1
 
 Active foreground apps - user 0:
   #1: com.google.android.tv.remote.service
     mNumActive=2 mAppOnTop=false mShownWhileTop=false mShownWhileScreenOn=true
-    mStartTime=-17m9s447ms mStartVisibleTime=-17m9s447ms
+    mStartTime=-7m27s949ms mStartVisibleTime=-7m27s949ms
   #0: com.spotify.tv.android
     mNumActive=1 mAppOnTop=false mShownWhileTop=true mShownWhileScreenOn=true
-    mStartTime=-3m44s45ms mStartVisibleTime=-3m44s45ms
+    mStartTime=-4m27s575ms mStartVisibleTime=-4m27s575ms

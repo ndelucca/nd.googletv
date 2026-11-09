@@ -1,6 +1,21 @@
-     27 TaskPersister
+     97 TGuardService
+     50 TclActivityManagerService
+     45 WifiVendorHal
+     32 IntervalStats
      26 ContentProviderRecord
-     20 MediaSessionRecord
-     17 ActivityThread
-      4 WifiVendorHal
-      1 ThermalHalWrapper
+     20 libc
+     19 CodecResource
+     16 TaskPersister
+     13 ActivityManager
+     12 ActivityThread
+      3 VPQ
+      3 Traffic
+      3 ThermalHalWrapper
+      2 r8k
+      2 /home/jenkins/jenkins_data/workspace/LZ_Build_release_midware_20230107/midware/base/core/atv/video/fpi_video.c
+      1 TGuardMemoryManagerAppClassifier
+      1 SystemServiceRegistry
+      1 ion
+      1 com.tcl.tv.data.ChannelDataMode
+      1 BufferQueueProducer
+      1 AutofillManagerServiceImpl

@@ -1,0 +1,2 @@
+com.spotify.tv.android speed-profile
+com.android.systemui speed-profile

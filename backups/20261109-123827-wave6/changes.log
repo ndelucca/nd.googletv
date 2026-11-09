@@ -1,0 +1,4 @@
+2026-11-09 12:38:31	home com.tvlauncher/.MainActivity -> dev.plume/.MainActivity
+2026-11-09 12:38:33	setting secure enabled_accessibility_services null -> dev.plume/dev.plume.HomeOverride
+2026-11-09 12:38:33	setting secure accessibility_enabled 0 -> 1
+2026-11-09 12:38:34	appop dev.plume APP_AUTO_START ignore -> allow

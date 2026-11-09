@@ -22,7 +22,7 @@ Display Devices: size=1
   DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 1920 x 1080, modeId 1, defaultModeId 1, supportedModes [{id=1, width=1920, height=1080, fps=60.000004}], colorMode 0, supportedColorModes [0], HdrCapabilities HdrCapabilities{mSupportedHdrTypes=[1, 2, 3, 4], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, gameContentTypeSupported false, density 320, 44.536 x 44.532 dpi, appVsyncOff 1000000, presDeadline 16666666, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
     mAdapter=LocalDisplayAdapter
     mUniqueId=local:0
-    mDisplayToken=android.os.BinderProxy@bb4f08a
+    mDisplayToken=android.os.BinderProxy@af15ea5
     mCurrentLayerStack=0
     mCurrentOrientation=0
     mCurrentLayerStackRect=Rect(0, 0 - 1920, 1080)
@@ -37,7 +37,7 @@ Display Devices: size=1
     mDefaultModeId=1
     mState=ON
     mBrightnessState=0.39763778
-    mBacklight=com.android.server.lights.LightsService$LightImpl@210a6fb
+    mBacklight=com.android.server.lights.LightsService$LightImpl@c39c27a
     mAllmSupported=false
     mAllmRequested=false
     mGameContentTypeSupported=false
@@ -81,48 +81,50 @@ DisplayModeDirector
     mRefreshRateInZone: 0
     mLastSensorData: 0.0
 
-Callbacks: size=41
-  0: mPid=726, mWifiDisplayScanRequested=false
-  1: mPid=960, mWifiDisplayScanRequested=false
-  2: mPid=968, mWifiDisplayScanRequested=false
-  3: mPid=987, mWifiDisplayScanRequested=false
-  4: mPid=1025, mWifiDisplayScanRequested=false
-  5: mPid=1071, mWifiDisplayScanRequested=false
-  6: mPid=1136, mWifiDisplayScanRequested=false
-  7: mPid=1219, mWifiDisplayScanRequested=false
-  8: mPid=1261, mWifiDisplayScanRequested=false
-  9: mPid=1333, mWifiDisplayScanRequested=false
-  10: mPid=1365, mWifiDisplayScanRequested=false
-  11: mPid=1399, mWifiDisplayScanRequested=false
-  12: mPid=1525, mWifiDisplayScanRequested=false
-  13: mPid=1548, mWifiDisplayScanRequested=false
-  14: mPid=1571, mWifiDisplayScanRequested=false
-  15: mPid=1592, mWifiDisplayScanRequested=false
-  16: mPid=1637, mWifiDisplayScanRequested=false
-  17: mPid=1752, mWifiDisplayScanRequested=false
-  18: mPid=1784, mWifiDisplayScanRequested=false
-  19: mPid=1824, mWifiDisplayScanRequested=false
-  20: mPid=1841, mWifiDisplayScanRequested=false
-  21: mPid=1849, mWifiDisplayScanRequested=false
-  22: mPid=1961, mWifiDisplayScanRequested=false
-  23: mPid=1979, mWifiDisplayScanRequested=false
-  24: mPid=2051, mWifiDisplayScanRequested=false
-  25: mPid=2095, mWifiDisplayScanRequested=false
-  26: mPid=2211, mWifiDisplayScanRequested=false
-  27: mPid=2221, mWifiDisplayScanRequested=false
-  28: mPid=2329, mWifiDisplayScanRequested=false
-  29: mPid=2402, mWifiDisplayScanRequested=false
-  30: mPid=2463, mWifiDisplayScanRequested=false
-  31: mPid=2526, mWifiDisplayScanRequested=false
-  32: mPid=2626, mWifiDisplayScanRequested=false
-  33: mPid=2716, mWifiDisplayScanRequested=false
-  34: mPid=2757, mWifiDisplayScanRequested=false
-  35: mPid=2800, mWifiDisplayScanRequested=false
-  36: mPid=2852, mWifiDisplayScanRequested=false
-  37: mPid=2893, mWifiDisplayScanRequested=false
-  38: mPid=3018, mWifiDisplayScanRequested=false
-  39: mPid=3285, mWifiDisplayScanRequested=false
+Callbacks: size=43
+  0: mPid=730, mWifiDisplayScanRequested=false
+  1: mPid=895, mWifiDisplayScanRequested=false
+  2: mPid=981, mWifiDisplayScanRequested=false
+  3: mPid=989, mWifiDisplayScanRequested=false
+  4: mPid=1008, mWifiDisplayScanRequested=false
+  5: mPid=1082, mWifiDisplayScanRequested=false
+  6: mPid=1083, mWifiDisplayScanRequested=false
+  7: mPid=1114, mWifiDisplayScanRequested=false
+  8: mPid=1225, mWifiDisplayScanRequested=false
+  9: mPid=1262, mWifiDisplayScanRequested=false
+  10: mPid=1347, mWifiDisplayScanRequested=false
+  11: mPid=1377, mWifiDisplayScanRequested=false
+  12: mPid=1391, mWifiDisplayScanRequested=false
+  13: mPid=1502, mWifiDisplayScanRequested=false
+  14: mPid=1538, mWifiDisplayScanRequested=false
+  15: mPid=1580, mWifiDisplayScanRequested=false
+  16: mPid=1607, mWifiDisplayScanRequested=false
+  17: mPid=1651, mWifiDisplayScanRequested=false
+  18: mPid=1707, mWifiDisplayScanRequested=false
+  19: mPid=1769, mWifiDisplayScanRequested=false
+  20: mPid=1803, mWifiDisplayScanRequested=false
+  21: mPid=1850, mWifiDisplayScanRequested=false
+  22: mPid=1958, mWifiDisplayScanRequested=false
+  23: mPid=1971, mWifiDisplayScanRequested=false
+  24: mPid=1982, mWifiDisplayScanRequested=false
+  25: mPid=1995, mWifiDisplayScanRequested=false
+  26: mPid=2240, mWifiDisplayScanRequested=false
+  27: mPid=2298, mWifiDisplayScanRequested=false
+  28: mPid=2357, mWifiDisplayScanRequested=false
+  29: mPid=2392, mWifiDisplayScanRequested=false
+  30: mPid=2438, mWifiDisplayScanRequested=false
+  31: mPid=2542, mWifiDisplayScanRequested=false
+  32: mPid=2636, mWifiDisplayScanRequested=false
+  33: mPid=2702, mWifiDisplayScanRequested=false
+  34: mPid=2745, mWifiDisplayScanRequested=false
+  35: mPid=2792, mWifiDisplayScanRequested=false
+  36: mPid=2865, mWifiDisplayScanRequested=false
+  37: mPid=2905, mWifiDisplayScanRequested=false
+  38: mPid=2951, mWifiDisplayScanRequested=false
+  39: mPid=3408, mWifiDisplayScanRequested=false
   40: mPid=3584, mWifiDisplayScanRequested=false
+  41: mPid=3777, mWifiDisplayScanRequested=false
+  42: mPid=3936, mWifiDisplayScanRequested=false
 
 Display Power Controller Locked State:
   mDisplayReadyLocked=true
@@ -155,7 +157,7 @@ Display Power Controller Thread State:
   mProximityThreshold=0.0
   mProximity=Unknown
   mPendingProximity=Unknown
-  mPendingProximityDebounceTime=-1 (1055480 ms ago)
+  mPendingProximityDebounceTime=-1 (473386 ms ago)
   mScreenOffBecauseOfProximity=false
   mLastUserSetScreenBrightnessFloat=0.0
   mPendingScreenBrightnessSettingFloat=NaN

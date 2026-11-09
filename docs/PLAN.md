@@ -2,7 +2,7 @@
 
 _Basado en el relevamiento del 2026-11-06 ([`inventory/SUMMARY.md`](../inventory/SUMMARY.md)) y la investigación en [`research/`](research/)._
 
-**Estado (2026-11-06):** etapa 1 terminada. Olas 1–5 aplicadas y verificadas automáticamente en el TV (`state/applied-wave` = 5). Resultados medidos en la [sección 5](#5-resultados). Queda la etapa 2 (launcher) y los pasos manuales de [`manual.md`](manual.md).
+**Estado (2026-11-09):** etapas 1 y 2 terminadas. Olas 1–6 aplicadas y verificadas automáticamente en el TV (`state/applied-wave` = 6). El launcher ahora es **Plume**, y los botones Netflix, YouTube y engranaje del control vuelven a funcionar. Resultados en la [sección 5](#5-resultados). Quedan los pasos manuales de [`manual.md`](manual.md).
 
 - **Etapa 1** (olas 1–5): optimizar lo que hay hoy, con FLauncher.
 - **Etapa 2** (ola 6): cambiar el launcher, medido aparte.
@@ -77,24 +77,27 @@ Además, **43 paquetes se inician solos al arrancar**.
 
 ```
 config/                          estado deseado; primera columna = ola
-  packages.conf      <ola> <paquete>                         → deshabilitado
+  packages.conf      <ola> <paquete> [uninstall]             → deshabilitado (o desinstalado si es app del usuario)
+  apps.conf          <ola> <paquete> <versionCode> <sha256> <url> [grants=…]   APK fuera de Play (launcher)
   settings.conf      <ola> <global|secure|system|device_config:ns> <clave> <valor>
   appops.conf        <ola> <paquete> <op> <modo>             (RUN_ANY_IN_BACKGROUND, APP_AUTO_START)
   compile.conf       <ola> <paquete> <speed|speed-profile>
   home.conf          <ola> <componente HOME>
+  buttons.conf       <ola> <botón> <código HID> <paquete>    botones del control que verify.sh prueba
   protected.conf     paquetes que jamás se tocan (además de PROTECTED_BUILTIN en lib.sh)
 scripts/
-  apply.sh [--wave N] [--apply]   backup + apply-{packages,settings,appops,compile,home}.sh
+  apply.sh [--wave N] [--apply]   backup + apply-{apps,home,packages,appops,settings,compile}.sh
+  wave.sh N                       aplicar → reiniciar → verify.sh --ui → rollback si falla
+  verify.sh [--ui]                ¿el TV funciona? (con --ui abre apps y prueba botones en pantalla)
   backup.sh / rollback.sh <dir>   foto del estado y vuelta atrás (rollback también en modo prueba)
   doctor.sh                       ¿el TV coincide con config/ hasta la última ola? ¿hubo OTA?
-  benchmark.sh <etiqueta> --yes   mediciones → benchmarks/<fecha>-<etiqueta>.md
+  benchmark.sh <etiqueta> --yes   mediciones → benchmarks/<fecha>-<etiqueta>.md (--quick: ~7 min)
+  measure.sh <etiqueta>           reiniciar → verify.sh --ui → benchmark.sh (mediciones comparables)
   collect.sh                      relevamiento completo → inventory/
 state/applied-wave                última ola aplicada (la usa doctor.sh)
 backups/                          una carpeta por aplicación, con changes.log
 benchmarks/                       resultados versionados
 ```
-
-Pendiente para la etapa 2: `config/apps.conf` + `apply-apps.sh` (APK fuera de Play con URL armeabi-v7a, versionCode y firmante).
 
 ## 4. Olas
 
@@ -102,7 +105,7 @@ Cada ola: `scripts/wave.sh N` (backup → `apply --wave N --apply` → reinicio 
 
 **Lo que `verify.sh` no puede comprobar solo** (mirarlo la próxima vez que se use el TV):
 - [ ] Imagen real en un HDMI y el botón Inputs del control (el script abre la entrada, pero la captura de pantalla sale negra por protección de contenido)
-- [ ] Botones físicos del control: Home, Back, volumen (el script verifica que el control está conectado e inyecta teclas)
+- [ ] Botones físicos del control: Home, Back, volumen (el script verifica que el control está conectado e inyecta teclas). Netflix, YouTube y engranaje sí se prueban, con un control virtual idéntico al real (ver ola 6)
 - [ ] Sonido
 - [ ] Castear algo desde el celular (el script solo verifica que el servicio de Chromecast corre)
 - [ ] Apagar y prender con el control (el arranque rápido)
@@ -117,7 +120,7 @@ Cada ola: `scripts/wave.sh N` (backup → `apply --wave N --apply` → reinicio 
   - Vuelta a Home: tiempo y cuántas veces el launcher había sido matado
   - Multitarea: abrir 7 apps seguidas, volver a Home y contar cuántas siguen en memoria (3 rondas)
   - Kills por falta de memoria durante la prueba
-  - Pendiente para la etapa 2: cuadros perdidos del launcher (`SurfaceFlinger --timestats`; FLauncher es Flutter y `gfxinfo` no lo ve)
+  - Launcher en reposo: su RAM y su CPU, y la de surfaceflinger (si es alta, el launcher redibuja sin parar)
 - **Necesita el TV libre unos 12 minutos**: abre y cierra apps en pantalla.
 - Recomendación aparte: reservar la IP `192.168.10.20` para el TV en el router (DHCP estático), para que los scripts no se rompan si cambia.
 
@@ -180,27 +183,17 @@ Las apps de terceros sin uso (Crunchyroll, Jellyfin) se pueden desinstalar norma
   - `wm size`/`wm density`, porque la evidencia es débil y hay riesgo de romper la interfaz.
   - "No mantener actividades".
 
-### Ola 6 (etapa 2) — Launcher
+### Ola 6 (etapa 2) — Launcher ✅
 
-Detalle en [`research/launchers.md`](research/launchers.md). Hoy FLauncher 0.18.0 usa ~38 MB más 12 MB en swap. Funciona, pero está abandonado desde 2023.
+Detalle, mediciones y notas para volver a probar en [`research/launchers.md`](research/launchers.md#trial-on-this-tv-2026-11-09-plume-won).
 
 - **Volver al launcher de Google no conviene.** Ronda los 165–190 MB y redibuja la pantalla 60 veces por segundo, incluso en "Modo solo apps".
-- **Candidatos** (todos con build de 32 bits y mantenidos en 2026):
-
-| # | Launcher | RAM | A favor | En contra |
-|---|---|---:|---|---|
-| 1 | **TV Launcher** (F-Droid, `com.tvlauncher`) | 25–30 MB (autodeclarado) | El más liviano medido; Views nativas; firmado por F-Droid | Sin categorías ni atajo HDMI; los botones Netflix/YouTube/engranaje necesitan un remapeador aparte |
-| 2 | **Plume** (`dev.plume`) | 50–70 MB (autodeclarado) | Trae selector HDMI y remapeo de botones del control; APK de 0,4 MB sin librerías | Tiene 3 semanas de vida; acceso a internet y actualizador propio |
-| 3 | **LtvLauncher** (`com.leanbitlab.ltvL`) | Sin datos (Flutter; probablemente ≥ FLauncher) | Fork activo de FLauncher, con categorías, entradas y remapeo | Base Flutter y servicios extra; hay que apagar "Watch Next" |
-| — | just-a-launcher | 39 MB (medido por su autor) | Piso de referencia para comparar | Mínimo: sin texto y sin atajo HDMI en TCL |
-
-- **Sobre los botones del control:** Netflix, YouTube, Prime y engranaje no andan sin launcherx. Plume y LtvLauncher los remapean; con TV Launcher hace falta un remapeador como tvQuickActions.
-- **Procedimiento:**
-  1. Instalar los candidatos al lado de FLauncher (tienen otros nombres de paquete).
-  2. Para cada uno: `config/home.conf` → `apply.sh` → `benchmark.sh launcher-<nombre> --yes`.
-  3. Comparar con la línea base.
-  4. Quedarse con el ganador, desinstalar el resto y fijarlo en `config/home.conf`.
-  5. Si algo sale mal, volver a FLauncher con `rollback.sh`.
+- **Se probaron en el TV** FLauncher (el de antes), TV Launcher y Plume, de a uno, con `benchmark.sh --quick`.
+- **Ganó Plume:** 0 % de CPU en reposo, 39 MB, y es el único que hace andar los botones Netflix, YouTube y engranaje (este último abre Ajustes). TV Launcher fue el más liviano (26 MB), pero deja esos botones muertos.
+- **FLauncher gastaba un núcleo entero sin hacer nada:** 43 % de CPU más 35 % de surfaceflinger, porque redibuja la pantalla 60 veces por segundo aunque nadie la mire.
+- FLauncher y TV Launcher se desinstalaron (`packages.conf`, `uninstall`; el backup guarda sus APK). La línea de TV Launcher queda comentada en `apps.conf` para volver a probarlo.
+- **Botones del control:** no andaban desde la ola 0. El firmware de TCL se los pasa al launcher de Google (launcherx), que está deshabilitado. Plume los reasigna con su servicio de accesibilidad. Esa asignación vive en los datos de Plume: si se borran, `verify.sh --ui` falla y hay que volver a cargarla (pasos en `launchers.md`).
+- **Cómo se prueban sin tocar el control:** `adb shell input keyevent` no pasa por los servicios de accesibilidad, así que no sirve. Los scripts crean un control virtual por `/dev/uhid` idéntico al real (mismo Bluetooth y modelo), cuyas pulsaciones siguen el mismo camino que las de verdad.
 
 ### Ola 7 — Mantenimiento
 
@@ -233,6 +226,19 @@ Cómo leerlo:
 - **Advertencia:** la línea base se midió con 4,5 días de encendido y el resto ~15 min después de reiniciar, así que el uso de swap no es del todo comparable.
 - **Descartados por medición o por el hardware:** compilar en `speed` (sin mejora) y la compactación de memoria (el kernel 4.14 no la soporta).
 
+### Etapa 2: launcher (2026-11-09)
+
+Medido con `benchmark.sh --quick`, el mismo día y en el mismo estado del TV ([`benchmarks/`](../benchmarks/), `*-launcher-*.md`).
+
+| | FLauncher (antes) | TV Launcher | **Plume (final)** |
+|---|---:|---:|---:|
+| RAM del launcher en reposo | 48 MB | 26 MB | **39 MB** |
+| CPU en reposo: launcher / surfaceflinger | 43 % / 35 % | 0,2 % / 0,1 % | **0 % / 0 %** |
+| Volver a Home | 78 ms | 87 ms | **90 ms** |
+| Multitarea: apps vivas después de abrir 7 | 6 de 7 | 6 de 7 | **6 de 7** |
+| Kills por falta de memoria | 1 | 0 | **0** |
+| Botones Netflix / YouTube / engranaje | no andan | no andan | **andan** |
+
 ### Bitácora de la ejecución (2026-11-06)
 
 - Cada ola se aplicó con `scripts/wave.sh N`: backup → aplicar → reiniciar → `verify.sh --ui` (abre las 9 apps, una entrada HDMI, Ajustes y el protector).
@@ -243,14 +249,24 @@ Cómo leerlo:
 - Olas 2, 3, 4 y 5: aplicadas y verificadas al primer intento: 35 chequeos ok; solo se omitió el control dormido.
 - Ola 5: `speed` se probó, no mejoró y se volvió a `speed-profile`.
 
+### Bitácora de la etapa 2 (2026-11-09)
+
+- `benchmark.sh` ganó el modo `--quick` (~7 min por launcher en vez de ~17) y la medición de CPU del launcher y de surfaceflinger en reposo.
+- Nuevo `apply-apps.sh`: instala APK fuera de Play desde una URL fija, comprobando el SHA-256. Instalar un launcher nuevo borra el HOME elegido, por eso `apply.sh` aplica apps antes que home.
+- **Hallazgo:** el servicio de Plume no arrancaba. `apply.sh` activaba el servicio de accesibilidad antes de dar `APP_AUTO_START`; TCL bloqueó el arranque y Android no reintenta. Ahora appops va antes que settings.
+- **Hallazgo:** los botones Netflix, YouTube y engranaje no andaban desde la ola 0, al deshabilitar launcherx (el firmware le manda esos botones a él). Plume los reasigna. Se verificó con un control virtual: abren su app desde el inicio y desde otras apps, y mantener apretado el volumen sigue repitiendo normalmente.
+- Plume quedó con solo la grilla de apps (fila de "Continue Watching" en *Never*).
+- `packages.conf` admite `uninstall` para apps del usuario (nunca del sistema). El backup guarda sus APK para que `rollback.sh` las reinstale.
+
 ### Pendiente de comprobar a mano (la próxima vez que se use el TV)
 
 - Que el control responda: el primer botón lo despierta. Home, Back, volumen, Inputs y la imagen real en un HDMI.
 - Castear algo desde el celular.
 - Los pasos de [`manual.md`](manual.md): *Uso y diagnóstico* apagado, modo *Hogar*, Aerial Views en 1080p SDR con "reducir buffers" y la prueba de las opciones de imagen "AI".
-- Sin efecto, como se esperaba: el botón del micrófono (voz deshabilitada), el engranaje del control (dashboard) y el botón Guard.
+- Con el control real: Netflix y YouTube abren su app, y el engranaje abre Ajustes (probado con el control virtual).
+- Sin efecto, como se esperaba: el botón del micrófono (voz deshabilitada) y el botón Guard.
 
-## 6. Decisiones (tomadas el 2026-11-06)
+## 6. Decisiones (tomadas el 2026-11-06 y el 2026-11-09)
 
 | # | Tema | Decisión | Efecto en `config/` |
 |---|---|---|---|
@@ -262,7 +278,10 @@ Cómo leerlo:
 | 6 | USB y "escuchar solo" | Se mantienen | `gallery`, `ui_mediaCenter`, `t_solo` quedan |
 | 7 | Firmware de TCL | Deshabilitado, con forma de volver a buscar actualizaciones | Ola 4: `tcl.ttvs` y `tcl.versionUpdateApp` apagados; `scripts/firmware-update.sh` los prende, abre la pantalla de actualización y los vuelve a apagar |
 | 8 | YouTube Music, Crunchyroll, Jellyfin | Se quedan | Sin cambios (Prime Video sí se deshabilita) |
-| 9 | Launcher | Etapa 2, aparte | Sigue FLauncher; ver ola 6 |
+| 9 | Launcher | Plume, después de probar TV Launcher y Plume contra FLauncher (2026-11-09) | Ola 6: `home.conf`, `apps.conf`, su servicio en `settings.conf` y `appops.conf` |
+| 10 | Botones Netflix/YouTube/engranaje | Que anden, si el launcher lo trae | Plume los reasigna; `buttons.conf` los verifica |
+| 11 | Pantalla de inicio | Solo la grilla de apps | Plume: fila de series en *Never* (se configura en Plume) |
+| 12 | FLauncher | Desinstalarlo | Ola 6: `uninstall` en `packages.conf` (TV Launcher también) |
 
 La ejecución es desatendida: `scripts/wave.sh N` aplica, reinicia, verifica con `scripts/verify.sh --ui` (abre cada app, una entrada HDMI, Ajustes y el protector de pantalla) y, si algo falla, vuelve atrás solo.
 

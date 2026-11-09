@@ -35,7 +35,7 @@ com.android.providers.tv: 10
 com.android.providers.userdictionary: 10
 com.android.proxyhandler: 5
 com.android.se: 5
-com.android.settings.intelligence: 40
+com.android.settings.intelligence: 10
 com.android.sharedstoragebackup: 10
 com.android.shell: 5
 com.android.soundpicker: 40
@@ -69,7 +69,7 @@ com.google.android.overlay.modules.ext.services: 10
 com.google.android.overlay.modules.modulemetadata.forframework: 10
 com.google.android.overlay.modules.permissioncontroller.forframework: 10
 com.google.android.overlay.modules.permissioncontroller: 10
-com.google.android.packageinstaller: 10
+com.google.android.packageinstaller: 40
 com.google.android.partnersetup: 40
 com.google.android.permissioncontroller: 10
 com.google.android.play.games: 40
@@ -135,7 +135,7 @@ com.tcl.versionUpdateApp: 5
 com.tcl.waterfall.overseas: 40
 com.tcl.xian.StartandroidService: 10
 com.tvos: 10
-me.efesser.flauncher: 10
+dev.plume: 10
 nl.giejay.android.tv.immich: 10
 org.chromium.webview_shell: 40
 org.jellyfin.androidtv: 10

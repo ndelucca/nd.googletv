@@ -41,7 +41,7 @@ done <<<"$disabled"
 print_totals >/dev/null || true
 echo
 log "drift against config/ (waves <= $applied, the last applied wave)"
-for step in packages settings appops compile home; do
+for step in apps home packages appops settings compile; do
   out="$("$REPO_ROOT/scripts/apply-$step.sh" --wave "$applied" 2>&1)" || rc=1
   echo "$out" | grep -vE '^\s+\S*ok\S*\s' || true
   grep -qE 'would|FAIL' <<<"$out" && rc=1

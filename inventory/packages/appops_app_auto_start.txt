@@ -129,7 +129,7 @@ com.tcl.usercenter: No operations. Default mode: ignore
 com.tcl.versionUpdateApp: No operations. Default mode: ignore 
 com.tcl.waterfall.overseas: No operations. Default mode: ignore 
 com.tvos: No operations. Default mode: ignore 
-me.efesser.flauncher: No operations. Default mode: ignore 
+dev.plume: APP_AUTO_START: allow ago 
 nl.giejay.android.tv.immich: No operations. Default mode: ignore 
 org.chromium.webview_shell: No operations. Default mode: ignore 
 org.jellyfin.androidtv: APP_AUTO_START: ignore ago 

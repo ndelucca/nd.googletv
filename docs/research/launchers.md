@@ -51,7 +51,51 @@ Verified on G03/BeyondTV4 units ([debloat.txt header](https://github.com/Gathin2
 - On TCL: `appops set <pkg> APP_AUTO_START allow`. Users report remappers/launchers switching themselves off on TCL.
 - A separate remapper = one more resident process; a launcher with built-in remap (Plume, LtvLauncher) avoids that (inference).
 
-## Ranking for this TV
+## Trial on this TV (2026-11-09): Plume won
+
+Wave 6. Each candidate was installed by `scripts/apply-apps.sh`, made HOME by `apply-home.sh` and measured with `scripts/benchmark.sh --quick` (same TV state, ~7 min each; reports in [`../../benchmarks/`](../../benchmarks/)). "Idle" = sitting on Home, nothing pressed.
+
+| | FLauncher 0.18.0 (before) | TV Launcher 1.6.2 (F-Droid) | **Plume 1.7.1** |
+|---|---:|---:|---:|
+| Memory, PSS of all its processes, idle | 48 MB (19 in swap) | **26 MB (9 in swap)**, measured by hand after the run | 39 MB (6 in swap) |
+| CPU over 10 s idle: launcher / surfaceflinger | **42.6 % / 34.8 %** | 0.2 % / 0.1 % | 0.0 % / 0.0 % |
+| Back to Home (median of 5) | 78 ms | 87 ms | 90 ms |
+| Apps still in memory after opening 7 | 6/7 | 6/7 | 6/7 |
+| Low-memory kills during the run | 1 | 0 | 0 |
+| Netflix / YouTube / gear buttons | dead | dead | **work** (remapped by Plume) |
+
+- **FLauncher redraws the screen 60 times a second while idle** (Flutter): a whole core between it and surfaceflinger, all day. That alone justified the change.
+- Right after start, or after a heavy screen (TV Launcher's app picker, Plume's settings), PSS reads high (86 MB and 73 MB); it settles within minutes. Compare idle figures only.
+- **Decision:** Plume, because it also fixes the remote's app buttons; TV Launcher was lighter but leaves them dead. FLauncher and TV Launcher were uninstalled (`config/packages.conf`, wave 6).
+
+### TV Launcher notes (to try it again)
+
+- Install: uncomment its line in `config/apps.conf` (pinned F-Droid APK, versionCode 10602, SHA-256 there), drop `6 com.tvlauncher uninstall` from `config/packages.conf`, set `com.tvlauncher/.MainActivity` in `config/home.conf`, run `scripts/wave.sh 6`.
+- Starts with an **empty grid**: Add App → Select Apps → tick each app → Done. Done by hand with the remote (or `input keyevent` over ADB); the selection lives in its private data, so the scripts can't set it.
+- Plain dark grid, no wallpaper, no clock. Gear tile → system settings. No HDMI shortcut, no rows, no key remap, no accessibility service, no network in the F-Droid build (no updater).
+- To get the Netflix/YouTube/gear buttons with it you need a separate remapper (an extra resident process; see "TCL remote keys" above). Check it with `config/buttons.conf` + `scripts/verify.sh --ui`.
+- No TCL quirks seen: no APP_AUTO_START needed (no services), survived the benchmark with 0 kills.
+
+### Plume notes
+
+- Settings used (Plume settings, top-right sliders icon): Shows row → **Never** (app grid only), Clock & weather Off (default), wallpaper "Arctic Aurora" (default, 4K; included in the PSS above), Home & remote → Home opens Plume.
+- **Remote keys** (Plume settings → Home & remote → Remote keys → Add a key, press the button, Press → Open an app or input…): `Key 4062 (242)` → Netflix, `Key 4065 (245)` → YouTube, `Key 4077 (233)` → TV Settings. They live in Plume's private preferences: **if Plume's data is cleared or it is reinstalled, set them again** (with the real remote, or over ADB with the virtual remote below). `verify.sh --ui` fails if they're gone.
+- Needs its accessibility service `dev.plume/dev.plume.HomeOverride` (settings.conf), `APP_AUTO_START allow` (appops.conf) and `WRITE_SECURE_SETTINGS` (apps.conf `grants=`, lets it turn its service back on).
+- **Order matters:** enabling the service before `APP_AUTO_START` is allowed makes TCL refuse the bind (`TclAppBoot ... callee_does't_have_OP_AUTO_START_permission`) and Android never retries until the setting changes or the TV reboots. `apply.sh` now applies appops before settings.
+- With remaps set Plume filters every key, but **holding volume still repeats normally** (40 → 17 with Plume vs 40 → 18 without, 1.5 s hold). The volume-hold caveat from other TVs doesn't apply here.
+- Network: checks GitHub for a newer release when it's open (no scheduled job); installing one needs confirming on screen. `apply-apps.sh` pins 1.7.1 as the minimum.
+
+## How the remote's app buttons work on this firmware
+
+Found while testing (2026-11-09), from logcat and the `TclPhoneWindowManager` strings in `/system/framework/services.jar`:
+- Netflix = keycode 4062 (`TCL_NETFLIX`, scan 242), YouTube = 4065 (`TCL_YOUTUBE`, scan 245), gear = 4077 (`TCL_SET`, scan 233). The remote (`TCL_RC902V_M8`, BLE, 0417:0304) uses `Generic.kl` and the generic HID driver; TCL's kernel maps consumer-page usages **0x51 → 242, 0x57 → 245, 0x55 → 233** (also 0x28b → 233).
+- `TclPhoneWindowManager.handleCustomKey` → `startNetflix`/`startYouTube` sends a broadcast to launcherx's `GlobalButtonLaunch_Receiver` (Google TV platform path). With launcherx disabled nobody receives it: **the buttons stopped working in wave 0**, not because of anything later. The gear logs `Start tcl set short press` and opened TCL's dashboard through launcherx too.
+- Accessibility key filters see these keys before `handleCustomKey`, so a remapping service (Plume) can take them.
+- **`adb shell input keyevent` can't test this:** injected keys skip the accessibility input filter. Writing to `/dev/input` is blocked by SELinux. What works: a virtual HID device through `/dev/uhid` (the `shell` user is in the `uhid` group) created with the system `hid` tool, copying the real remote's identity (Bluetooth bus, 0417:0304). Its presses travel the same path as real ones. `scripts/lib.sh` has `vremote_start`/`vremote_press`/`vremote_stop`; `verify.sh --ui` uses them for `config/buttons.conf`.
+- Don't name the virtual device `virtual-remote`: the system has a `virtual-remote.kl` that maps every key to 0.
+- Usages were found without pressing anything: register a device whose descriptor covers a usage range and read the key bits it gets with `getevent -p`, narrowing the range.
+
+## Ranking before the trial (web research)
 
 1. **TV Launcher, F-Droid build** — `https://f-droid.org/repo/com.tvlauncher_10602.apk`. Lightest maintained option with published numbers (25–30 MB), plain Views, F-Droid-signed. Trade-offs: no categories or HDMI shortcut; Netflix/YouTube/Prime/gear keys need a remapper (extra process).
 2. **Plume** — `https://github.com/aradhyas8/Plume_Launcher/releases/latest/download/Plume.apk`. Only one bundling HDMI switching + remote-key remap + Home service in a 0.4 MB library-free APK. Trade-offs: 50–70 MB self-reported (more than FLauncher), 3 weeks old, internet + self-updater.

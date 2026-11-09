@@ -83,6 +83,6 @@ com.tcl.tv
 com.tcl.tvinput
 com.tcl.ui_mediaCenter
 com.tvos
-me.efesser.flauncher
+dev.plume
 nl.giejay.android.tv.immich
 org.jellyfin.androidtv

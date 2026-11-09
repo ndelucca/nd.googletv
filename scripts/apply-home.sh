@@ -18,7 +18,11 @@ else
   if [[ "$cur" == "$want" ]]; then
     report ok "home" "$want"
   elif ! tv_shell pm list packages -e | grep -qxF "package:$pkg"; then
-    report fail "home" "$pkg is not installed or is disabled"
+    if [[ $APPLY -eq 0 ]] && conf_wave_lines "$CONFIG_DIR/apps.conf" | awk '{print $1}' | grep -qxF "$pkg"; then
+      report change "home" "$cur -> $want (after apply-apps.sh installs it)"
+    else
+      report fail "home" "$pkg is not installed or is disabled"
+    fi
   else
     report change "home" "$cur -> $want"
     if [[ $APPLY -eq 1 ]]; then

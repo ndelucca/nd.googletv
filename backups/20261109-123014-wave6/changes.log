@@ -1,0 +1,4 @@
+2026-11-09 12:30:33	install com.tvlauncher none -> 10602
+2026-11-09 12:30:37	install dev.plume none -> 10
+2026-11-09 12:30:39	grant dev.plume android.permission.WRITE_SECURE_SETTINGS
+2026-11-09 12:30:39	home android/com.android.internal.app.ResolverActivity -> com.tvlauncher/.MainActivity

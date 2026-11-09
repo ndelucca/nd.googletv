@@ -5,10 +5,12 @@
 #   scripts/verify.sh                    system checks (no UI): boot, Wi-Fi, HDMI inputs, remote,
 #                                        key services, launcher, protected packages, crashes
 #   scripts/verify.sh --ui               also opens every app, an HDMI input, settings and the
-#                                        screensaver on screen, and saves screenshots to verify-screens/
+#                                        screensaver on screen, presses the app buttons of
+#                                        config/buttons.conf on a virtual remote, and saves
+#                                        screenshots to verify-screens/
 #
-# What it can't check: the actual picture on an HDMI port, sound, and the physical remote's buttons
-# (it checks the remote is connected and injects key events instead).
+# What it can't check: the actual picture on an HDMI port, sound, and the physical remote itself
+# (it checks the remote is connected; button presses come from a virtual copy of it).
 source "$(dirname "$0")/lib.sh"
 
 REF="$REPO_ROOT/state/verify-reference.txt"
@@ -67,7 +69,8 @@ log "system"
 if tv_shell cmd wifi status 2>/dev/null | grep -q "Wifi is connected"; then report ok "wifi" "connected"; else report fail "wifi" "not connected"; fi
 if tv_shell dumpsys connectivity | grep -q 'VALIDATED'; then report ok "internet" "validated"; else report fail "internet" "network not validated"; fi
 
-want_home="$(conf_lines "$CONFIG_DIR/home.conf" | awk 'NF {c=$2} END {print c}')"
+applied="$(cat "$REPO_ROOT/state/applied-wave" 2>/dev/null || echo 0)"
+want_home="$(MAX_WAVE="$applied" conf_wave_lines "$CONFIG_DIR/home.conf" | awk 'NF {c=$1} END {print c}')"
 got_home="$(home_comp)"
 [[ "$got_home" == "$want_home" ]] && report ok "home" "$got_home" || report fail "home" "expected $want_home, got $got_home"
 
@@ -105,6 +108,18 @@ if tv_shell pm list packages -e | grep -qxF "package:com.google.android.apps.med
   else
     report fail "chromecast" "mediashell enabled but no service running"
   fi
+fi
+
+a11y="$(tv_shell settings get secure enabled_accessibility_services)"
+if [[ -n "$a11y" && "$a11y" != "null" ]]; then
+  for comp in ${a11y//:/ }; do
+    pkg="${comp%%/*}"; cls="${comp##*.}"
+    if tv_shell dumpsys activity services "$pkg" | grep -qE "ServiceRecord\{.*[./]$cls\}"; then
+      report ok "accessibility" "$comp running"
+    else
+      report fail "accessibility" "$comp enabled but not running (APP_AUTO_START?)"
+    fi
+  done
 fi
 
 log "packages"
@@ -181,6 +196,27 @@ if [[ $UI -eq 1 ]]; then
   [[ "$(resumed_pkg)" == "com.android.tv.settings" ]] && report ok "ui settings" "opened" || report fail "ui settings" "did not open ($(resumed_pkg))"
   shot 85-settings
   home_key
+
+  log "UI: remote buttons"
+  buttons="$(MAX_WAVE="$applied" conf_wave_lines "$CONFIG_DIR/buttons.conf")"
+  if [[ -z "$buttons" ]]; then
+    report skip "ui buttons" "none in config/buttons.conf"
+  elif vremote_start; then
+    trap vremote_stop EXIT
+    while read -r name code pkg; do
+      [[ -z "$name" ]] && continue
+      tv_shell pm list packages -e | grep -qxF "package:$pkg" || { report skip "ui button" "$name: $pkg disabled"; continue; }
+      vremote_press "$code"; sleep 7
+      front="$(resumed_pkg)"
+      if [[ "$front" == "$pkg" ]]; then report ok "ui button" "$name opens $pkg"
+      else report fail "ui button" "$name: front is ${front:-?}, expected $pkg (remap lost? see config/buttons.conf)"; fi
+      shot "86-button-$name"
+      home_key
+    done <<<"$buttons"
+    vremote_stop; trap - EXIT
+  else
+    report fail "ui buttons" "could not create the virtual remote (uhid)"
+  fi
 
   log "UI: screensaver"
   # Close the screensaver app first: in real use it starts from a stopped process, which is

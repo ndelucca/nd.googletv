@@ -1,109 +1,194 @@
-Load: 28.61 / 30.23 / 21.39
-CPU usage from 104219ms to 11409ms ago (2026-11-06 03:03:25.207 to 2026-11-06 03:04:58.017):
-  41% 1571/me.efesser.flauncher: 32% user + 9.6% kernel / faults: 27380 minor 3 major
-  40% 344/surfaceflinger: 17% user + 22% kernel / faults: 959 minor 90 major
-  14% 726/system_server: 8.8% user + 5.6% kernel / faults: 15980 minor 2434 major
-  9.2% 293/android.hardware.graphics.composer-rtk@2.4-service: 3.9% user + 5.3% kernel / faults: 186 minor 13 major
-  9.1% 333/audioserver: 8.4% user + 0.6% kernel / faults: 233 minor 34 major
-  8.7% 1784/com.spotify.tv.android: 7.4% user + 1.2% kernel / faults: 6770 minor 639 major
-  5% 360/sitatvservice: 2.7% user + 2.3% kernel / faults: 562 minor 1 major
-  4% 281/android.hardware.audio.service: 1.3% user + 2.7% kernel / faults: 44 minor
-  2.7% 1787/rtkm_scene: 0.2% user + 2.5% kernel / faults: 13 minor
-  1.9% 62/kswapd0: 0% user + 1.9% kernel
-  1.8% 1785/rtkm_ultraFace: 0.1% user + 1.6% kernel / faults: 7 minor
-  1.1% 199/logd: 0.5% user + 0.6% kernel / faults: 203 minor 9 major
-  0.9% 501/audio_codec: 0.4% user + 0.5% kernel / faults: 32 minor
-  0.8% 3229/kworker/u9:3: 0% user + 0.8% kernel
-  0.8% 325/rtdlog: 0% user + 0.8% kernel
-  0.8% 239/kworker/u9:1: 0% user + 0.8% kernel
-  0.7% 459/adbd: 0.1% user + 0.6% kernel / faults: 3327 minor 18 major
-  0.7% 21/ksoftirqd/2: 0% user + 0.7% kernel
-  0.6% 1025/com.google.android.youtube.tv: 0.5% user + 0.1% kernel / faults: 3871 minor 282 major
+Load: 26.79 / 22.55 / 11.46
+CPU usage from 437574ms to 10727ms ago (2026-11-09 13:17:03.292 to 2026-11-09 13:24:10.139):
+  9.5% 62/kswapd0: 0% user + 9.5% kernel
+  8.3% 730/system_server: 5% user + 3.2% kernel / faults: 338679 minor 4507 major
+  5.1% 1391/com.google.android.gms: 3.7% user + 1.4% kernel / faults: 183265 minor 8624 major
+  4.7% 334/surfaceflinger: 2.2% user + 2.5% kernel / faults: 20379 minor 338 major
+  4.5% 357/sitatvservice: 2.1% user + 2.3% kernel / faults: 23930 minor 710 major
+  3.6% 21/ksoftirqd/2: 0% user + 3.6% kernel
+  3.3% 327/audioserver: 2.5% user + 0.7% kernel / faults: 5413 minor 187 major
+  2.4% 106/mmcqd/0: 0% user + 2.4% kernel
+  1.9% 291/android.hardware.graphics.composer-rtk@2.4-service: 0.7% user + 1.2% kernel / faults: 4484 minor 123 major
+  1.8% 26/ksoftirqd/3: 0% user + 1.8% kernel
+  1.7% 1502/com.android.providers.media.module: 1.1% user + 0.5% kernel / faults: 39394 minor 356 major
+  1.6% 8/ksoftirqd/0: 0% user + 1.6% kernel
+  1.5% 279/android.hardware.audio.service: 0.5% user + 1% kernel / faults: 1017 minor 78 major
+  1.1% 16/ksoftirqd/1: 0% user + 1.1% kernel
+  1% 501/media.codec: 0.7% user + 0.3% kernel / faults: 3052 minor 248 major
+  1% 1538/com.tcl.tv: 0.5% user + 0.4% kernel / faults: 67120 minor 1683 major
+  0.9% 290/android.hardware.graphics.allocator@4.0-service: 0% user + 0.9% kernel / faults: 1622 minor 11 major
+  0.9% 196/lmkd: 0.1% user + 0.8% kernel / faults: 35 minor
+  0.9% 1580/dev.plume: 0.6% user + 0.2% kernel / faults: 76808 minor 1334 major
+  0.8% 323/rtdlog: 0% user + 0.7% kernel / faults: 131 minor 33 major
+  0.8% 502/audio_codec: 0.3% user + 0.4% kernel / faults: 516 minor 25 major
+  0.8% 981/com.android.tv.settings: 0.4% user + 0.3% kernel / faults: 48946 minor 1093 major
   0.6% 562/hdmi_task: 0% user + 0.6% kernel
-  0.6% 106/mmcqd/0: 0% user + 0.6% kernel
-  0.5% 187/ueventd: 0.4% user + 0% kernel / faults: 102 minor
-  0.4% 1333/com.netflix.ninja: 0.3% user + 0.1% kernel / faults: 2177 minor 41 major
+  0.5% 195/logd: 0.2% user + 0.2% kernel / faults: 4118 minor 135 major
+  0.5% 461/adbd: 0% user + 0.4% kernel / faults: 13707 minor 43 major
+  0.4% 185/ueventd: 0.3% user + 0% kernel / faults: 3936 minor 24 major
   0.4% 136/film_mode_detec: 0% user + 0.4% kernel
-  0.4% 26/ksoftirqd/3: 0% user + 0.4% kernel
-  0.4% 1525/com.tcl.tv: 0.1% user + 0.2% kernel / faults: 1012 minor
-  0.3% 8/ksoftirqd/0: 0% user + 0.3% kernel
-  0.3% 9/rcu_preempt: 0% user + 0.3% kernel
-  0.3% 500/media.codec: 0.2% user + 0% kernel / faults: 5 minor
-  0.2% 1979/com.google.android.apps.mediashell: 0.1% user + 0.1% kernel / faults: 2508 minor 120 major
-  0.2% 2893/com.android.vending: 0.1% user + 0% kernel / faults: 3897 minor 154 major
-  0.2% 2402/org.jellyfin.androidtv: 0.1% user + 0% kernel / faults: 764 minor 2 major
-  0.2% 16/ksoftirqd/1: 0% user + 0.2% kernel
+  0.2% 1008/com.android.systemui: 0.1% user + 0.1% kernel / faults: 36458 minor 666 major
+  0.2% 9/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 287/android.hardware.drm@1.3-service.widevine: 0% user + 0.2% kernel / faults: 6296 minor 139 major
+  0.2% 1769/com.android.providers.tv: 0.1% user + 0% kernel / faults: 17854 minor 869 major
+  0.2% 197/servicemanager: 0% user + 0.1% kernel / faults: 1743 minor 3 major
   0.2% 124/vsc_tsk: 0% user + 0.2% kernel
-  0.2% 120/avd_detect_tsk: 0% user + 0.2% kernel
-  0.2% 359/log_out: 0% user + 0.1% kernel / faults: 5 minor
-  0.1% 200/lmkd: 0% user + 0.1% kernel
-  0.1% 12/migration/0: 0% user + 0.1% kernel
-  0.1% 15/migration/1: 0% user + 0.1% kernel
-  0.1% 201/servicemanager: 0% user + 0.1% kernel / faults: 105 minor 1 major
-  0.1% 725/kworker/u9:2: 0% user + 0.1% kernel
-  0% 960/com.android.tv.settings: 0% user + 0% kernel / faults: 855 minor
-  0% 1824/com.tcl.settings: 0% user + 0% kernel / faults: 1435 minor 63 major
-  0% 127/fix_lastline_ts: 0% user + 0% kernel
-  0% 133/init film_mode_: 0% user + 0% kernel
-  0% 296/android.hardware.memtrack@1.0-service: 0% user + 0% kernel / faults: 29 minor
-  0% 503/heserver: 0% user + 0% kernel / faults: 101 minor 36 major
-  0% 1399/com.google.android.gms: 0% user + 0% kernel / faults: 1579 minor 36 major
+  0.2% 356/log_out: 0% user + 0.1% kernel / faults: 159 minor
+  0.1% 989/com.android.bluetooth: 0% user + 0.1% kernel / faults: 15776 minor 352 major
+  0.1% 273/zygote: 0% user + 0.1% kernel / faults: 13130 minor 22 major
+  0.1% 272/netd: 0% user + 0.1% kernel / faults: 4633 minor 59 major
+  0.1% 306/kworker/u8:6: 0% user + 0.1% kernel
+  0.1% 1347/com.google.android.inputmethod.latin: 0.1% user + 0% kernel / faults: 21689 minor 181 major
+  0.1% 172/kworker/u8:4: 0% user + 0.1% kernel
+  0.1% 485/installd: 0% user + 0.1% kernel / faults: 268 minor 2 major
+  0.1% 727/kworker/u9:2: 0% user + 0.1% kernel
+  0.1% 511/media.swcodec: 0% user + 0% kernel / faults: 1523 minor 348 major
+  0.1% 1082/com.tcl.tvinput: 0% user + 0% kernel / faults: 17209 minor 402 major
+  0.1% 141/kworker/u9:0: 0% user + 0.1% kernel
+  0.1% 167/kworker/u8:1: 0% user + 0.1% kernel
+  0.1% 304/kworker/u8:5: 0% user + 0.1% kernel
+  0.1% 120/avd_detect_tsk: 0% user + 0.1% kernel
+  0.1% 1651/com.google.android.permissioncontroller: 0% user + 0% kernel / faults: 14824 minor 660 major
+  0.1% 271/statsd: 0% user + 0% kernel / faults: 1184 minor 30 major
+  0.1% 1/init: 0% user + 0% kernel / faults: 3456 minor 68 major
+  0% 214/jbd2/mmcblk0p17: 0% user + 0% kernel
+  0% 506/heserver: 0% user + 0% kernel / faults: 684 minor 25 major
   0% 114/rpc-A: 0% user + 0% kernel
   0% 117/md_check_thread: 0% user + 0% kernel
-  0% 121/hdmi_detect_tsk: 0% user + 0% kernel
-  0% 125/magnifier_tsk: 0% user + 0% kernel
-  0% 128/localDimmingDem: 0% user + 0% kernel
-  0% 130/variable_refres: 0% user + 0% kernel
-  0% 135/new_game_mode_t: 0% user + 0% kernel
+  0% 127/fix_lastline_ts: 0% user + 0% kernel
   0% 137/VPQ_detect_tsk: 0% user + 0% kernel
-  0% 563/infoframe_task: 0% user + 0% kernel
-  0% 564/audio_task: 0% user + 0% kernel
-  0% 987/com.android.systemui: 0% user + 0% kernel / faults: 938 minor
-  0% 1071/com.tcl.tvinput: 0% user + 0% kernel / faults: 756 minor
-  0% 1637/com.tcl.tv:privileged_process0: 0% user + 0% kernel / faults: 1333 minor 64 major
-  0% 2095/com.tcl.system.server: 0% user + 0% kernel / faults: 769 minor
-  0% 119/adc_detect_tsk: 0% user + 0% kernel
-  0% 129/game_mode_unmut: 0% user + 0% kernel
+  0% 198/hwservicemanager: 0% user + 0% kernel / faults: 2441 minor 13 major
+  0% 133/init film_mode_: 0% user + 0% kernel
+  0% 1607/com.google.process.gservices: 0% user + 0% kernel / faults: 6721 minor 63 major
+  0% 121/hdmi_detect_tsk: 0% user + 0% kernel
+  0% 1225/com.google.android.ext.services: 0% user + 0% kernel / faults: 15907 minor 323 major
+  0% 135/new_game_mode_t: 0% user + 0% kernel
+  0% 495/mediaserver: 0% user + 0% kernel / faults: 1665 minor 63 major
+  0% 570/audio_task: 0% user + 0% kernel
   0% 619/AioThread0: 0% user + 0% kernel
+  0% 119/adc_detect_tsk: 0% user + 0% kernel
+  0% 125/magnifier_tsk: 0% user + 0% kernel
+  0% 129/game_mode_unmut: 0% user + 0% kernel
+  0% 130/variable_refres: 0% user + 0% kernel
+  0% 128/localDimmingDem: 0% user + 0% kernel
+  0% 569/infoframe_task: 0% user + 0% kernel
+  0% 235/kworker/u9:1: 0% user + 0% kernel
+  0% 487/iopred_readahead: 0% user + 0% kernel / faults: 888 minor 9 major
+  0% 1262/com.google.android.tv.remote.service: 0% user + 0% kernel / faults: 8120 minor 175 major
+  0% 187/kworker/2:2: 0% user + 0% kernel
   0% 561/AppThread0: 0% user + 0% kernel
-  0% 565/AtvThread0: 0% user + 0% kernel
-  0% 2221/com.tcl.guard: 0% user + 0% kernel / faults: 721 minor
-  0% 3025/kworker/u8:7: 0% user + 0% kernel
-  0% 959/KernelAutoTune: 0% user + 0% kernel
-  0% 2051/com.android.vending:background: 0% user + 0% kernel / faults: 1386 minor 24 major
-  0% 2329/com.tcl.suspension: 0% user + 0% kernel / faults: 645 minor
-  0% 2598/kworker/1:0: 0% user + 0% kernel
+  0% 564/AtvThread0: 0% user + 0% kernel
+  0% 313/kworker/u8:7: 0% user + 0% kernel
+  0% 294/android.hardware.memtrack@1.0-service: 0% user + 0% kernel / faults: 701 minor 7 major
+  0% 1850/com.google.process.gapps: 0% user + 0% kernel / faults: 3760 minor 15 major
+  0% 951/KernelAutoTune: 0% user + 0% kernel
+  0% 115/rpc-V1: 0% user + 0% kernel
+  0% 1707/android.process.acore: 0% user + 0% kernel / faults: 3007 minor 16 major
+  0% 242/android.hardware.keymaster@3.0-service: 0% user + 0% kernel / faults: 599 minor 22 major
+  0% 305/vendor.ipel.engine@1.0-service: 0% user + 0% kernel / faults: 1262 minor 8 major
+  0% 921/main_thread: 0% user + 0% kernel
+  0% 488/keystore: 0% user + 0% kernel / faults: 994 minor 64 major
   0% 131/scaler_verify_t: 0% user + 0% kernel
-  0% 170/kworker/u8:2: 0% user + 0% kernel
-  0% 189/kworker/u8:5: 0% user + 0% kernel
-  0% 321/vendor.tcl.earc@1.0-service: 0% user + 0% kernel / faults: 57 minor 15 major
-  0% 920/main_thread: 0% user + 0% kernel
+  0% 317/vendor.tcl.earc@1.0-service: 0% user + 0% kernel / faults: 650 minor 15 major
   0% 3/hw_watchdog: 0% user + 0% kernel
+  0% 499/wificond: 0% user + 0% kernel / faults: 1097 minor
+  0% 508/tee-supplicant: 0% user + 0% kernel / faults: 805 minor 2 major
+  0% 31/kworker/0:1: 0% user + 0% kernel
   0% 123/vbi_detect_tsk: 0% user + 0% kernel
-  0% 167/kworker/u8:1: 0% user + 0% kernel
-  0% 275/netd: 0% user + 0% kernel / faults: 157 minor
-  0% 303/android.hardware.wifi@1.0-service: 0% user + 0% kernel / faults: 90 minor
-  0% 498/wificond: 0% user + 0% kernel / faults: 59 minor
-  0% 3018/nl.giejay.android.tv.immich: 0% user + 0% kernel / faults: 534 minor 66 major
-  0% 3285/com.google.android.youtube.tv.recommendations: 0% user + 0% kernel / faults: 566 minor 1 major
-  0% 25/migration/3: 0% user + 0% kernel
-  0% 61/kauditd: 0% user + 0% kernel
+  0% 1356/kworker/3:3: 0% user + 0% kernel
   0% 126/forcebg_tsk: 0% user + 0% kernel
-  0% 140/check_usb: 0% user + 0% kernel
-  0% 218/jbd2/mmcblk0p17: 0% user + 0% kernel
-  0% 274/statsd: 0% user + 0% kernel / faults: 36 minor
-  0% 289/android.hardware.drm@1.3-service.widevine: 0% user + 0% kernel / faults: 64 minor
-  0% 294/android.hardware.health@2.0-service: 0% user + 0% kernel / faults: 65 minor
-  0% 312/vendor.realtek.ginga@1.0-service: 0% user + 0% kernel / faults: 3 minor
-  0% 331/motionclient: 0% user + 0% kernel / faults: 118 minor
-  0% 361/tcl_gingad: 0% user + 0% kernel / faults: 2 minor
-  0% 514/mdnsd: 0% user + 0% kernel / faults: 8 minor
-  0% 515/rtk_burn_key: 0% user + 0% kernel / faults: 2 minor
-  0% 921/hif_thread: 0% user + 0% kernel
-  0% 1548/com.android.providers.media.module: 0% user + 0% kernel / faults: 22 minor 21 major
- +0% 2408/kworker/1:2: 0% user + 0% kernel
- +0% 2977/dumpsys: 0% user + 0% kernel
- +0% 3392/kworker/2:2: 0% user + 0% kernel
- +0% 3545/kworker/0:2: 0% user + 0% kernel
- +0% 3578/kworker/3:2: 0% user + 0% kernel
-44% TOTAL: 24% user + 19% kernel + 0.1% iowait + 0.6% softirq
+  0% 301/android.hardware.wifi@1.0-service: 0% user + 0% kernel / faults: 1680 minor
+  0% 512/mdnsd: 0% user + 0% kernel / faults: 678 minor 12 major
+  0% 199/psimon: 0% user + 0% kernel
+  0% 238/kworker/1:2: 0% user + 0% kernel
+  0% 493/media.metrics: 0% user + 0% kernel / faults: 1432 minor 69 major
+  0% 297/android.hardware.power@1.0-service: 0% user + 0% kernel / faults: 688 minor 5 major
+  0% 308/vendor.realtek.ginga@1.0-service: 0% user + 0% kernel / faults: 49 minor
+  0% 513/rtk_burn_key: 0% user + 0% kernel / faults: 74 minor
+  0% 181/rtkvdec_debug_c: 0% user + 0% kernel
+  0% 243/vendor.realtek.tv@1.0-service: 0% user + 0% kernel / faults: 727 minor 100 major
+  0% 292/android.hardware.health@2.0-service: 0% user + 0% kernel / faults: 836 minor 22 major
+  0% 310/EitvRestServer: 0% user + 0% kernel / faults: 659 minor 2 major
+  0% 479/cameraserver: 0% user + 0% kernel / faults: 733 minor 15 major
+  0% 492/media.extractor: 0% user + 0% kernel / faults: 105 minor 14 major
+  0% 922/hif_thread: 0% user + 0% kernel
+  0% 12/migration/0: 0% user + 0% kernel
+  0% 15/migration/1: 0% user + 0% kernel
+  0% 122/onlinemeasure_t: 0% user + 0% kernel
+  0% 240/android.system.suspend@1.0-service: 0% user + 0% kernel / faults: 807 minor 2 major
+  0% 285/android.hardware.drm@1.3-service.mgkid: 0% user + 0% kernel / faults: 308 minor 9 major
+  0% 321/rtkd: 0% user + 0% kernel / faults: 248 minor
+  0% 339/iptables-restore: 0% user + 0% kernel / faults: 259 minor 10 major
+  0% 486/iopred: 0% user + 0% kernel / faults: 1561 minor 4 major
+  0% 64/cma_boost_1: 0% user + 0% kernel
+  0% 207/vold: 0% user + 0% kernel / faults: 670 minor 17 major
+  0% 280/android.hardware.bluetooth@1.0-service: 0% user + 0% kernel / faults: 155 minor 4 major
+  0% 284/android.hardware.drm@1.3-service.clearkey: 0% user + 0% kernel / faults: 325 minor 16 major
+  0% 286/android.hardware.drm@1.3-service.playready: 0% user + 0% kernel / faults: 336 minor 11 major
+  0% 325/motionclient: 0% user + 0% kernel / faults: 100 minor 3 major
+  0% 358/tcl_gingad: 0% user + 0% kernel / faults: 65 minor
+  0% 29/kdevtmpfs: 0% user + 0% kernel
+  0% 61/kauditd: 0% user + 0% kernel
+  0% 63/cma_boost_0: 0% user + 0% kernel
+  0% 65/cma_boost_2: 0% user + 0% kernel
+  0% 66/cma_boost_3: 0% user + 0% kernel
+  0% 116/kusbdump: 0% user + 0% kernel
+  0% 118/rtk_monitor_thr: 0% user + 0% kernel
+  0% 138/se_tsk: 0% user + 0% kernel
+  0% 201/vndservicemanager: 0% user + 0% kernel / faults: 366 minor 9 major
+  0% 278/android.hidl.allocator@1.0-service: 0% user + 0% kernel / faults: 433 minor 42 major
+  0% 319/vendor.tcl.input@1.0-service: 0% user + 0% kernel / faults: 54 minor 2 major
+  0% 332/gpuservice: 0% user + 0% kernel / faults: 475 minor 11 major
+  0% 340/ip6tables-restore: 0% user + 0% kernel / faults: 242 minor 2 major
+  0% 395/kworker/2:1H: 0% user + 0% kernel
+  0% 465/traced_probes: 0% user + 0% kernel / faults: 61 minor 6 major
+  0% 466/traced: 0% user + 0% kernel / faults: 133 minor 8 major
+  0% 494/LogkitInputEvent: 0% user + 0% kernel / faults: 38 minor 21 major
+  0% 498/storaged: 0% user + 0% kernel / faults: 478 minor 30 major
+ +0% 895/com.google.android.youtube.tv.recommendations: 0% user + 0% kernel
+ +0% 1083/nl.giejay.android.tv.immich: 0% user + 0% kernel
+ +0% 1179/kbase_event: 0% user + 0% kernel
+ +0% 1377/org.jellyfin.androidtv: 0% user + 0% kernel
+ +0% 1468/kbase_event: 0% user + 0% kernel
+ +0% 1739/kbase_event: 0% user + 0% kernel
+ +0% 1803/com.tcl.tv:privileged_process0: 0% user + 0% kernel
+ +0% 1851/kbase_event: 0% user + 0% kernel
+ +0% 1925/rtkm_ultraFace: 0% user + 0% kernel
+ +0% 1926/rtkm_scene: 0% user + 0% kernel
+ +0% 1958/com.tcl.settings: 0% user + 0% kernel
+ +0% 1971/android.process.media: 0% user + 0% kernel
+ +0% 1982/com.android.settings.intelligence: 0% user + 0% kernel
+ +0% 1995/com.google.android.apps.mediashell: 0% user + 0% kernel
+ +0% 2240/com.tcl.system.server: 0% user + 0% kernel
+ +0% 2298/com.tcl.guard: 0% user + 0% kernel
+ +0% 2357/com.tcl.suspension: 0% user + 0% kernel
+ +0% 2392/com.google.android.gms.unstable: 0% user + 0% kernel
+ +0% 2438/com.android.vending: 0% user + 0% kernel
+ +0% 2510/kworker/3:1: 0% user + 0% kernel
+ +0% 2515/kworker/1:0: 0% user + 0% kernel
+ +0% 2524/kworker/0:0: 0% user + 0% kernel
+ +0% 2542/com.neilturner.aerialviews: 0% user + 0% kernel
+ +0% 2619/dumpsys: 0% user + 0% kernel
+ +0% 2636/com.android.providers.calendar: 0% user + 0% kernel
+ +0% 2637/kbase_event: 0% user + 0% kernel
+ +0% 2702/com.android.shell: 0% user + 0% kernel
+ +0% 2726/kbase_event: 0% user + 0% kernel
+ +0% 2745/com.google.android.apps.nbu.smartconnect.tv: 0% user + 0% kernel
+ +0% 2792/com.android.vending:background: 0% user + 0% kernel
+ +0% 2846/usap32: 0% user + 0% kernel
+ +0% 2850/usap32: 0% user + 0% kernel
+ +0% 2851/usap32: 0% user + 0% kernel
+ +0% 2865/com.google.android.packageinstaller: 0% user + 0% kernel
+ +0% 2905/com.google.android.tts: 0% user + 0% kernel
+ +0% 2928/kworker/2:0: 0% user + 0% kernel
+ +0% 2951/com.android.externalstorage: 0% user + 0% kernel
+ +0% 2978/kbase_event: 0% user + 0% kernel
+ +0% 3408/com.google.android.youtube.tv: 0% user + 0% kernel
+ +0% 3474/kbase_event: 0% user + 0% kernel
+ +0% 3584/com.google.android.youtube.tvmusic: 0% user + 0% kernel
+ +0% 3615/kbase_event: 0% user + 0% kernel
+ +0% 3777/com.netflix.ninja: 0% user + 0% kernel
+ +0% 3827/kbase_event: 0% user + 0% kernel
+ +0% 3936/com.spotify.tv.android: 0% user + 0% kernel
+ +0% 3986/kbase_event: 0% user + 0% kernel
+32% TOTAL: 16% user + 12% kernel + 1% iowait + 2.3% softirq

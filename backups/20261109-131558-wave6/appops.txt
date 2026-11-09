@@ -1,0 +1,3 @@
+com.neilturner.aerialviews APP_AUTO_START allow
+com.crunchyroll.crunchyroid RUN_ANY_IN_BACKGROUND ignore
+dev.plume APP_AUTO_START allow

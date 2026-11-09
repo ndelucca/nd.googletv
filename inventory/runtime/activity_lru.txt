@@ -1,44 +1,46 @@
 ACTIVITY MANAGER LRU PROCESSES (dumpsys activity lru)
   Activities:
-  #40: fg     TOP  LCM 1571:me.efesser.flauncher/u0a62 act:activities|recents
-  #39: prev   LAST --- 2893:com.android.vending/u0a30 act:activities|recents
-  #38: cch    CAC  --- 2402:org.jellyfin.androidtv/u0a87 act:activities|recents
-  #37: prcp   FGS  --- 1784:com.spotify.tv.android/u0a101 act:activities|recents
-  #36: cch+ 5 SVC  --- 1333:com.netflix.ninja/u0a36 act:activities|recents
-  #35: cch+10 CAC  --- 1025:com.google.android.youtube.tv/u0a34 act:activities|recents
-  #34: cch+20 CRE  --- 3584:com.google.android.youtube.tvmusic/u0a39 act:recents
-  #33: vis    BFGS --- 1071:com.tcl.tvinput/1000 act:client
-  #32: psvc   PER  LCM 1637:com.tcl.tv:privileged_process0/1000 act:client
-  #31: psvc   PER  LCM 968:com.android.bluetooth/1002
-  #30: vis    FGS  -CM 1399:com.google.android.gms/u0a9 act:client
+  #42: fg     TOP  LCM 1580:dev.plume/u0a74 act:activities|recents
+  #41: prev   LAST --- 3408:com.google.android.youtube.tv/u0a34 act:activities|recents
+  #40: cch+ 5 SVC  --- 3777:com.netflix.ninja/u0a36 act:activities|recents
+  #39: cch    CAC  --- 1377:org.jellyfin.androidtv/u0a87 act:activities|recents
+  #38: cch+10 CAC  --- 1083:nl.giejay.android.tv.immich/u0a107 act:activities|recents
+  #37: prcp   FGS  --- 3936:com.spotify.tv.android/u0a101 act:activities|recents
+  #36: cch+20 CRE  --- 3584:com.google.android.youtube.tvmusic/u0a39 act:recents
+  #35: cch+30 CAC  --- 2438:com.android.vending/u0a30 act:activities|recents
+  #34: vis    BFGS --- 1082:com.tcl.tvinput/1000 act:client
+  #33: psvc   PER  LCM 1803:com.tcl.tv:privileged_process0/1000 act:client
+  #32: psvc   PER  LCM 989:com.android.bluetooth/1002
+  #31: cch+40 CACC --- 1982:com.android.settings.intelligence/u0a57 act:client
+  #30: vis    FGS  -CM 1391:com.google.android.gms/u0a9 act:client
   Other:
-  #29: cch+ 5 CEM  --- 2051:com.android.vending:background/u0a30
-  #28: cch+15 CEM  --- 3285:com.google.android.youtube.tv.recommendations/u0a34
-  #27: cch+15 CEM  --- 3018:nl.giejay.android.tv.immich/u0a107
-  #26: cch+25 CEM  --- 1592:com.google.process.gservices/u0a9
-  #25: cch+25 CEM  --- 1752:com.google.process.gapps/u0a9
-  #24: svc    SVC  --- 1979:com.google.android.apps.mediashell/u0a23
-  #23: cch+35 CEM  --- 2526:com.google.android.gms.unstable/u0a9
-  #22: cch+35 CEM  --- 2211:com.neilturner.aerialviews/u0a106
-  #21: vis    BFGS --- 1219:com.google.android.ext.services/u0a82
-  #20: cch+45 CEM  --- 1849:com.android.settings.intelligence/u0a57
-  #19: cch+45 SVC  --- 960:com.android.tv.settings/1000
-  #18: fg     BFGS --- 1824:com.tcl.settings/1000
-  #17: psvc   PER  LCM 1548:com.android.providers.media.module/u0a85
-  #16: cch+55 CEM  --- 1961:android.process.acore/u0a14
-  #15: cch+55 CEM  --- 2852:com.android.externalstorage/u0a10
-  #14: vis+99 CEM  --- 2329:com.tcl.suspension/1000
-  #13: cch+65 CEM  --- 2800:com.google.android.tts/u0a51
-  #12: cch+65 CEM  --- 2757:com.google.android.permissioncontroller/u0a81
-  #11: cch+75 CEM  --- 2716:com.google.android.packageinstaller/u0a22
-  #10: vis+99 CEM  --- 2626:com.google.android.apps.nbu.smartconnect.tv/u0a11
-  # 9: cch+75 CEM  --- 2463:com.android.providers.calendar/u0a21
-  # 8: pers   PER  LCM 2221:com.tcl.guard/1000
-  # 7: vis    FGS  --- 1261:com.google.android.tv.remote.service/u0a12
-  # 6: prcp   IMPB --- 1365:com.google.android.inputmethod.latin/u0a56
-  # 5: pers   PER  LCM 2095:com.tcl.system.server/1000
-  # 4: pers   PER  LCM 1841:com.android.providers.tv/u0a29
-  # 3: pers   PER  LCM 1525:com.tcl.tv/1000 act:activities|recents
-  # 2: pers   PER  LCM 1136:com.android.se/1068
-  # 1: pers   PER  LCM 987:com.android.systemui/u0a79
-  # 0: sys    PER  LCM 726:system/1000
+  #29: cch+ 5 CEM  --- 895:com.google.android.youtube.tv.recommendations/u0a34
+  #28: cch+15 CEM  --- 2542:com.neilturner.aerialviews/u0a106
+  #27: vis    BFGS --- 1225:com.google.android.ext.services/u0a82
+  #26: cch+15 SVC  --- 981:com.android.tv.settings/1000
+  #25: fg     BFGS --- 1958:com.tcl.settings/1000
+  #24: cch+25 CEM  --- 2392:com.google.android.gms.unstable/u0a9
+  #23: svc    SVC  --- 1995:com.google.android.apps.mediashell/u0a23
+  #22: cch+25 CEM  --- 2792:com.android.vending:background/u0a30
+  #21: cch+35 CEM  --- 1651:com.google.android.permissioncontroller/u0a81
+  #20: cch+35 CEM  --- 1607:com.google.process.gservices/u0a9
+  #19: vis+99 CEM  --- 2357:com.tcl.suspension/1000
+  #18: cch+45 CEM  --- 2951:com.android.externalstorage/u0a10
+  #17: cch+45 CEM  --- 1850:com.google.process.gapps/u0a9
+  #16: psvc   PER  LCM 1502:com.android.providers.media.module/u0a85
+  #15: cch+55 CEM  --- 2905:com.google.android.tts/u0a51
+  #14: cch+55 CEM  --- 2865:com.google.android.packageinstaller/u0a22
+  #13: cch+65 CEM  --- 2636:com.android.providers.calendar/u0a21
+  #12: vis+99 CEM  --- 2745:com.google.android.apps.nbu.smartconnect.tv/u0a11
+  #11: cch+65 CEM  --- 2702:com.android.shell/2000
+  #10: cch+75 CEM  --- 1971:android.process.media/u0a13
+  # 9: cch+75 CEM  --- 1707:android.process.acore/u0a14
+  # 8: pers   PER  LCM 2298:com.tcl.guard/1000
+  # 7: pers   PER  LCM 2240:com.tcl.system.server/1000
+  # 6: vis    FGS  --- 1262:com.google.android.tv.remote.service/u0a12
+  # 5: prcp   IMPB --- 1347:com.google.android.inputmethod.latin/u0a56
+  # 4: pers   PER  LCM 1769:com.android.providers.tv/u0a29
+  # 3: pers   PER  LCM 1538:com.tcl.tv/1000 act:activities|recents
+  # 2: pers   PER  LCM 1114:com.android.se/1068
+  # 1: pers   PER  LCM 1008:com.android.systemui/u0a79
+  # 0: sys    PER  LCM 730:system/1000

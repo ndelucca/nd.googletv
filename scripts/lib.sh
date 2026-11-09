@@ -95,6 +95,48 @@ sanitize() {
     -e 's/^((android_id|bluetooth_address|bluetooth_name|device_name|advertising_id)=).*/\1<redacted>/'
 }
 
+# ============================================================== virtual remote
+#
+# Presses remote buttons at the hardware level through a virtual HID device (uhid, via the system
+# `hid` tool). Unlike `input keyevent`, these presses go through accessibility key filters (Plume's
+# button remaps live there), exactly like a real press. The device copies the real remote's identity
+# (Bluetooth, 0417:0304), so the kernel and Android map its keys the same way. Codes are HID
+# consumer-page usages; TCL's kernel maps 0x51 → Netflix, 0x57 → YouTube, 0x55 → gear (TCL_SET).
+# Its name starts with "virtual" so verify.sh doesn't count it as a real input device, and it is not
+# "virtual-remote": the system ships a virtual-remote.kl that would map its keys differently.
+VREMOTE_DIR=""
+vremote_start() {
+  VREMOTE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/vremote.XXXXXX")"
+  mkfifo "$VREMOTE_DIR/in"
+  sleep 900 >"$VREMOTE_DIR/in" &                       # keeps the pipe open between presses
+  echo $! >"$VREMOTE_DIR/keeper"
+  adb -s "$TV_SERIAL" shell hid - <"$VREMOTE_DIR/in" >/dev/null 2>&1 &
+  echo $! >"$VREMOTE_DIR/reader"
+  # one 16-bit array input over consumer usages 0x001-0x3ff, no report id
+  local desc='"0x05","0x0c","0x09","0x01","0xa1","0x01","0x16","0x01","0x00","0x26","0xff","0x03","0x1a","0x01","0x00","0x2a","0xff","0x03","0x75","0x10","0x95","0x01","0x81","0x00","0xc0"'
+  echo "{\"id\":1,\"command\":\"register\",\"name\":\"virtual-tcl-rc\",\"vid\":\"0x0417\",\"pid\":\"0x0304\",\"bus\":\"bluetooth\",\"descriptor\":[$desc]}" >"$VREMOTE_DIR/in"
+  local i
+  for i in 1 2 3 4 5 6 7 8 9 10; do
+    tv_shell dumpsys input | grep -q 'virtual-tcl-rc' && { sleep 1; return 0; }   # Android has it, not just the kernel
+    sleep 1
+  done
+  vremote_stop; return 1
+}
+# vremote_press <usage, e.g. 0x51>: press and release one button.
+vremote_press() {
+  local u=$(( $1 ))
+  printf '{"id":1,"command":"report","report":["0x%02x","0x%02x"]}\n' $(( u & 0xff )) $(( u >> 8 )) >"$VREMOTE_DIR/in"
+  sleep 0.15
+  echo '{"id":1,"command":"report","report":["0x00","0x00"]}' >"$VREMOTE_DIR/in"
+}
+vremote_stop() {
+  [[ -n "$VREMOTE_DIR" && -d "$VREMOTE_DIR" ]] || return 0
+  kill "$(cat "$VREMOTE_DIR/keeper" 2>/dev/null)" 2>/dev/null || true   # EOF → hid unregisters the device
+  sleep 1
+  kill "$(cat "$VREMOTE_DIR/reader" 2>/dev/null)" 2>/dev/null || true
+  rm -rf "$VREMOTE_DIR"; VREMOTE_DIR=""
+}
+
 # ============================================================== apply framework
 #
 # Every apply-*.sh script follows the same contract:

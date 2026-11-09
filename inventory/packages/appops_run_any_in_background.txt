@@ -129,7 +129,7 @@ com.tcl.usercenter: No operations. Default mode: allow
 com.tcl.versionUpdateApp: No operations. Default mode: allow 
 com.tcl.waterfall.overseas: No operations. Default mode: allow 
 com.tvos: No operations. Default mode: allow 
-me.efesser.flauncher: No operations. Default mode: allow 
+dev.plume: No operations. Default mode: allow 
 nl.giejay.android.tv.immich: No operations. Default mode: allow 
 org.chromium.webview_shell: No operations. Default mode: allow 
 org.jellyfin.androidtv: No operations. Default mode: allow 
